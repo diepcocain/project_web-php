@@ -16,12 +16,74 @@
         rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./main.js"></script>
 </head>
 
 <body>
     <!-- HEADER -->
- <p>Abc</p>
+    <header>
+        <nav class="navbar">
+            <div class="navbar__label">
+                <a href="/" class="logo__link">
+                    <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v800/v2_2019/pc/graphics/logo.svg" alt="logo"
+                        class="logo__img">
+                </a>
+
+                <div class="date boder">
+                </div>
+
+                <div class="location">
+                    Hà Nội
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                    <i class="fa-solid fa-cloud"></i>
+                    27°C
+                </div>
+
+            </div>
+
+            <div class="navbar__label">
+                <a href="#">
+                    <div class="news">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Mới Nhất</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="news">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Tin theo khu vực</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="news">
+                        <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v800/logos/57x57.png" alt="logo_2"
+                            class="sub__logo">
+                        <span>International</span>
+                    </div>
+                </a>
+
+                <div class="user">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#" class="login">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Đăng Nhập</span>
+                    </a>
+                    <a href="#">
+                    <i class="fa-regular fa-bell"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
     <!-- NAVBAR -->
 
 
@@ -30,6 +92,30 @@
     <!-- CONTENT -->
 
     <!-- FOOTER -->
+    <script>
+        // Hàm để hiển thị ngày vào div
+        function showDate() {
+            // Tạo một đối tượng Date với ngày hiện tại
+            var date = new Date();
+            // Tạo một đối tượng options để chỉ định các thành phần của ngày
+            var options = {
+                weekday: "long", // Hiển thị tên thứ
+                day: "numeric", // Hiển thị số ngày
+                month: "numeric", // Hiển thị số tháng
+                year: "numeric" // Hiển thị số năm
+            };
+            // Định dạng ngày theo tiếng Việt
+            var dateStr = date.toLocaleDateString("vi-VN", options);
+            // Lấy phần tử div bằng class name
+            var getDate = document.getElementsByClassName("date")[0];
+            // Thiết lập thuộc tính innerHTML của div bằng ngày
+            getDate.innerHTML = dateStr;
+        }
+        // Gọi hàm showDate () lần đầu tiên
+        showDate();
+
+    </script>
+
 
 </body>
 

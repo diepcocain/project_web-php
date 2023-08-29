@@ -1,6 +1,84 @@
-
-* , html , :root{
-    height: 100%;
+*,
+html,
+:root {
     font-family: 'Roboto', sans-serif;
+    --gray-color: #ccc;
+    --font-text-sm: 14px;
+    --font-text-base: 16px;
+    --font-text-lg: 20px;
 }
 
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: var(--font-text-base);
+}
+
+header {}
+
+
+.navbar {
+    padding: 0.875rem 10rem 0.875rem 10rem;
+    border-bottom: 1px solid var(--gray-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar__label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.date {
+    margin: 0 10px;
+    padding: 0 10px;
+    border-left: 1px solid var(--gray-color);
+    border-right: 1px solid var(--gray-color);
+    color: gray;
+    font-size: var(--font-text-sm);
+}
+
+.location , .news {
+    padding: 0 10px;
+    color: gray;
+    font-size: var(--font-text-sm);
+    cursor: pointer;
+}
+
+.location>.fa-cloud {
+    padding-left: 12px;
+    padding-right: 4px;
+}
+
+.news > span {
+    padding: 0 2px;
+}
+
+.sub__logo {
+    width: 15px;
+    height: 15px;
+    object-fit: fill;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-left: 1px solid var(--gray-color);
+}
+
+
+.fa-magnifying-glass {
+    font-size: var(--font-text-sm);
+    padding-right: 8px;
+}
+
+.login  {
+    margin: 0 8px;
+}
+
+.login > span {
+    padding: 0 4px;
+}
