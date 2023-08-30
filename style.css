@@ -14,6 +14,8 @@ a {
     font-size: var(--font-text-base);
 }
 
+/* header */
+/* navbar */
 header {}
 
 
@@ -81,4 +83,30 @@ header {}
 
 .login > span {
     padding: 0 4px;
+}
+
+
+/* navbar menu */
+.navbar-menu {
+    display: flex;
+    position: sticky;
+    top: 0;
+    justify-content: center;
+    width: 100%;
+    border-bottom: 1px solid var(--gray-color);
+}
+/* .navbar-items {
+    margin: 0 auto;
+} */
+
+.navbar-items ul{
+    display: flex;
+    margin: 0;
+    list-style: none;
+}
+
+.navbar-items ul li {
+    padding: 16.5px 0;
+    margin-right: 10px;
+
 }
