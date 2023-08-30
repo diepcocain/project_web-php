@@ -7,6 +7,9 @@ html,
     --font-text-sm: 14px;
     --font-text-base: 16px;
     --font-text-lg: 20px;
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
 }
 
 .clear {
@@ -17,6 +20,19 @@ a {
     text-decoration: none;
     color: #333;
     font-size: var(--font-text-base);
+}
+
+a:hover {
+    color: #087cce;
+}
+
+p:hover a {
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.span, p {
+    color: var(--text-color);
 }
 
 ul {
@@ -169,17 +185,16 @@ header {}
 } 
 
 /* Container */
-.container {
+.container , .content{
     margin-top: 15px;
-    height: 100vh;
     background-color: transparent;
     display: flex;
 }
 
 
 /* flexbox */
-.flexbox {
-    width: 1130px;
+.flexbox, .content-main {
+    width: 1100px;
     margin: 0 auto;
     padding: 0 15px; 
     height: auto;   
@@ -198,6 +213,10 @@ header {}
 .flexbox-content h2 {
     margin: 0;
     margin-bottom: 15px;
+}
+
+.flexbox-content h2 a {
+    font-size: 24px;
 }
 
 .flexbox img {
@@ -245,6 +264,7 @@ header {}
 
 
 .item-gocnhin > a{
+    color: #9f224e;
     font-size: 18px;
 }
 
@@ -260,7 +280,114 @@ header {}
     height: 72px;
 }
 
+/* content */
+.content-main {
+    padding-top: 20px;
+    display: flex;
+}
 
+.content-l {
+    width: 380px;
+    border-right: 1px solid #c5c5c5;
+    padding-right: 20px;
+}
+
+.item-news {
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 12px;
+}
+
+.item-news > a {
+    font-weight: bold;
+    
+}
+
+.description {
+    margin-top: 8px;
+    display: flex;
+    color: var(--text-color);
+    
+}
+
+.description img{
+    width: 150px;
+    height: 87px;
+    margin-right: 8px;
+
+}
+
+.content-r {
+    width: 680px;
+    padding-left: 20px;
+}
+
+/* kinh doanh */
+
+
+.category {
+    height: 28px;
+    width: 100%;
+    margin-bottom: 12px;
+}
+
+.kinhdoanh ul {
+    display: flex;
+    align-items: center;
+    
+}
+
+.kinhdoanh ul li{
+    padding: 4px 0;
+}
+
+.kinhdoanh ul li a {
+    margin: 0 8px;
+}
+
+.kinhdoanh ul li:first-child a {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.category--kinhdoanh {
+    display: flex;
+    height: 170px;
+}
+
+
+.category-l {
+    width: 460px;
+    display: flex;
+
+}
+
+.category-l img {
+    width: 225px;
+    height: 135px;
+}
+
+
+.category-l__content {
+    padding: 0 20px 0 15px;
+}
+
+.category-l__content p , .category-r__content p{
+    margin-top: 12px;
+}
+
+
+
+.category-r {
+    width: 200px;
+    border-left: 1px solid #c5c5c5;
+}
+
+.category-r__content {
+    padding-left: 20px;
+    
+}
 /* Foooter */
 
 footer {
