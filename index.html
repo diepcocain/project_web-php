@@ -16,6 +16,10 @@
         rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="./main.js"></script>
 </head>
 
@@ -77,9 +81,33 @@
                 </div>
             </div>
         </nav>
-        
-
-
+        <div class="navbar-menu">
+            <div class="navbar-items">
+                <ul>
+                    <li><a href="">
+                        <i class="fa-solid fa-house"></i>
+                    </a></li>
+                    <li><a href="">Thời sự</a></li>
+                    <li><a href="">Góc nhìn</a></li>
+                    <li><a href="">Thế giới</a></li>
+                    <li><a href="">Video</a></li>
+                    <li><a href="">Podcasts</a></li>
+                    <li><a href="">Kinh doanh</a></li>
+                    <li><a href="">Bất động sản</a></li>
+                    <li><a href="">Khoa học</a></li>
+                    <li><a href="">Giải trí</a></li>
+                    <li><a href="">Thể thao</a></li>
+                    <li><a href="">Pháp luật</a></li>
+                    <li><a href="">Giáo dục</a></li>
+                    <li><a href="">Sức khoẻ</a></li>
+                    <li><a href="">Đời sống</a></li>
+                    <li><a href="">Du lịch</a></li>
+                    <li><a href="">
+                        <i class="fa-solid fa-bars"></i>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <!-- NAVBAR -->
@@ -90,6 +118,30 @@
     <!-- CONTENT -->
 
     <!-- FOOTER -->
+    <script>
+        // Hàm để hiển thị ngày vào div
+        function showDate() {
+            // Tạo một đối tượng Date với ngày hiện tại
+            var date = new Date();
+            // Tạo một đối tượng options để chỉ định các thành phần của ngày
+            var options = {
+                weekday: "long", // Hiển thị tên thứ
+                day: "numeric", // Hiển thị số ngày
+                month: "numeric", // Hiển thị số tháng
+                year: "numeric" // Hiển thị số năm
+            };
+            // Định dạng ngày theo tiếng Việt
+            var dateStr = date.toLocaleDateString("vi-VN", options);
+            // Lấy phần tử div bằng class name
+            var getDate = document.getElementsByClassName("date")[0];
+            // Thiết lập thuộc tính innerHTML của div bằng ngày
+            getDate.innerHTML = dateStr;
+        }
+        // Gọi hàm showDate () lần đầu tiên
+        showDate();
+
+    </script>
+
 
 </body>
 
