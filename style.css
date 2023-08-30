@@ -14,6 +14,10 @@ a {
     font-size: var(--font-text-base);
 }
 
+ul {
+    list-style: none;
+}
+
 header {}
 
 
@@ -81,4 +85,33 @@ header {}
 
 .login > span {
     padding: 0 4px;
+}
+
+
+.container {
+    height: 100vh;
+    background-color: transparent;
+}
+
+footer {
+    margin: 1rem 12.75rem 1rem 12.75rem;
+    border-top: 2px solid var(--gray-color) ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_container-left {
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content-link > li {
+    padding-bottom: 8px;
+}
+
+.bold {
+    font-weight: 500;
 }
