@@ -40,6 +40,12 @@ li>a {
     border-bottom: 1px solid var(--gray-color);
 }
 
+.boder-l-r {
+    padding: 0 8px;
+    border-left: 1px solid var(--gray-color);
+    border-right: 1px solid var(--gray-color);
+}
+
 /* header */
 /* navbar */
 header {}
@@ -148,10 +154,14 @@ header {}
 
 /* Foooter */
 
+footer {
+    margin: 1rem 12.75rem 1rem 12.75rem;
+}
+
+
 .footer {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    margin: 1rem 12.75rem 1rem 12.75rem;
     border-top: 2px solid var(--gray-color);
     display: flex;
     justify-content: space-between;
@@ -277,4 +287,110 @@ header {}
 .label_text {
     color: var(--text-color);
     font-size: 12px;
+}
+
+.footer__social {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.logo_social>span {
+    margin-right: 6px;
+    font-size: var(--font-text-sm);
+}
+
+.box__socail {
+    display: flex;
+    align-items: center;
+}
+
+.footer__social>.footer_social {
+    display: flex;
+    align-items: center;
+}
+
+.logo_social {
+    display: flex;
+    align-items: center;
+}
+
+.social>a>span {
+    color: var(--text-color);
+    font-size: var(--font-text-sm);
+}
+
+.social>a>span:hover {
+    text-decoration: underline;
+}
+
+
+.social_icon_label {
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+
+.facebook,
+.youtube,
+.twitter {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    border: 1px solid;
+    border-color: var(--gray-color);
+}
+
+.facebook:hover {
+    background-color: rgb(44, 44, 181);
+}
+
+.youtube:hover {
+    background-color: red;
+}
+
+.twitter:hover {
+    background-color: #38bdf8;
+}
+
+.facebook:hover,
+.youtube:hover,
+.twitter:hover>i {
+    color: #fff;
+}
+
+.twitter {
+    margin: 0 8px;
+
+}
+
+.box_social {
+    display: flex;
+    align-items: center;
+}
+
+.copyright {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.copy_content {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-text-sm);
+}
+
+.copy_content > span {
+    margin-bottom: 2px;
+}
+
+.copy_content-main {
+    padding-right: 2em;
 }
