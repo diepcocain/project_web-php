@@ -1,7 +1,4 @@
-/* header */
-/* navbar */
-header {}
-
+/* HEADER NAVBAR */
 
 .navbar {
     padding: 0.875rem 10rem 0.875rem 10rem;
@@ -81,9 +78,6 @@ header {}
     border-bottom: 1px solid var(--gray-color);
 }
 
-/* .navbar-items {
-    margin: 0 auto;
-} */
 
 .navbar-items ul {
     display: flex;
@@ -102,11 +96,12 @@ header {}
 }
 
 .home-logo {
-    width: 24px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
     text-align: center;
+    padding: 10px;
     line-height: 22px;
-    border-radius: 50%;
+    border-radius: 9999px;
     background: #c5c5c5;
 }
 
