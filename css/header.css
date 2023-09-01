@@ -97,8 +97,22 @@ header {}
 
 }
 
-
-.container {
-    height: 100vh;
-    background-color: transparent;
+.navbar-items>ul>li:hover a {
+    color: #9f224e;
 }
+
+.home-logo {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 10px;
+    line-height: 22px;
+    border-radius: 9999px;
+    background: #c5c5c5;
+}
+
+.navbar-items ul li:hover .home-logo {
+    background: #9f224e;
+    color: #fff;
+    
+} 
