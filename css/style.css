@@ -4,7 +4,7 @@ html,
     font-family: 'Roboto', sans-serif;
     --gray-color: #ccc;
     --text-color: #716565;
-    --font-text-sm: 14px;
+    --font-text-sm: 13px;
     --font-text-base: 16px;
     --font-text-lg: 20px;
     margin: 0;
@@ -22,6 +22,7 @@ a {
     font-size: var(--font-text-sm);
 }
 
+
 a:hover {
     color: #087cce;
 }
@@ -32,6 +33,7 @@ p:hover a {
 }
 
 .span, p {
+    font-size: 13px;
     color: var(--text-color);
 }
 
@@ -70,4 +72,12 @@ li>a {
     padding-bottom: 15px;
     margin-bottom: 15px;
     border-bottom: 1px solid #c5c5c5;
+}
+
+.active {
+    display: block;
+}
+
+.disable {
+    display: none;
 }

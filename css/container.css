@@ -69,8 +69,13 @@
     margin-bottom:  8px;
 }
 
-.item-gocnhin{
-    padding-left: 12px;
+.inner-sub-new-top ul li:last-child{
+    padding-left: 15px;
+}
+
+
+
+.item-gocnhin {
     border-left: 1px solid #c5c5c5;
 }
 
@@ -126,14 +131,16 @@
     margin-top: 8px;
     display: flex;
     color: var(--text-color);
-    
+}
+
+.description span {
+    font-size: 13px;
+    padding-left: 12px;
 }
 
 .description img{
     width: 150px;
     height: 87px;
-    margin-right: 8px;
-
 }
 
 .content-r {
@@ -147,7 +154,7 @@
 .category {
     height: 28px;
     width: 100%;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
 }
 
 .category ul {
@@ -186,13 +193,18 @@
     height: 135px;
 }
 
+.category-l__content a, .category-r__content a {
+    font-size: 16px;
+    font-weight: bold;
+}
 
 .category-l__content {
     padding: 0 20px 0 15px;
 }
 
 .category-l__content p , .category-r__content p{
-    margin-top: 12px;
+    margin-top: 10px;
+    font-size: 13px;
 }
 
 
@@ -217,11 +229,11 @@
 .sub-news-cate ul li {
     width: 200px;
     height: 82px;
-    padding: 15px 0 0 15px
+    padding: 15px 0 0 10px;
 }
 
 .sub-news-cate ul li a {
-    font-size: var(--font-text-base);
+    font-size: var(--font-text-sm);
     font-weight: bold;
 }
 
@@ -257,3 +269,151 @@
     width: 395px;
     text-align: left;
 }
+
+
+/* Lịch thi đấu */
+.Lich-thi-dau {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    white-space: nowrap;
+}
+
+.doi-tuyen {
+    padding: 7px 12px 5px 7px;
+    border: 1px solid #c5c5c5;
+}
+
+.Lich-thi-dau a {
+    color: #222; 
+}
+
+.doi-thi-dau {
+    width: 140px;
+    height: 70px;
+}
+
+.doi-thi-dau img {
+    width: 12px;
+}
+
+.thoi-gian-dau, .chu-nha {
+    margin-bottom: 6px;
+}
+
+.f-left{
+    color: var(--text-color);
+    font-size: 11px;
+}
+
+.ten-doi {
+    padding-left: 4px;
+    font-size: 11px;
+}
+
+/* nút  */
+
+.btn-thi-dau {
+    width: 32px;
+    height: 70px;
+    background: rgba(255,255,255,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-thi-dau:hover {
+    cursor: pointer;
+}
+
+.btn-icon{
+    background: transparent;
+}
+
+.btn-thi-dau.btn-prev {
+    
+    position: absolute;
+    left: 0;
+}
+
+.btn-thi-dau.btn-next {
+    position: absolute;
+    right: 0;
+}
+
+/* Cẩm nang các bệnh */
+.Cam_nang_cac_benh {
+    position: relative;
+}
+.cac-benh {
+    width: 100%;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    
+}
+
+.danhsach-benh {
+    width: 470px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+.btn-benh {
+    
+}
+
+.btn-benh-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 2px;
+    color: var(--text-color);
+    border: 1px solid #c5c5c5;
+    
+}
+
+.btn-benh-item.btn-prev {
+    position: absolute;
+    right: 5%;
+    box-shadow: -12px 0px 12px 6px #fff;
+}
+
+.btn-benh-item.btn-next {
+    position: absolute;
+    
+}
+
+.cac-benh>span {
+    margin-right: 8px;
+    color: var(--text-color);
+    font-size: var(--font-text-sm);
+}
+
+.benh {
+    padding: 5px 20px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background: #bcdff4;
+}
+
+.tenbenh {
+    font-size: var(--font-text-sm);
+    color: #0C4B71; 
+}
+
+.tenbenh:hover {
+    font-size: var(--font-text-sm);
+    color: #0C4B71; 
+}
+
