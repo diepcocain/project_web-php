@@ -79,6 +79,14 @@ li>a {
     border-bottom: 1px solid #c5c5c5;
 }
 
+.up-top {
+    padding-top: 15px;
+    border-top: 1px solid #c5c5c5;
+    margin-top: 15px;
+}
+
+
+
 .active {
     display: block;
 }
