@@ -1,3 +1,5 @@
+/* CSS FOR GÓC NHÌN PAGE */
+
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
 
 .container {
@@ -26,6 +28,7 @@
 .head-aside {
     font-family: 'Merriweather', serif;
     color: #9f224e;
+    padding: 16px 0;
     font-size: 1.3rem;
 }
 

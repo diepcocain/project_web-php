@@ -2,7 +2,7 @@
 
 # Nguyễn Văn Thắng (2121050131)
 
-# Nguyễn Hữu Phi ()
+# Nguyễn Hữu Phi (2121050154)
 
 # Nguyễn Công Thắng ()
 

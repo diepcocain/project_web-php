@@ -9,12 +9,37 @@ html,
     --font-text-sm: 14px;
     --font-text-base: 16px;
     --font-text-lg: 20px;
+    --font-text-sm: 13px;
+    --font-text-base: 16px;
+    --font-text-lg: 20px;
+    margin: 0;
+    padding:0 ;
+    box-sizing: border-box;
+}
+
+.clear {
+    clear: both;
 }
 
 a {
     text-decoration: none;
     color: #333;
-    font-size: var(--font-text-base);
+    font-size: var(--font-text-sm);
+}
+
+
+a:hover {
+    color: #087cce;
+}
+
+p:hover a {
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.span, p {
+    font-size: 13px;
+    color: var(--text-color);
 }
 
 ul {
@@ -48,4 +73,16 @@ li>a {
     border-right: 1px solid var(--gray-color);
 }
 
+.down {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #c5c5c5;
+}
 
+.active {
+    display: block;
+}
+
+.disable {
+    display: none;
+}
