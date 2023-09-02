@@ -418,6 +418,61 @@
     color: #0C4B71; 
 }
 
+/* Điểm chuẩn đại học  */
+.DiemChuanDaiHoc {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    /* background: url("/img/bgDiemchuan.png") no-repeat ; */
+    /* background-size: cover; */
+}
+
+.Diem-l {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    align-items: center;
+    width: 220px;
+}
+
+.Diem-l p {
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+}
+
+.chitiet {
+    padding: 7px 10px;
+    font-size: 13px;
+    margin-left: 10px ;
+    border-left: 1px solid #c5c5c5;
+}
+
+.Diem-r{
+    display: flex;
+    margin-left: 10px;
+    padding-left: 20px;
+    width: 325px;
+    height: 40px;
+}
+
+.Diem-r input {
+    width: 265px;
+    padding: 0 8px;
+    border: 1px solid #e2cca5;
+
+}
+
+.Diem-icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #e2cca5;
+}
+
 /* podcasts */
 .podcast-info {
     padding-top: 20px;
@@ -440,7 +495,7 @@
 }
 
 .category-lg ul li a {
-    margin: 0 8px;
+    margin: 0 6px;
 }
 
 .category-lg ul li:first-child a {
@@ -597,4 +652,40 @@
 .box-cate-right img {
     width: 100px;
     height: 60px;
+}
+
+
+/* Thời sự */
+.category-main{
+    padding: 20px 0 0 0;
+}
+
+
+.category-3 {
+    width: 340px;
+    margin-right: 40px;
+    position: relative;
+}
+
+.category-3::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 20px);
+    background: #c5c5c5;
+    top: 0;
+    right: -20px;
+}
+
+.box-info-news img {
+    width: 340px;
+    margin-bottom: 10px;
+}
+
+.info-news h3 {
+    margin: 6px 0;
+}
+
+.info-news p {
+    margin-bottom: 20px;
 }
