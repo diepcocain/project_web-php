@@ -4,7 +4,7 @@
 
 # Nguyễn Hữu Phi (2121050154)
 
-# Nguyễn Công Thắng ()
+# Nguyễn Công Thắng (2121050137)
 
 # Vũ Ngọc Sơn ()
 
