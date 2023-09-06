@@ -6,7 +6,7 @@
 
 # Nguyễn Công Thắng (2121050137)
 
-# Vũ Ngọc Sơn ()
+# Vũ Ngọc Sơn (2121050181)
 
 # Điệp ()
 
