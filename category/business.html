@@ -37,20 +37,20 @@
                     <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v800/v2_2019/pc/graphics/logo.svg" alt="logo"
                         class="logo__img">
                 </a>
-
+    
                 <div class="date boder">
                 </div>
-
+    
                 <div class="location">
                     Hà Nội
                     <i class="fa-solid fa-chevron-down"></i>
-
+    
                     <i class="fa-solid fa-cloud"></i>
                     27°C
                 </div>
-
+    
             </div>
-
+    
             <div class="navbar__label">
                 <a href="#">
                     <div class="news">
@@ -71,12 +71,12 @@
                         <span>International</span>
                     </div>
                 </a>
-
+    
                 <div class="user">
                     <a href="#">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
-                    <a href="#" class="login">
+                    <a href="#" class="login" onclick="document.getElementById('login').style.display='block'">
                         <i class="fa-regular fa-user"></i>
                         <span>Đăng Nhập</span>
                     </a>
@@ -93,14 +93,14 @@
                     <li><a href="/" class=" home-logo">
                             <i class="fa-solid fa-house"></i>
                         </a></li>
-                    <li><a href="">Thời sự</a></li>
-                    <li><a href="">Góc nhìn</a></li>
+                    <li><a href="./news.html">Thời sự</a></li>
+                    <li><a href="./views.html">Góc nhìn</a></li>
                     <li><a href="">Thế giới</a></li>
                     <li><a href="">Video</a></li>
                     <li><a href="">Podcasts</a></li>
-                    <li><a href="">Kinh doanh</a></li>
+                    <li><a href="./business.html">Kinh doanh</a></li>
                     <li><a href="">Bất động sản</a></li>
-                    <li><a href="">Khoa học</a></li>
+                    <li><a href="./science.html">Khoa học</a></li>
                     <li><a href="">Giải trí</a></li>
                     <li><a href="">Thể thao</a></li>
                     <li><a href="">Pháp luật</a></li>
@@ -114,7 +114,114 @@
                 </ul>
             </div>
         </div>
+    
+        <!-- Modal -->
+        <div id="login" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="close" onclick="document.getElementById('login').style.display='none'">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="header_modal">
+                    <div class="login_header focus_modal login">
+                        <p>Đăng nhập</p>
+                    </div>
+                    <div class="login_header register">
+                        <p>Tạo tài khoản</p>
+                    </div>
+                </div>
+    
+                <div class="body_modal">
+                    <div class="body_left">
+                        <span>Đăng nhập với Email</span>
+    
+                        <form action="" method="post">
+                            <input type="email" name="username" id="name" placeholder="Email">
+    
+                            <input type="password" id="password" placeholder="Password">
+    
+                            <button type="submit">Đăng nhập</button>
+                        </form>
+    
+                        <a href="#">
+                            <p class="forgot">Lấy lại mật khẩu</p>
+                        </a>
+                    </div>
+    
+                    <div class="body_right">
+                        <span>Đăng nhập với</span>
+                        <div class="modal_social">
+                            <button class="modal_facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                            <button class="modal_google">
+                                <i class="fa-brands fa-google"></i>
+                                Google
+                            </button>
+                            <button class="modal_apple">
+                                <i class="fa-brands fa-apple"></i>
+                                Apple
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+            </form>
+        </div>
+    
+        <div id="register" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="close" onclick="document.getElementById('register').style.display='none'">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="header_modal">
+                    <div class="login_header login">
+                        <p>Đăng nhập</p>
+                    </div>
+                    <div class="login_header register  focus_modal">
+                        <p>Tạo tài khoản</p>
+                    </div>
+                </div>
+    
+                <div class="body_modal">
+                    <div class="body_left">
+                        <span style="text-align: center; font-size: 12px;">Tạo tài khoản VnExpress
+    
+                            Để sử dụng đầy đủ tính năng đọc báo và tham gia cộng đồng hơn 8 triệu thành viên</span>
+    
+                        <form action="" method="post">
+                            <input type="email" name="username" id="name" placeholder="Nhập Email">
+    
+                            <input type="password" id="password" placeholder="Tạo mật khẩu">
+    
+                            <button type="submit">Tạo tài khoản</button>
+                        </form>
+    
+                    </div>
+    
+                    <div class="body_right">
+                        <span>Đăng nhập với</span>
+                        <div class="modal_social">
+                            <button class="modal_facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                            <button class="modal_google">
+                                <i class="fa-brands fa-google"></i>
+                                Google
+                            </button>
+                            <button class="modal_apple">
+                                <i class="fa-brands fa-apple"></i>
+                                Apple
+                            </button>
+                        </div>
+                    </div>
+                </div>
+    
+            </form>
+        </div>
     </header>
+
 
 
 
@@ -390,28 +497,7 @@
     </footer>
 
 
-    <script>
-        // Hàm để hiển thị ngày vào div
-        function showDate() {
-            // Tạo một đối tượng Date với ngày hiện tại
-            var date = new Date();
-            // Tạo một đối tượng options để chỉ định các thành phần của ngày
-            var options = {
-                weekday: "long", // Hiển thị tên thứ
-                day: "numeric", // Hiển thị số ngày
-                month: "numeric", // Hiển thị số tháng
-                year: "numeric" // Hiển thị số năm
-            };
-            // Định dạng ngày theo tiếng Việt
-            var dateStr = date.toLocaleDateString("vi-VN", options);
-            // Lấy phần tử div bằng class name
-            var getDate = document.getElementsByClassName("date")[0];
-            // Thiết lập thuộc tính innerHTML của div bằng ngày
-            getDate.innerHTML = dateStr;
-        }
-        // Gọi hàm showDate () lần đầu tiên
-        showDate();
-
+    <script src="../main.js">
     </script>
 
 
