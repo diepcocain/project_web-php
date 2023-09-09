@@ -1,7 +1,7 @@
 /* FOOTER STYLE */
 
 footer {
-    margin: 1rem 12.75rem 1rem 12.75rem;
+    margin: 0rem 12.75rem 1rem 12.75rem;
 }
 
 
@@ -181,7 +181,9 @@ footer {
 
 .facebook,
 .youtube,
-.twitter {
+.twitter,
+.email,
+.link_social {
     width: 35px;
     height: 35px;
     display: flex;

@@ -130,7 +130,7 @@
     opacity: 0.6;
 }
 
-.context > p > a{
+.context>p>a {
     color: rgba(38, 135, 188, 0.929);
     text-decoration: underline;
     font-size: 18px;
@@ -138,4 +138,88 @@
 
 .context>p:hover>a {
     color: rgba(38, 135, 188, 0.929);
+}
+
+.bottom_context {
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left_bottom,
+.right_bottom {
+    display: flex;
+    align-items: center;
+}
+
+.btn_back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ccc;
+}
+
+.btn_bookmark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    border: 1px solid #ccc;
+    margin: 0 1rem;
+}
+
+.btn_bookmark:hover {
+    border: 1px solid rgb(22, 71, 184);
+}
+
+.btn_bookmark>i {
+    font-size: 18px;
+}
+
+
+.btn_bookmark>span {
+    padding-left: 4px;
+    font-weight: 500;
+}
+
+.social_share {
+    margin-left: 0.5rem;
+}
+.email:hover {
+    background: #333;
+    color: #fff;
+}
+
+.menu_right {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.menu_right > H3 {
+    font-family: 'Merriweather', serif;
+    border-bottom: 1px solid #9f224e;
+}
+
+.context_menu {
+    cursor: pointer;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.context_menu > img {
+    width: 50%; 
+    padding-right: 4px; 
+    object-fit: cover;
+}
+
+.text_context> span {
+    font-size: 0.8rem;
+    font-family: 'Merriweather', serif;
+    font-weight: 500;
 }
