@@ -2,11 +2,11 @@
 
 # Nguyễn Văn Thắng (2121050131)
 
-# Nguyễn Hữu Phi ()
+# Nguyễn Hữu Phi (2121050154)
 
-# Nguyễn Công Thắng ()
+# Nguyễn Công Thắng (2121050137)
 
-# Vũ Ngọc Sơn ()
+# Vũ Ngọc Sơn (2121050181)
 
 # Điệp (2121051474)
 

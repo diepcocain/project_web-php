@@ -1,0 +1,235 @@
+/* CSS FOR GÓC NHÌN PAGE */
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+.container {
+    margin: 1rem 12.75rem 1rem 12.75rem;
+}
+
+
+.heading_title {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #4f4f4f;
+    font-weight: 800;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.box-container {
+    display: flex;
+}
+
+.aside-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.head-aside {
+    font-family: 'Merriweather', serif;
+    color: #9f224e;
+    padding: 16px 0;
+    font-size: 1.3rem;
+}
+
+.aside-container>a {
+    padding-bottom: 20px;
+}
+
+.aside-container>a>span {
+    font-size: 17px;
+}
+
+.aside-container>.more {
+    color: #a39f9f;
+}
+
+.more>.more-text {
+    font-size: 15px;
+}
+
+.more-text:hover {
+    font-weight: 700;
+    color: #136284;
+}
+
+.button-submit {
+    margin-top: 12px;
+    padding: 12px 20px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 0.375rem;
+    border: 1px solid transparent;
+}
+
+.button-submit:hover {
+    opacity: var(--gray-color);
+}
+
+.email {
+    margin-bottom: 8px !important;
+    font-size: 13px !important;
+    text-decoration: underline;
+}
+
+
+
+.container-content {
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.main-content {
+    flex-basis: 60%;
+}
+
+.list-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.focus {
+    background: #f7f7f7;
+
+}
+
+.box-content {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #e0dbdb;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.text-content>span {
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.category {
+    display: flex;
+    padding: 10px 0;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.comment:hover {
+    cursor: pointer;
+}
+
+.comment>span {
+    font-size: 12px;
+    padding: 0 4px;
+    color: #136284;
+}
+
+.heading-text {
+    font-family: 'Merriweather', serif;
+}
+
+.heading-text:hover,
+.heading-text-h2:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.heading-text-h2 {
+    padding: 8px 0;
+    font-family: 'Merriweather', serif;
+}
+
+.another {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.another>img {
+    width: 100px;
+    height: 100px;
+    border-radius: 9999px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    margin-bottom: 8px;
+}
+
+.another-name {
+    color: #4f4f4f;
+    font-size: 13px;
+}
+
+.another-name:hover {
+    color: #136284;
+}
+
+
+.aside-right {
+    flex-basis: 40%;
+    padding: 0 0.5rem;
+    margin: 0 1rem;
+}
+
+.box-content-right {
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.box-content-right>a>span {
+    font-size: 16px;
+}
+
+.box-content-right>a {
+    padding-bottom: 16px;
+}
+
+.label-aside-right {
+    margin: 1rem 0;
+}
+
+.box-comment {
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box-comment > span {
+    font-size: 14px;
+    color: #a39f9f;
+}
+
+.box-label-right{
+    padding: 12px 0;
+    border-bottom: 1px solid #a39f9f;
+}
+
+.box-label-right > a > h4 {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+    padding: 6px 0;
+}
+
+.box-label-right > p {
+    padding: 6px 0;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

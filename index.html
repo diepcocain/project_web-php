@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Bài Tập Lớn Nhóm</title>
+    <title>VnExpress</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
     <!-- Reset CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
         integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
@@ -17,13 +19,13 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/root-contaier.css">
+    <link rel="stylesheet" href="./css/root-container.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./main.js"></script>
+
 </head>
 
 <body>
@@ -74,7 +76,7 @@
                     <a href="#">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
-                    <a href="#" class="login">
+                    <a href="#" class="login" onclick="document.getElementById('login').style.display='block'">
                         <i class="fa-regular fa-user"></i>
                         <span>Đăng Nhập</span>
                     </a>
@@ -84,20 +86,21 @@
                 </div>
             </div>
         </nav>
+        <!-- NAVBAR -->
         <div class="navbar-menu">
             <div class="navbar-items">
                 <ul>
-                    <li><a href="">
+                    <li><a href="/" class=" home-logo">
                             <i class="fa-solid fa-house"></i>
                         </a></li>
-                    <li><a href="">Thời sự</a></li>
-                    <li><a href="">Góc nhìn</a></li>
+                    <li><a href="./category/news.html">Thời sự</a></li>
+                    <li><a href="./category/views.html">Góc nhìn</a></li>
                     <li><a href="">Thế giới</a></li>
                     <li><a href="">Video</a></li>
                     <li><a href="">Podcasts</a></li>
-                    <li><a href="">Kinh doanh</a></li>
+                    <li><a href="./category/business.html">Kinh doanh</a></li>
                     <li><a href="">Bất động sản</a></li>
-                    <li><a href="">Khoa học</a></li>
+                    <li><a href="./category/science.html">Khoa học</a></li>
                     <li><a href="">Giải trí</a></li>
                     <li><a href="">Thể thao</a></li>
                     <li><a href="">Pháp luật</a></li>
@@ -111,16 +114,1113 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div id="login" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="close" onclick="document.getElementById('login').style.display='none'">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="header_modal">
+                    <div class="login_header focus_modal login">
+                        <p>Đăng nhập</p>
+                    </div>
+                    <div class="login_header register">
+                        <p>Tạo tài khoản</p>
+                    </div>
+                </div>
+
+                <div class="body_modal">
+                    <div class="body_left">
+                        <span>Đăng nhập với Email</span>
+
+                        <form action="" method="post">
+                            <input type="email" name="username" id="name" placeholder="Email">
+
+                            <input type="password" id="password" placeholder="Password">
+
+                            <button type="submit">Đăng nhập</button>
+                        </form>
+
+                        <a href="#">
+                            <p class="forgot">Lấy lại mật khẩu</p>
+                        </a>
+                    </div>
+
+                    <div class="body_right">
+                        <span>Đăng nhập với</span>
+                        <div class="modal_social">
+                            <button class="modal_facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                            <button class="modal_google">
+                                <i class="fa-brands fa-google"></i>
+                                Google
+                            </button>
+                            <button class="modal_apple">
+                                <i class="fa-brands fa-apple"></i>
+                                Apple
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div id="register" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="close" onclick="document.getElementById('register').style.display='none'">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="header_modal">
+                    <div class="login_header login">
+                        <p>Đăng nhập</p>
+                    </div>
+                    <div class="login_header register  focus_modal">
+                        <p>Tạo tài khoản</p>
+                    </div>
+                </div>
+        
+                <div class="body_modal">
+                    <div class="body_left">
+                        <span style="text-align: center; font-size: 12px;">Tạo tài khoản VnExpress
+        
+                            Để sử dụng đầy đủ tính năng đọc báo và tham gia cộng đồng hơn 8 triệu thành viên</span>
+        
+                        <form action="" method="post">
+                            <input type="email" name="username" id="name" placeholder="Nhập Email">
+        
+                            <input type="password" id="password" placeholder="Tạo mật khẩu">
+        
+                            <button type="submit">Tạo tài khoản</button>
+                        </form>
+        
+                    </div>
+        
+                    <div class="body_right">
+                        <span>Đăng nhập với</span>
+                        <div class="modal_social">
+                            <button class="modal_facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                            <button class="modal_google">
+                                <i class="fa-brands fa-google"></i>
+                                Google
+                            </button>
+                            <button class="modal_apple">
+                                <i class="fa-brands fa-apple"></i>
+                                Apple
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        
+            </form>
+        </div>
     </header>
 
 
 
     <!-- CONTAINER -->
-    <div class="container"></div>
+    <div class="container">
+
+    </div>
+    <div class="flexbox">
+        <a href="./category/id.html">
+            <div class="flexbox-tide">
+                <img src="./img/bongchuyenvn.jpg" alt="">
+                <div class="flexbox-content">
+                    <h2> <a href="./category/id.html">Việt Nam thắng sốc Hàn Quốc ở giải bóng chuyền nữ châu Á</a></h2>
+                    <span>Bị dẫn 0-2 nhưng Việt Nam ngược dòng thắng 3-2 trước đối thủ mạnh Hàn Quốc ở trận ra quân Giải
+                        bóng chuyền
+                        nữ vô địch châu Á 2023. Sức mạnh của bóng chuyền nữ Hàn Quốc chỉ xếp sau Nhật Bản, Trung Quốc và
+                        ...</span>
+
+                    <p>51' trướcThể thao</p>
+                </div>
+        </a>
+    </div>
+
+    <div class="sub-new-top">
+        <div class="inner-sub-new-top">
+            <ul>
+                <li>
+                    <h4> <a href="">HLV Park để ngỏ khả năng trở lại cầm quân</a></h4>
+                    <p><a href="">HÀ NỘIHLV Park Hang-seo hiện ưu tiên làm bóng đá trẻ, nhưng sẵn sàng trở lại làm
+                            chuyên nghiệp nếu có đội đáp ứng một số yêu cầu của ông.</a></p>
+                </li>
+                <li>
+                    <h4> <a href="">Giá điện có thể gánh thêm khoản lỗ của EVN</a></h4>
+                    <p><a href="">Giá bán lẻ điện bình quân dự kiến tính thêm chênh lệch tỷ giá, lỗ sản xuất kinh doanh
+                            - những khoản vốn chưa được tính vào giá điện.</a></p>
+                </li>
+                <li class="item-gocnhin">
+                    <a href="">Góc nhìn</a>
+                    <div class="gocnhin_info">
+                        <h4> <a href="">Đại học - 'thi là đỗ'</a></h4>
+                        <p><a href="">Với thế hệ sinh vào thập kỷ 1980 như tôi, thi đầu vào đại học như cuộc chiến ‘sống
+                                còn’. Tình thế bây giờ đã khác.</a></p>
+                        <div class="gocnhin_info--">
+                            <p>Lang Minh</p>
+                            <img src="./img/LangMinh.png" alt="">
+                        </div>
+                    </div>
+
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    </div>
+
+
+
+    </div>
+
     <!-- CONTENT -->
+    <div class="content">
+        <div class="content-main">
+            <!-- content - left -->
+            <div class="content-l">
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Nga xem xét khả năng máy bay chở trùm Wagner bị tấn công</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+                <div class="item-news">
+                    <a href="">Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia</a>
+                    <div class="description">
+                        <img src="./img/tin3.jpg" alt="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia"
+                            title="Thủ tướng sắp dự Hội nghị Cấp cao ASEAN tại Indonesia">
+                        <span>Thủ tướng Phạm Minh Chính sẽ dự Hội nghị Cấp cao ASEAN lần thứ 43 và các hội nghị cấp cao
+                            liên quan tại Indonesia vào tháng sau.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- content right -->
+            <div class="content-r">
+                <div class="box-category">
+                    <!-- kinh doanh -->
+                    <div class="category-item">
+                        <div class="category kinhdoanh">
+                            <ul>
+                                <li><a href="">Kinh doanh</a></li>
+                                <li><a href="">Quốc tế</a></li>
+                                <li><a href="">Doanh nghiệp</a></li>
+                                <li><a href="">Chứng khoán</a></li>
+                                <li><a href="">Vĩ mô</a></li>
+                                <li><a href="">Hậu trường kinh doanh</a></li>
+                            </ul>
+                        </div>
+                        <div class="category--news">
+                            <div class="category-l">
+                                <img src="./img/congtrinh.jpg" alt="">
+                                <div class="category-l__content">
+                                    <a href="">Lợi nhuận Xây dựng Hòa Bình giảm hơn 800 tỷ đồng sau kiểm toán</a>
+                                    <p>Đại gia ngành xây dựng lỗ ròng hơn 700 tỷ đồng trên báo cáo tài chính kiểm toán
+                                        bán niên, so với mức lợi nhuận</p>
+                                </div>
+                            </div>
+                            <div class="category-r">
+                                <div class="category-r__content">
+                                    <a href="">Lợi nhuận Xây dựng Hòa Bình giảm hơn 800 tỷ đồng sau kiểm toán</a>
+                                    <p>Đại gia ngành xây dựng lỗ ròng hơn 700 tỷ đồng trên báo cáo tài chính kiểm toán
+                                        bán niên, so với mức lợi nhuận</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-news-cate down">
+                            <ul>
+                                <li><a href="">Country Garden cảnh báo vỡ nợ sau khi báo lỗ kỷ lục</a></li>
+                                <li><a href="">Kinh tế Đức khó tìm lại hào quang</a></li>
+                                <li><a href="">Làm gì khi gia đình cho 2 tỷ đồng?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- bảng ngoại tệ -->
+                    <div class="bangNgoaiTe down">
+
+                        <table class="ngoaiTe">
+                            <tr>
+                                <th>Tỷ giá ngoại tệ <a href=""><img src="./img/eximbank.svg" alt=""></a></th>
+                                <th>Mua TM</th>
+                                <th>Mua CK</th>
+                                <th>Bán</th>
+                            </tr>
+                            <tr>
+                                <td>USD/VNĐ</td>
+                                <td>23.840</td>
+                                <td>23.920</td>
+                                <td>24.240</td>
+                            </tr>
+                            <tr>
+                                <td>EUR/VNĐ</td>
+                                <td>25.888</td>
+                                <td>25.966</td>
+                                <td>26.626</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Bất động sản -->
+                    <div class="category-item">
+                        <div class="category ">
+                            <ul>
+                                <li><a href="">Bất động sản</a></li>
+                                <li><a href="">Chính sách</a></li>
+                                <li><a href="">Thị trường</a></li>
+                                <li><a href="">Dự án</a></li>
+                                <li><a href="">Không gian sống</a></li>
+                                <li><a href="">Tư vấn</a></li>
+                            </ul>
+                        </div>
+                        <div class="category--news down">
+                            <div class="category-l">
+                                <img src="./img/batdongsan.jpg" alt="">
+                                <div class="category-l__content">
+                                    <a href="">Nhà ống có đủ bể bơi, sân vườn</a>
+                                    <p>TP HCM- Nhờ bố trí hợp lý, ngôi nhà ống diện tích 4x20 m vẫn có bể bơi cho trẻ
+                                        nhỏ vui chơi và sân vườn để đáp ứng sở thích trồng cây của bố mẹ. </p>
+                                </div>
+                            </div>
+                            <div class="category-r">
+                                <div class="category-r__content">
+                                    <a href="">Với 1,6 tỷ đồng, có nên mua nhà tập thể cũ?</a>
+                                    <p>HÀ NỘI- Tôi định mua một nhà tập thể diện tích 60 m2 sau cơi nới, ở trung tâm
+                                        quận Cầu Giấy cho hai con tiện đi học. </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-news-cate down">
+                            <ul>
+                                <li><a href="">Ngôi nhà có 3 phòng ngủ xếp thẳng đứng</a></li>
+                                <li><a href="">Người Australia chật vật trả tiền vay mua nhà</a></li>
+                                <li><a href="">Quy hoạch hết đất một xã thành đô thị biển 3.000 ha</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Thể thao -->
+                    <div class="category-item">
+                        <div class="category ">
+                            <ul>
+                                <li><a href="">Thể thao</a></li>
+                                <li><a href="">Bóng đá</a></li>
+                                <li><a href="">Tennis</a></li>
+                                <li><a href="">Marathon</a></li>
+                                <li><a href="">Lịch thi đấu</a></li>
+                                <li><a href="">U23 Đông Nam Á 2023</a></li>
+                            </ul>
+                        </div>
+                        <div class="category--news down">
+                            <div class="category-l">
+                                <img src="./img/thethao.jpg" alt="">
+                                <div class="category-l__content">
+                                    <a href="">Nhiều tay vợt mệt mỏi bất thường ở Mỹ Mở rộng 2023</a>
+                                    <p>MỸ- Nhiều tay vợt mệt mỏi và bỏ cuộc làm dấy lên những nghi ngờ về
+                                        một căn bệnh lạ đang tồn tại ở giải Grand ... </p>
+                                </div>
+                            </div>
+                            <div class="category-r">
+                                <div class="category-r__content">
+                                    <a href="">UEFA không cho các CLB Saudi dự Champions League</a>
+                                    <p>Chủ tịch UEFA Aleksander Ceferin khẳng định chỉ có các CLB châu Âu mới được góp
+                                        mặt tại Champions ... </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-news-cate down">
+                            <ul>
+                                <li><a href="">Bayern chưa quên trận thua ngược Man Utd năm 1999</a></li>
+                                <li><a href="">Sếp UEFA chỉ trích luật bù giờ mới tại Ngoại hạng Anh</a></li>
+                                <li><a href="">HLV Inter Miami hối MLS đổi lịch vì Messi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- lịch thi đấu bóng đá -->
+                    <div class="thi-dau__bong-da down">
+                        <div class="Lich-thi-dau">
+                            <div class="btn-thi-dau btn-prev disable">
+                                <i class="fa-solid fa-angle-left btn-icon"></i>
+                            </div>
+                            <div class="btn-thi-dau btn-next active">
+                                <i class="fa-solid fa-angle-right btn-icon"></i>
+                            </div>
+                            <!-- 2 Đội thi đấu -->
+                            <div class="doi-tuyen">
+                                <a class="doi-thi-dau" href="">
+                                    <div class="thoi-gian-dau">
+                                        <span class="f-left">Ngày mai, 1:00</span>
+                                        <span class="f-right"></span>
+                                    </div>
+                                    <div class="chu-nha">
+                                        <img src="https://is.vnecdn.net/objects/teams/2938.png" alt="">
+                                        <span class="ten-doi">Al-Ittihad FC</span>
+                                    </div>
+                                    <div class="doi-khach">
+                                        <img src="https://is.vnecdn.net/objects/teams/2932.png" alt="">
+                                        <span class="ten-doi">Al-Hilal Saudi FC</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="doi-tuyen">
+                                <a class="doi-thi-dau" href="">
+                                    <div class="thoi-gian-dau">
+                                        <span class="f-left">Ngày mai, 1:00</span>
+                                        <span class="f-right"></span>
+                                    </div>
+                                    <div class="chu-nha">
+                                        <img src="https://is.vnecdn.net/objects/teams/2938.png" alt="">
+                                        <span class="ten-doi">Al-Ittihad FC</span>
+                                    </div>
+                                    <div class="doi-khach">
+                                        <img src="https://is.vnecdn.net/objects/teams/2932.png" alt="">
+                                        <span class="ten-doi">Al-Hilal Saudi FC</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="doi-tuyen">
+                                <a class="doi-thi-dau" href="">
+                                    <div class="thoi-gian-dau">
+                                        <span class="f-left">Ngày mai, 1:00</span>
+                                        <span class="f-right"></span>
+                                    </div>
+                                    <div class="chu-nha">
+                                        <img src="https://is.vnecdn.net/objects/teams/2938.png" alt="">
+                                        <span class="ten-doi">Al-Ittihad FC</span>
+                                    </div>
+                                    <div class="doi-khach">
+                                        <img src="https://is.vnecdn.net/objects/teams/2932.png" alt="">
+                                        <span class="ten-doi">Al-Hilal Saudi FC</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="doi-tuyen">
+                                <a class="doi-thi-dau" href="">
+                                    <div class="thoi-gian-dau">
+                                        <span class="f-left">Ngày mai, 1:00</span>
+                                        <span class="f-right"></span>
+                                    </div>
+                                    <div class="chu-nha">
+                                        <img src="https://is.vnecdn.net/objects/teams/2938.png" alt="">
+                                        <span class="ten-doi">Al-Ittihad FC</span>
+                                    </div>
+                                    <div class="doi-khach">
+                                        <img src="https://is.vnecdn.net/objects/teams/2932.png" alt="">
+                                        <span class="ten-doi">Al-Hilal Saudi FC</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="doi-tuyen">
+                                <a class="doi-thi-dau" href="">
+                                    <div class="thoi-gian-dau">
+                                        <span class="f-left">Ngày mai, 1:00</span>
+                                        <span class="f-right"></span>
+                                    </div>
+                                    <div class="chu-nha">
+                                        <img src="https://is.vnecdn.net/objects/teams/2938.png" alt="">
+                                        <span class="ten-doi">Al-Ittihad FC</span>
+                                    </div>
+                                    <div class="doi-khach">
+                                        <img src="https://is.vnecdn.net/objects/teams/2932.png" alt="">
+                                        <span class="ten-doi">Al-Hilal Saudi FC</span>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="doi-tuyen">
+                                <a class="doi-thi-dau" href="">
+                                    <div class="thoi-gian-dau">
+                                        <span class="f-left">Ngày mai, 1:00</span>
+                                        <span class="f-right"></span>
+                                    </div>
+                                    <div class="chu-nha">
+                                        <img src="https://is.vnecdn.net/objects/teams/2938.png" alt="">
+                                        <span class="ten-doi">Al-Ittihad FC</span>
+                                    </div>
+                                    <div class="doi-khach">
+                                        <img src="https://is.vnecdn.net/objects/teams/2932.png" alt="">
+                                        <span class="ten-doi">Al-Hilal Saudi FC</span>
+                                    </div>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Giải trí -->
+                    <div class="category-item">
+                        <div class="category ">
+                            <ul>
+                                <li><a href="">Thể thao</a></li>
+                                <li><a href="">Bóng đá</a></li>
+                                <li><a href="">Tennis</a></li>
+                                <li><a href="">Marathon</a></li>
+                                <li><a href="">Lịch thi đấu</a></li>
+                                <li><a href="">U23 Đông Nam Á 2023</a></li>
+                            </ul>
+                        </div>
+                        <div class="category--news down">
+                            <div class="category-l">
+                                <img src="./img/thethao.jpg" alt="">
+                                <div class="category-l__content">
+                                    <a href="">Nhiều tay vợt mệt mỏi bất thường ở Mỹ Mở rộng 2023</a>
+                                    <p>MỸ- Nhiều tay vợt mệt mỏi và bỏ cuộc làm dấy lên những nghi ngờ về
+                                        một căn bệnh lạ đang tồn tại ở giải Grand ... </p>
+                                </div>
+                            </div>
+                            <div class="category-r">
+                                <div class="category-r__content">
+                                    <a href="">UEFA không cho các CLB Saudi dự Champions League</a>
+                                    <p>Chủ tịch UEFA Aleksander Ceferin khẳng định chỉ có các CLB châu Âu mới được góp
+                                        mặt tại Champions ... </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-news-cate down">
+                            <ul>
+                                <li><a href="">Bayern chưa quên trận thua ngược Man Utd năm 1999</a></li>
+                                <li><a href="">Sếp UEFA chỉ trích luật bù giờ mới tại Ngoại hạng Anh</a></li>
+                                <li><a href="">HLV Inter Miami hối MLS đổi lịch vì Messi</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Sức khoẻ -->
+                    <div class="category-item">
+                        <div class="category ">
+                            <ul>
+                                <li><a href="">Sức khoẻ</a></li>
+                                <li><a href="">Tin tức</a></li>
+                                <li><a href="">Dinh dưỡng</a></li>
+                                <li><a href="">Khoẻ đẹp</a></li>
+                                <li><a href="">Các bệnh</a></li>
+                                <li><a href="">Vaccine</a></li>
+                            </ul>
+                        </div>
+                        <div class="category--news down">
+                            <div class="category-l">
+                                <img src="./img/suckhoe.jpg" alt="">
+                                <div class="category-l__content">
+                                    <a href="">Áp xe mặt sau tiêm filler trẻ hóa</a>
+                                    <p>HÀ NỘI- Sau tiêm filler mong trẻ trung, cô gái 26 tuổi sưng tấy mặt do ứ dịch,
+                                        tổn thương da, biến chứng nhiễm trùng.</p>
+                                </div>
+                            </div>
+                            <div class="category-r">
+                                <div class="category-r__content">
+                                    <a href="">Đàn sán chui ra từ đường mật do thói quen ăn gỏi</a>
+                                    <p>HÀ NỘI- Bệnh nhân nam 57 tuổi, thường xuyên ăn gỏi cá, gần đây đau bụng, sốt,
+                                        vàng da, mệt mỏi, bác sĩ ... </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-news-cate down">
+                            <ul>
+                                <li><a href="">Biến chứng nguy hiểm do trào ngược dạ dày</a></li>
+                                <li><a href="">Phát hiện ung thư sau khi bị râu tôm chọc ngón tay</a></li>
+                                <li><a href="">Cuộc gọi của bé ba tuổi cứu mạng bà ngoại</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- cẩm nang các bệnh -->
+                    <div class="Cam_nang_cac_benh down">
+                        <div class="cac-benh">
+                            <span class="txt-cn">Cẩm nang các bệnh: </span>
+
+                            <div class="danhsach-benh">
+
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Da liễu</a>
+                                </div>
+
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Tim mạch</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Hô hấp</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Nội tiết</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Dinh dưỡng</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Tiêu hoá</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Tai mũi họng</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Thần kinh</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Hiến muộn</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Nhi - Sơ sinh</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Cơ xương khớp</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Tiết niệu - Nam học</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Ung thư</a>
+                                </div>
+                                <div class="benh">
+                                    <a href="" class="tenbenh">Sản phụ khoa</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn-benh">
+                            <div class="btn-benh-item btn-prev disable">
+                                <i class="fa-solid fa-angle-left "></i>
+                            </div>
+                            <div class="btn-benh-item btn-next active">
+                                <i class="fa-solid fa-angle-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Đời sống -->
+                    <div class="category-item">
+                        <div class="category ">
+                            <ul>
+                                <li><a href="">Đời sống</a></li>
+                                <li><a href="">Bài học sống</a></li>
+                                <li><a href="">Tổ ấm</a></li>
+                                <li><a href="">Tiêu dùng</a></li>
+                                <li><a href="">Cooking</a></li>
+                                <li><a href="">Mua sắm thông minh</a></li>
+                            </ul>
+                        </div>
+                        <div class="category--news down">
+                            <div class="category-l">
+                                <img src="./img/doisong.jpg" alt="">
+                                <div class="category-l__content">
+                                    <a href="">Đổ về New York xem chuột</a>
+                                    <p>MỸ- Người dân khắp nước Mỹ đang kéo đến thành phố New York để tham quan nơi ở của
+                                        hàng trăm con chuột mỗi đêm. </p>
+                                </div>
+                            </div>
+                            <div class="category-r">
+                                <div class="category-r__content">
+                                    <a href="">Cách làm hủ tiếu sa tế chay thơm ngon</a>
+                                    <p>Sợi hủ tiếu dai mềm, nấm giòn ngọt, lạc giòn bùi, nước dùng sa tế tê cay và có
+                                        chút bùi béo của bơ đậu phộng rất bắt vị. Món này ... </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-news-cate down">
+                            <ul>
+                                <li><a href="">Tại sao nồi bị đen sau khi luộc trứng?</a></li>
+                                <li><a href="">Những sai lầm khi vệ sinh kính mắt</a></li>
+                                <li><a href="">5 lầm tưởng phổ biến về tình yêu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Giáo dục -->
+                    <div class="category-item">
+                        <div class="category ">
+                            <ul>
+                                <li><a href="">Giáo dục</a></li>
+                                <li><a href="">Tin tức</a></li>
+                                <li><a href="">Tuyển sinh</a></li>
+                                <li><a href="">Chân dung</a></li>
+                                <li><a href="">Du học</a></li>
+                                <li><a href="">Giáo dục 4.0</a></li>
+                                <li><a href="">Trắc nghiệm</a></li>
+                            </ul>
+                        </div>
+                        <div class="category--news down">
+                            <div class="category-l">
+                                <img src="./img/giaoduc.png" alt="">
+                                <div class="category-l__content">
+                                    <a href=""> Nói về 'cấp độ bão' trong tiếng Anh</a>
+                                    <p>Bạn có biết "bão cấp độ 1" hay "áp thấp nhiệt đới" và các cơn dông nói thế nào
+                                        trong tiếng Anh? </p>
+                                </div>
+                            </div>
+                            <div class="category-r">
+                                <div class="category-r__content">
+                                    <a href="">Các khoản phí bủa vây tân sinh viên</a>
+                                    <p>Nhận thông báo nhập học, Ngọc Ngân bất ngờ trước nhiều khoản phải nộp như phí thư
+                                        viện số 90.000, tin nhắn SMS 80.000, hệ thống ... </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sub-news-cate down">
+                            <ul>
+                                <li><a href="">Cô giáo đánh rớt học sinh môn Âm nhạc bị chuyển trường</a></li>
+                                <li><a href="">Nữ sinh lớp 8 bị bạn đánh, lột đồ</a></li>
+                                <li><a href="">Lễ cúng cô hồn có tên gọi khác là gì?</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Điểm chuẩn đại học -->
+                    <div class="DiemChuanDaiHoc">
+                        <div class="Diem-l">
+                            <a href="">
+                                <p>Điểm chuẩn đại học</p>
+                                <a class="chitiet" href="">chi tiết <i class="fa-solid fa-angle-right"></i></a>
+                            </a>
+                        </div>
+                        <div class="Diem-r">
+                            <input type="text" placeholder="Nhập tên trường hoặc mã trường">
+                            <div class="Diem-icon"><i class="fa-solid fa-magnifying-glass "></i></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Podcasts -->
+    <div class="podcasts">
+        <div class="podcast-info up-top">
+            <div class="category-item-lg">
+                <div class="category-lg ">
+                    <ul>
+                        <li><a href="">Podcasts</a></li>
+                        <li><a href="">PodcastsVnExpress hôm nay</a></li>
+                        <li><a href="">Tôi kể</a></li>
+                        <li><a href="">Giải mã</a></li>
+                        <li><a href="">Bạn ổn không?</a></li>
+                        <li><a href="">Tiền làm gì?</a></li>
+                    </ul>
+                </div>
+                <div class="category--news-lg down">
+                    <div class="category-l-lg">
+                        <img src="./img/podcast_bom.jpg" alt="">
+                        <div class="category-l-lg__content">
+                            <a href="">Vụ ném bom Hiroshima có thật sự giúp kết thúc Thế Chiến II?</a>
+                            <p>Nhiều học giả tin rằng hai vụ ném bom không phải động cơ chính thúc đẩy Nhật đầu hàng phe
+                                Đồng minh, nước này có đến 68 thành phố bị hủy diệt bằng bom vào mùa hè 1945.</p>
+                        </div>
+                    </div>
+                    <div class="category-r-lg">
+                        <img src="./img/podcast2.jpg" alt="">
+                        <div class="category-r-lg__content">
+                            <a href="">Chuyện người phụ nữ đòi cưới bạn trai nhiễm HIV</a>
+                            <p>Sau 2 tháng tìm hiểu, chị Vân chủ động tán tỉnh dù biết anh Bình nhiễm HIV và từng nghiện
+                                ma tuý. Chị nói mình hãnh diện lạ thường khi được là cô dâu ở tuổi 42.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-news-cate-lg down">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-headset"></i>
+                                Điểm tin 11h: Vé máy bay sát lễ 2/9 còn nhiều, giá không tăng; Ông Trump không nhận tội
+                                ở Georgia
+                            </a>
+                            <p>Phóng viên bị bắt với cáo buộc tống tiền người dân; Ukraine yêu cầu không chỉ trích tốc
+                                độ phản công; Lính Ukraine kể về nỗi sợ bom dẫn đường Nga... </p>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-headset"></i>
+                                Cửa hàng xe máy cũ nguy cơ lỗ tiền tỷ vì biển số định danh
+                            </a>
+                            <p>Thủ tục sang tên phức tạp, khó liên hệ lại với chủ cũ, cửa hàng xe máy cũ của anh Việt
+                                Hưng gần như đóng băng khi lượng khách hỏi mua giảm tới 80%.</p>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="fa-solid fa-headset"></i>
+                                Các bước thoát vòng lặp nợ nần
+                            </a>
+                            <p>Quẹt thẻ tiêu xài, khoản vay nợ liên tục tăng cho tới khi vượt khả năng chi trả là vấn đề
+                                của nhiều người trẻ, chuyên gia tài chính cá nhân Nguyễn Thanh Minh chỉ ra các bước
+                                thoát vòng nợ nần.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Chủ đề -->
+            <div class="theme down">
+                <div class="theme-item">
+                    <span>
+                        <i class="fa-solid fa-chart-line"></i>
+                        Chủ đề
+                    </span>
+
+                    <div class="theme-list">
+                        <ul>
+                            <li><a href="" class="theme-name">Biến đổi môi trường Đà Lạt</a></li>
+                            <li><a href="" class="theme-name">Hà Nội sau 15 năm mở rộng</a></li>
+                            <li><a href="" class="theme-name">Cấm xuất khẩu gạo</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Khoa Học Công nghệ -->
+    <div class="content">
+        <div class="content-main content-cover">
+            <div class="category-item-lg">
+                <h1>Khoa học - Công nghệ</h1>
+                <div class="category-lg ">
+                    <ul>
+                        <li><a href="">Khoa học</a></li>
+                        <li><a href="">Việt Nam</a></li>
+                        <li><a href="">Phát minh</a></li>
+                        <li><a href="">Ứng dụng</a></li>
+                        <li><a href="">AI4VN 2023</a></li>
+                        <li><a href="">Techconnect 2023</a></li>
+                    </ul>
+                </div>
+                <div class="box-cate down">
+                    <div class="box-cate-left">
+                        <img src="./img/khoahoc1.jpg" alt="">
+                        <h3 class="title-news"><a href="">Xe tải bọc pin Mặt Trời chạy 5.000 km</a></h3>
+                        <p><a href="">THỤY ĐIỂN- Xe tải thử nghiệm trong nghiên cứu mới có diện tích phủ pin Mặt Trời
+                                lên tới 100 m2, giúp xe chạy 5.000 km mà không cần dừng lại sạc. </a></p>
+                    </div>
+                    <div class="box-cate-center">
+                        <div class="box-cate-up down">
+                            <img src="./img/khoahoc2.jpg" alt="">
+                            <h3 class="title-news"><a href="">Tàu Mỹ phát hiện hố Mặt Trăng nghi do tàu Luna-25 đâm
+                                    xuống</a></h3>
+
+                        </div>
+                        <div class="box-cate-down">
+                            <img src="./img/khoahoc3.jpg" alt="">
+                            <h3 class="title-news"><a href="">Sân bay Mỹ khai thác năng lượng khi máy bay cất cánh</a>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="box-cate-right">
+                        <div class="box-cate-item down">
+                            <h3 class="title-news">Nhà máy hydro xanh lớn nhất Trung Quốc đi vào hoạt động</h3>
+                            <img src="./img/khoahoc4.jpg" alt="">
+                        </div>
+                        <div class="box-cate-item down">
+                            <h3 class="title-news">Hàng chục cá mập đầu búa tụ tập bí ẩn khi trăng tròn</h3>
+                            <img src="./img/khoahoc5.jpg" alt="">
+                        </div>
+                        <div class="box-cate-item down">
+                            <h3 class="title-news">Trăng Xanh rực sáng trên bầu trời</h3>
+                            <img src="./img/khoahoc6.jpg" alt="">
+                        </div>
+                        <div class="box-cate-item ">
+                            <h3 class="title-news">Lần đầu phục dựng khuôn mặt 'người lùn' 1.000 năm trước</h3>
+                            <img src="./img/khoahoc7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- số học -->
+            <div class="category-item-lg">
+                <div class="category-lg ">
+                    <ul>
+                        <li><a href="">Số học</a></li>
+                        <li><a href="">Công nghệ</a></li>
+                        <li><a href="">Sản phẩm</a></li>
+                        <li><a href="">BlockChain</a></li>
+                        <li><a href="">CTO Summit 2023</a></li>
+                        <li><a href="">Sản phẩm tôi yêu 2023</a></li>
+                    </ul>
+                </div>
+                <div class="box-cate down">
+                    <div class="box-cate-left">
+                        <img src="./img/sohoc1.jpg" alt="">
+                        <h3 class="title-news"><a href="">Triển khai kế hoạch thương mại hóa 5G</a></h3>
+                        <p><a href="">Bộ Thông tin và Truyền thông đưa ra kế hoạch thương mại hóa 5G, trong đó nhiều
+                                hạng mục sẽ hoàn thành cuối năm nay. </a></p>
+                    </div>
+                    <div class="box-cate-center">
+                        <div class="box-cate-up down">
+                            <img src="./img/sohoc2.jpg" alt="">
+                            <h3 class="title-news"><a href="">Người dùng ngày càng ít đăng bài lên mạng xã hội</a></h3>
+
+                        </div>
+                        <div class="box-cate-down">
+                            <img src="./img/sohoc3.jpg" alt="">
+                            <h3 class="title-news"><a href="">Mô hình iPhone 15 và 15 Pro đủ màu xuất hiện</a></h3>
+                        </div>
+                    </div>
+                    <div class="box-cate-right">
+                        <div class="box-cate-item down">
+                            <h3 class="title-news">Smartphone cỡ nhỏ dần biến mất</h3>
+                            <img src="./img/sohoc4.png" alt="">
+                        </div>
+                        <div class="box-cate-item down">
+                            <h3 class="title-news">Thiết bị Apple có thể được làm bằng in 3D</h3>
+                            <img src="./img/sohoc5.jpg" alt="">
+                        </div>
+                        <div class="box-cate-item down">
+                            <h3 class="title-news">Sự im lặng bất thường của Huawei về chip trên Mate 60 Pro</h3>
+                            <img src="./img/sohoc6.png" alt="">
+                        </div>
+                        <div class="box-cate-item ">
+                            <h3 class="title-news">Những thay đổi được chờ đợi trên iPhone 15</h3>
+                            <img src="./img/sohoc7.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Thời sự -->
+    <div class="content">
+        <div class="content-main category-main down">
+            <div class="category-item-lg category-3 ">
+                <div class="category-lg">
+                    <ul>
+                        <li><a href="">Thời sự</a></li>
+                        <li><a href="">Chính trị</a></li>
+                        <li><a href="">Lao động - việc làm</a></li>
+                        <li><a href="">Dân sinh</a></li>
+                    </ul>
+                </div>
+                <div class="box-info-news down">
+                    <img src="./img/thoisu1.jpg" alt="">
+                    <div class="info-news">
+                        <h3 class="title-news"><a href="">Tàu cao tốc đi Phú Quốc dừng chạy</a></h3>
+                        <p><a href="">KIÊN GIANGTàu cao tốc đi Phú Quốc và các đảo Nam Du, Hòn Sơn dừng chạy do ảnh
+                                hưởng bão số Sao La, biển có mưa và giông, sóng cao đến 3 m, ngày 2/9. </a></p>
+                    </div>
+                </div>
+                <div class="box-info-news">
+                    <div class="info-news">
+                        <h3 class="title-news"><a href="">Công nhân bám vách núi Bà Hỏa khắc phục sạt lở</a></h3>
+                        <p><a href="">BÌNH ĐỊNH25 người bám vào vách núi khoan lỗ để đóng đinh, rào lưới thép sau gần
+                                hai năm địa danh nổi tiếng TP Quy Nhơn sạt lở làm ba người bị thương. </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item-lg category-3">
+                <div class="category-lg">
+                    <ul>
+                        <li><a href="">Thế giới</a></li>
+                        <li><a href="">Tư liệu</a></li>
+                        <li><a href="">Phân tích</a></li>
+                    </ul>
+                </div>
+                <div class="box-info-news down">
+                    <img src="./img/thoisu2.jpg" alt="">
+                    <div class="info-news">
+                        <h3 class="title-news"><a href="">Ông Trump bác cáo buộc khai khống tài sản</a></h3>
+                        <p><a href="">Cựu tổng thống Trump phủ nhận cáo buộc từ tổng chưởng lý New York cho rằng ông đã
+                                khai khống tài sản, tuyên bố bản thân bị phỉ báng. </a></p>
+                    </div>
+                </div>
+                <div class="box-info-news">
+                    <div class="info-news">
+                        <h3 class="title-news"><a href="">Belarus tố trực thăng Ba Lan xâm phạm biên giới</a></h3>
+                        <p><a href="">Belarus nói một trực thăng quân sự Ba Lan đã vượt qua biên giới giữa hai nước và
+                                triệu đại biện của Warsaw để phản đối. </a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="category-item-lg category-3 ">
+                <div class="category-lg ">
+                    <ul>
+                        <li><a href="">Pháp luật</a></li>
+                        <li><a href="">Hồ sơ phá án</a></li>
+                        <li><a href="">Tư vấn</a></li>
+                    </ul>
+                </div>
+                <div class="box-info-news down">
+                    <img src="./img/thoisu3.jpg" alt="">
+                    <div class="info-news">
+                        <h3 class="title-news"><a href="">Nhân viên hàng không vi phạm gì sẽ bị nghỉ việc lập tức, từ
+                                1/9?</a></h3>
+                        <p><a href="">Em nghe nói từ 1/9 có quy định mới về các vi phạm khiến nhân viên hàng không bị
+                                tạm đình chỉ công việc ngay lập tức bằng lời nói, xin hỏi cụ thể ra sao? (Độc giả Lan
+                                Anh) </a></p>
+                    </div>
+                </div>
+                <div class="box-info-news">
+                    <div class="info-news">
+                        <h3 class="title-news"><a href="">Nên làm gì khi siêu thị đòi chụp ảnh CCCD mới cho lĩnh
+                                thưởng?</a></h3>
+                        <p><a href="">Tôi vừa chơi mini game bốc thăm trúng thưởng tại siêu thị điện máy và trúng một
+                                chiếc điện thoại trị giá hơn 12 triệu đồng.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- FOOTER -->
-
+    <div class="clear"></div>
     <footer>
         <div class="footer">
             <div class="footer_container-left">
@@ -374,7 +1474,8 @@
             </div>
             <div class="copy_content ">
                 <span>Tổng biên tập: Phạm Hiếu</span>
-                <span class="copy_content-main">Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, Dịch Vọng, Cầu Giấy, Hà Nội</span>
+                <span class="copy_content-main">Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, Dịch Vọng, Cầu
+                    Giấy, Hà Nội</span>
                 <span>Điện thoại: 024 7300 8899 - máy lẻ 4500</span>
             </div>
             <div class="copy_content">
@@ -383,33 +1484,7 @@
         </div>
 
     </footer>
-
-
-    <script>
-        // Hàm để hiển thị ngày vào div
-        function showDate() {
-            // Tạo một đối tượng Date với ngày hiện tại
-            var date = new Date();
-            // Tạo một đối tượng options để chỉ định các thành phần của ngày
-            var options = {
-                weekday: "long", // Hiển thị tên thứ
-                day: "numeric", // Hiển thị số ngày
-                month: "numeric", // Hiển thị số tháng
-                year: "numeric" // Hiển thị số năm
-            };
-            // Định dạng ngày theo tiếng Việt
-            var dateStr = date.toLocaleDateString("vi-VN", options);
-            // Lấy phần tử div bằng class name
-            var getDate = document.getElementsByClassName("date")[0];
-            // Thiết lập thuộc tính innerHTML của div bằng ngày
-            getDate.innerHTML = dateStr;
-        }
-        // Gọi hàm showDate () lần đầu tiên
-        showDate();
-
-    </script>
-
-
+    <script src="./main.js"></script>
 </body>
 
 </html>

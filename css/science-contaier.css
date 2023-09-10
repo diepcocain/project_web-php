@@ -1,110 +1,4 @@
-/* STYLE GLOBAL WEB */
-
-*,
-html,
-:root {
-    font-family: 'Roboto', sans-serif;
-    --gray-color: #ccc;
-    --text-color: #716565;
-    --font-text-sm: 14px;
-    --font-text-base: 16px;
-    --font-text-lg: 20px;
-    --font-text-sm: 13px;
-    --font-text-base: 16px;
-    --font-text-lg: 20px;
-    margin: 0;
-    padding:0 ;
-    box-sizing: border-box;
-}
-
-.clear {
-    clear: both;
-}
-
-a {
-    text-decoration: none;
-    color: #333;
-    font-size: var(--font-text-sm);
-}
-
-
-a:hover {
-    color: #087cce;
-}
-
-p:hover a {
-    cursor: pointer;
-    color: var(--text-color);
-}
-
-.span, p {
-    font-size: 13px;
-    color: var(--text-color);
-}
-
-ul {
-    list-style: none;
-}
-
-.bold {
-    font-weight: 500;
-}
-
-.mt-2 {
-    margin-top: 2px;
-}
-
-.pt-4 {
-    padding-top: 4px;
-}
-
-li>a {
-    font-size: var(--font-text-sm);
-}
-
-.boder-b {
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--gray-color);
-}
-
-.boder-l-r {
-    padding: 0 8px;
-    border-left: 1px solid var(--gray-color);
-    border-right: 1px solid var(--gray-color);
-}
-
-.down {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #c5c5c5;
-    margin-bottom: 20px;
-}
-
-.up-top {
-    padding-top: 20px;
-    border-top: 1px solid #c5c5c5;
-    margin-top: 20px;
-}
-
-.right-{
-    padding-right: 20px;
-    border-right: 1px solid #c5c5c5;
-    margin-right: 20px;
-}
-
-.left- {
-    padding-left: 20px;
-    border-left: 1px solid #c5c5c5;
-}
-
-.active {
-    display: block;
-}
-
-.disable {
-    display: none;
-}
-
-/* Modal */
+/* CSS FOR TIN KHOA HỌC */
 
 .body_modal {
     display: flex;
@@ -186,7 +80,7 @@ li>a {
     background: transparent;
 }
 
-.modal_social>button>i {
+.modal_social>button > i {
     margin-right: 1rem;
 }
 

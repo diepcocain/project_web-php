@@ -18,3 +18,34 @@ function showDate() {
 }
 // Gọi hàm showDate () lần đầu tiên
 showDate();
+
+// OPEN MODAL
+
+var modal = document.getElementById("id01");
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+};
+
+// MODAL CHANGE
+
+document
+  .querySelectorAll(".login_header.login")[1]
+  .addEventListener("click", function () {
+    // Đóng modal hiện tại
+    document.getElementById("register").style.display = "none";
+    // Mở modal mới
+    document.getElementById("login").style.display = "block";
+  });
+
+document
+  .querySelector(".login_header.register")
+  .addEventListener("click", function () {
+    // Đóng modal hiện tại
+    document.getElementById("login").style.display = "none";
+    // Mở modal mới
+    document.getElementById("register").style.display = "block";
+  });

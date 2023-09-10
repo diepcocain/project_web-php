@@ -1,0 +1,691 @@
+/* CONTAIER */
+
+.container , .content, .podcasts{
+    margin-top: 15px;
+    background-color: transparent;
+    display: flex;
+}
+
+
+/* flexbox */
+.flexbox, .content-main, .podcast-info {
+    width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: auto;   
+}
+
+.flexbox-tide{
+    max-height: 312px;
+    display: flex;
+}
+
+.flexbox-content {
+    max-width: 250px;
+    padding: 15px;
+}
+
+.flexbox-content h2 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.flexbox-content h2 a {
+    font-size: 24px;
+}
+
+.flexbox img {
+    width: 520px;
+    height: 312px;
+}
+
+.sub-new-top {
+    width: 780px;
+    height: 190px;
+}
+
+
+
+.inner-sub-new-top {
+    max-height: 190px;
+}
+
+.inner-sub-new-top h4, .inner-sub-new-top p {
+    margin: 0;
+}
+
+.inner-sub-new-top ul {
+    display: flex;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.inner-sub-new-top ul li {
+    width: 240px;
+    height: 190px;
+    padding: 15px 0;
+}
+
+.inner-sub-new-top ul li h4 {
+    margin-bottom:  8px;
+}
+
+.inner-sub-new-top ul li:last-child{
+    padding-left: 15px;
+}
+
+
+
+.item-gocnhin {
+    border-left: 1px solid #c5c5c5;
+}
+
+
+.item-gocnhin > a{
+    color: #9f224e;
+    font-size: 18px;
+}
+
+.gocnhin_info-- {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.gocnhin_info-- img{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+/* content */
+
+
+.content-main {
+    border-top: 1px solid #c5c5c5;
+    margin-top: 15px;
+    padding-top: 20px;
+    display: flex;
+}
+
+.content-l {
+    width: 380px;
+    border-right: 1px solid #c5c5c5;
+    padding-right: 20px;
+}
+
+.item-news {
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 12px;
+}
+
+.item-news > a {
+    font-weight: bold;
+    
+}
+
+.description {
+    margin-top: 8px;
+    display: flex;
+    color: var(--text-color);
+}
+
+.description span {
+    font-size: 13px;
+    padding-left: 12px;
+}
+
+.description img{
+    width: 150px;
+    height: 87px;
+}
+
+.content-r {
+    width: 680px;
+    padding-left: 20px;
+}
+
+/* kinh doanh */
+
+
+.category {
+    height: 28px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.category ul {
+    display: flex;
+    align-items: center;
+    
+}
+
+.category ul li{
+    padding: 4px 0;
+}
+
+.category ul li a {
+    margin: 0 8px;
+}
+
+.category ul li:first-child a {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.category--news {
+    display: flex;
+    height: 170px;
+}
+
+
+.category-l {
+    width: 460px;
+    display: flex;
+
+}
+
+.category-l img {
+    width: 225px;
+    height: 135px;
+}
+
+.category-l__content a, .category-r__content a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.category-l__content {
+    padding: 0 20px 0 15px;
+}
+
+.category-l__content p , .category-r__content p{
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+
+
+.category-r {
+    width: 200px;
+    border-left: 1px solid #c5c5c5;
+}
+
+.category-r__content {
+    padding-left: 20px;
+}
+
+.sub-news-cate {
+}
+
+.sub-news-cate ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sub-news-cate ul li {
+    width: 200px;
+    height: 82px;
+    padding: 15px 0 0 10px;
+}
+
+.sub-news-cate ul li a {
+    font-size: var(--font-text-sm);
+    font-weight: bold;
+}
+
+/* Bảng ngoại tệ */
+.ngoaiTe {
+    width: 100%;
+    text-align: right;
+    background: #f5f8ff;
+    border: 1px solid #c1cbe0;
+    
+}
+
+.ngoaiTe tr th {
+    font-size: var(--font-text-base);
+    color: #087CCE;
+    border: 1px solid #c1cbe0;
+}
+
+.ngoaiTe tr td {
+    color: var(--text-color);
+    border: 1px solid #c1cbe0;
+}
+
+.ngoaiTe tr th, .ngoaiTe tr td {
+    padding: 4px 4px ;
+}
+
+.ngoaiTe tr th > a > img {
+    float: right;
+}
+
+.ngoaiTe tr th:first-child , .ngoaiTe tr td:first-child {
+    width: 395px;
+    text-align: left;
+}
+
+
+/* Lịch thi đấu */
+.Lich-thi-dau {
+    width: 100%;
+    height: 70px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    white-space: nowrap;
+}
+
+.doi-tuyen {
+    padding: 7px 12px 5px 7px;
+    border: 1px solid #c5c5c5;
+}
+
+.Lich-thi-dau a {
+    color: #222; 
+}
+
+.doi-thi-dau {
+    width: 140px;
+    height: 70px;
+}
+
+.doi-thi-dau img {
+    width: 12px;
+}
+
+.thoi-gian-dau, .chu-nha {
+    margin-bottom: 6px;
+}
+
+.f-left{
+    color: var(--text-color);
+    font-size: 11px;
+}
+
+.ten-doi {
+    padding-left: 4px;
+    font-size: 11px;
+}
+
+/* nút  */
+
+.btn-thi-dau {
+    width: 32px;
+    height: 70px;
+    background: rgba(255,255,255,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-thi-dau:hover {
+    cursor: pointer;
+}
+
+.btn-icon{
+    background: transparent;
+}
+
+.btn-thi-dau.btn-prev {
+    
+    position: absolute;
+    left: 0;
+}
+
+.btn-thi-dau.btn-next {
+    position: absolute;
+    right: 0;
+}
+
+/* Cẩm nang các bệnh */
+.Cam_nang_cac_benh {
+    position: relative;
+}
+.cac-benh {
+    width: 100%;
+    height: 26px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    
+}
+
+.danhsach-benh {
+    width: 470px;
+    overflow: hidden;
+    display: flex;
+}
+
+
+
+.btn-benh {
+    
+}
+
+.btn-benh-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 2px;
+    color: var(--text-color);
+    border: 1px solid #c5c5c5;
+    
+}
+
+.btn-benh-item.btn-prev {
+    position: absolute;
+    right: 5%;
+    box-shadow: -12px 0px 12px 6px #fff;
+}
+
+.btn-benh-item.btn-next {
+    position: absolute;
+    
+}
+
+.cac-benh>span {
+    margin-right: 8px;
+    color: var(--text-color);
+    font-size: var(--font-text-sm);
+}
+
+.benh {
+    padding: 5px 20px;
+    margin-right: 8px;
+    border-radius: 4px;
+    background: #bcdff4;
+}
+
+.tenbenh {
+    font-size: var(--font-text-sm);
+    color: #0C4B71; 
+}
+
+.tenbenh:hover {
+    font-size: var(--font-text-sm);
+    color: #0C4B71; 
+}
+
+/* Điểm chuẩn đại học  */
+.DiemChuanDaiHoc {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    /* background: url("/img/bgDiemchuan.png") no-repeat ; */
+    /* background-size: cover; */
+}
+
+.Diem-l {
+    display: flex;
+    justify-content: space-between;
+    height: 35px;
+    align-items: center;
+    width: 220px;
+}
+
+.Diem-l p {
+    font-size: 15px;
+    color: #000;
+    font-weight: 700;
+}
+
+.chitiet {
+    padding: 7px 10px;
+    font-size: 13px;
+    margin-left: 10px ;
+    border-left: 1px solid #c5c5c5;
+}
+
+.Diem-r{
+    display: flex;
+    margin-left: 10px;
+    padding-left: 20px;
+    width: 325px;
+    height: 40px;
+}
+
+.Diem-r input {
+    width: 265px;
+    padding: 0 8px;
+    border: 1px solid #e2cca5;
+
+}
+
+.Diem-icon {
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    background: #e2cca5;
+}
+
+/* podcasts */
+.podcast-info {
+    padding-top: 20px;
+}
+
+.category-lg {
+    height: 28px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.category-lg ul {
+    display: flex;
+    align-items: center;
+    
+}
+
+.category-lg ul li{
+    padding: 4px 0;
+}
+
+.category-lg ul li a {
+    margin: 0 6px;
+}
+
+.category-lg ul li:first-child a {
+    font-size: 22px;
+    text-decoration: underline;
+}
+
+.category--news-lg {
+    display: flex;
+}
+
+
+.category-l-lg, .category-r-lg {
+    width: 530px;
+    height: 125px;
+    display: flex;
+
+}
+
+.category-l-lg img, .category-r-lg img {
+    width: 120px;
+    height: 120px;
+}
+
+.category-l-lg__content a, .category-r-lg__content a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.category-l-lg__content {
+    padding: 0 20px 0 15px;
+}
+
+.category-l-lg__content p , .category-r-lg__content p{
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.category-r-lg {
+    width: 530px;
+    padding-left: 20px;
+    border-left: 1px solid #c5c5c5;
+}
+
+.category-r-lg__content {
+    padding-left: 20px;
+}
+
+.sub-news-cate-lg {
+}
+
+.sub-news-cate-lg ul {
+    display: flex;
+}
+
+.sub-news-cate-lg ul li {
+    width: 340px;
+    height: 150px;
+    padding-right: 20px;
+    border-right: 1px solid #c5c5c5;
+    margin-right: 20px;
+}
+
+.sub-news-cate-lg ul li a {
+    font-size: var(--font-text-base);
+    font-weight: bold;
+}
+
+.sub-news-cate-lg ul li p {
+    margin-top: 10px;
+    font-size: var(--font-text-base);
+}
+
+
+/* theme - chủ đề */
+
+.theme-item , .theme-list ul{
+    display: flex;
+    font-size: var(--font-text-base);
+    align-items: center;
+    color: var(--text-color);
+}
+
+.theme-item {
+    height: 30px;
+}
+
+.theme-item span {
+    margin-right: 20px;
+}
+
+.theme-list ul li {
+    padding: 5px 15px;
+}
+
+.theme-list ul li a{
+    color: #a42e58;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+/* Khoa học công nghệ */
+
+.content-cover{
+    border: 1px solid #c5c5c5;
+    flex-direction: column;
+}
+
+.category-item-lg>h1 {
+    padding: 0 8px;
+}
+
+.box-cate {
+    display: flex;
+}
+
+.box-cate-item {
+    display: flex;
+}
+
+.box-cate-left, .box-cate-center {
+    border-right: 1px solid #c5c5c5;
+    margin-right: 20px;
+    padding-right: 20px;
+}
+
+.title-news a{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.box-cate-left .title-news a {
+    font-size: 28px;    
+}
+
+.box-cate-left .title-news {
+    margin: 8px 0;
+}
+
+.box-cate-left p a {
+    font-size: 16px;
+}
+
+.box-cate-left img{
+    width: 500px;
+    height: 300px;
+}
+
+.box-cate-center img {
+    width: 240px;
+    height: 144px;
+}
+
+.box-cate-right img {
+    width: 100px;
+    height: 60px;
+}
+
+
+/* Thời sự */
+.category-main{
+    padding: 20px 0 0 0;
+}
+
+
+.category-3 {
+    width: 340px;
+    margin-right: 40px;
+    position: relative;
+}
+
+.category-3::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: calc(100% - 20px);
+    background: #c5c5c5;
+    top: 0;
+    right: -20px;
+}
+
+.box-info-news img {
+    width: 340px;
+    margin-bottom: 10px;
+}
+
+.info-news h3 {
+    margin: 6px 0;
+}
+
+.info-news p {
+    margin-bottom: 20px;
+}
