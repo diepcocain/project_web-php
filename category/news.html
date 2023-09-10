@@ -76,7 +76,7 @@
                     <a href="#">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
-                    <a href="#" class="login">
+                    <a href="#" class="login" onclick="document.getElementById('login').style.display='block'">
                         <i class="fa-regular fa-user"></i>
                         <span>Đăng Nhập</span>
                     </a>
@@ -93,14 +93,14 @@
                     <li><a href="/" class=" home-logo">
                             <i class="fa-solid fa-house"></i>
                         </a></li>
-                    <li><a href="./category/news.html">Thời sự</a></li>
-                    <li><a href="">Góc nhìn</a></li>
+                    <li><a href="./news.html">Thời sự</a></li>
+                    <li><a href="./views.html">Góc nhìn</a></li>
                     <li><a href="">Thế giới</a></li>
                     <li><a href="">Video</a></li>
                     <li><a href="">Podcasts</a></li>
-                    <li><a href="">Kinh doanh</a></li>
+                    <li><a href="./business.html">Kinh doanh</a></li>
                     <li><a href="">Bất động sản</a></li>
-                    <li><a href="">Khoa học</a></li>
+                    <li><a href="./science.html">Khoa học</a></li>
                     <li><a href="">Giải trí</a></li>
                     <li><a href="">Thể thao</a></li>
                     <li><a href="">Pháp luật</a></li>
@@ -114,247 +114,409 @@
                 </ul>
             </div>
         </div>
+
+        <!-- Modal -->
+        <div id="login" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="close" onclick="document.getElementById('login').style.display='none'">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="header_modal">
+                    <div class="login_header focus_modal login">
+                        <p>Đăng nhập</p>
+                    </div>
+                    <div class="login_header register">
+                        <p>Tạo tài khoản</p>
+                    </div>
+                </div>
+
+                <div class="body_modal">
+                    <div class="body_left">
+                        <span>Đăng nhập với Email</span>
+
+                        <form action="" method="post">
+                            <input type="email" name="username" id="name" placeholder="Email">
+
+                            <input type="password" id="password" placeholder="Password">
+
+                            <button type="submit">Đăng nhập</button>
+                        </form>
+
+                        <a href="#">
+                            <p class="forgot">Lấy lại mật khẩu</p>
+                        </a>
+                    </div>
+
+                    <div class="body_right">
+                        <span>Đăng nhập với</span>
+                        <div class="modal_social">
+                            <button class="modal_facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                            <button class="modal_google">
+                                <i class="fa-brands fa-google"></i>
+                                Google
+                            </button>
+                            <button class="modal_apple">
+                                <i class="fa-brands fa-apple"></i>
+                                Apple
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div id="register" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="close" onclick="document.getElementById('register').style.display='none'">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="header_modal">
+                    <div class="login_header login">
+                        <p>Đăng nhập</p>
+                    </div>
+                    <div class="login_header register  focus_modal">
+                        <p>Tạo tài khoản</p>
+                    </div>
+                </div>
+
+                <div class="body_modal">
+                    <div class="body_left">
+                        <span style="text-align: center; font-size: 12px;">Tạo tài khoản VnExpress
+
+                            Để sử dụng đầy đủ tính năng đọc báo và tham gia cộng đồng hơn 8 triệu thành viên</span>
+
+                        <form action="" method="post">
+                            <input type="email" name="username" id="name" placeholder="Nhập Email">
+
+                            <input type="password" id="password" placeholder="Tạo mật khẩu">
+
+                            <button type="submit">Tạo tài khoản</button>
+                        </form>
+
+                    </div>
+
+                    <div class="body_right">
+                        <span>Đăng nhập với</span>
+                        <div class="modal_social">
+                            <button class="modal_facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                            <button class="modal_google">
+                                <i class="fa-brands fa-google"></i>
+                                Google
+                            </button>
+                            <button class="modal_apple">
+                                <i class="fa-brands fa-apple"></i>
+                                Apple
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
     </header>
+
 
     <!-- CONTAINER -->
 
-        <div class="menu_container">
-            <h1>Thời sự</h1>
-            <ul>
+    <div class="menu_container">
+        <h1>Thời sự</h1>
+        <ul>
+            <a href="#">
                 <li>Chính trị</li>
+            </a>
+            <a href="#">
                 <li>Dân sinh</li>
+            </a>
+            <a href="#">
                 <li>Lao động - Việc làm</li>
+            </a>
+            <a href="#">
                 <li>Giao thông</li>
+            </a>
+            <a href="#">
                 <li>MeKong</li>
+            </a>
+            <a href="#">
                 <li>Quỹ Hy vọng</li>
-            </ul>
-        </div>
-    
-        <!--CONTENT-->
+            </a>
+        </ul>
+    </div>
 
-            <div class="content">
-                <div class="content-l">
-                    <div class="category--news">
-                        <div class="category-l">
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/04/vich-6565-1693796503-169379699-4701-3330-1693797002.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=RDZXcHHM7z3QPr24ffhkbg">
-                            <div class="category-l__content">
-                                <h2><a href="">Xác vích gần 100 kg dạt vào biển Vũng Tàu</a></h2>
-                                <span>Xác rùa biển dài 1,1 m, mai rộng 60 cm, nặng gần 100 kg đang phân hủy mạnh, dạt vào Bãi Trước, TP Vũng Tàu, sáng 4/9.</span>
-                                <p> 10' trước </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item-news">
-                        <a href="">Bình Định khởi công đường nối quốc lộ với KCN 5.000 tỷ đồng</a>
-                        <div class="description">
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/08/373412386-1278053446245794-437-4357-7042-1694138047.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=DKNNstNMXVXX8_tQIwEUXA">
-                            <span>Đường nối quốc lộ 19 với KCN Becamex VSIP Bình Định dài gần 20 km, tổng mức đầu tư 1.171 tỷ đồng khởi công sáng 8/9, giúp kết nối giao thương, thu hút đầu tư.</span>
-                        </div>
-                    </div>
-                    <div class="item-news">
-                        <a href="">Bộ Chính trị đề nghị kỷ luật Bí thư Bến Tre Lê Đức Thọ</a>
-                        <div class="description">
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/08/le-duc-tho-1694169457-6729-1694169547.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=G00llQBPkjoWNLw1MukMMQ">
-                            <span>Bộ Chính trị thống nhất đề nghị Trung ương xem xét, kỷ luật Bí thư Tỉnh ủy Bến Tre Lê Đức Thọ vì giải trình nguồn gốc và biến động tài sản không trung thực.</span>
-                        </div>
-                    </div>
-                    <div class="item-news">
-                        <a href="">Ôtô tải tông loạt xe máy, ba người bị thương</a>
-                        <div class="description">
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/07/z4671433086627-423fed55b1f2dea-2557-8691-1694071068.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=BYQ7n_3CjKpaS08TxJUrNA">
-                            <span>TP HCM- Ôtô tải 4 tấn đang chạy trên đường Phan Văn Trị, quận Gò Vấp bất ngờ lao qua làn ngược chiều húc nhiều xe máy làm ba người bị thương, chiều 7/9. </span>
-                        </div>
-                    </div>
-                    <div class="item-news">
-                        <a href="">Chờ hơn một tháng để đăng ký xe máy theo quy định mới</a>
-                        <div class="description">
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/06/e9aa95c947c89296cbd9-7371-1694000801.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=yMchkN_xnPJZGNwAWmqxQQ">
-                            <span>TP HCM- Nhiều người phải chờ hơn một tháng để được bấm biển số hoặc vướng thủ tục sang tên đổi chủ xe cũ khi thông tư mới có hiệu lực.</span>
-                        </div>
-                    </div>
-                    <div class="item-news">
-                        <a href="">'Sống mòn' trong khu tập thể cũ nát</a>
-                        <div class="description">
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/06/z4668413609409-aee2bd754d3bf50ae29ad89ceefef16e-1694017817.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=t7Y-558HOyqjIrEZviwxZA">
-                            <span>HẢI DƯƠNG- Khu tập thể Công ty Máy bơm ở phường Nguyễn Trãi xuống cấp, thuộc danh mục nhà nguy hiểm cấp độ D phải tháo dỡ, nhưng vẫn là nơi cư trú của 148 hộ dân.</span>
-                        </div>
-                    </div>
-                    <div class="item-news">
-                        <a href="">Nam sinh bị điện giật tử vong trong trường</a>
-                        <div class="description">
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/07/z4671092928691-86ff0d0adfc86e4-5962-7016-1694062586.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=_DFVLkrqqyWvYSk_nDo4eA">
-                            <span>TP HCM- Trong lúc sinh hoạt tại khu nội trú trường tư thục ở TP Thủ Đức, nam sinh lớp 10 bị điện giật chết, nghi do rò rỉ từ bình lọc nước.</span>
-                        </div>
-                    </div>
-                    <div class="item-news">
-                        <a href="">Hiện trạng bờ sông Sài Gòn phía Thủ Thiêm dự tính cải tạo</a>
-                        <div class="description">
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/06/DJI-0023-1693987023.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=l4KlaNkq4gEUBflT0xkMeA">
-                            <span>Gần một km bờ sông Sài Gòn ở Thủ Thiêm phần lớn là đất trống, đường mòn, cỏ cây um tùm, đang được chính quyền thành phố lên kế hoạch cải tạo.</span>
-                        </div>
-                    </div>
-                    <div class="item-news">
-                        <a href="">Tìm giải pháp bảo tồn đàn voọc quý hiếm ở Quảng Nam</a>
-                        <div class="description">
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/06/anh-1-6098-1693998074.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=F6kmauBNiwqRMBmXUuX_zg">
-                            <span>Trước nguy cơ gần 70 voọc chà vá chân xám quý hiếm ở huyện Núi Thành bị đe dọa, chính quyền tỉnh Quảng Nam đang tìm nhiều giải pháp để bảo tồn. </span>
-                        </div>
+    <!--CONTENT-->
+
+    <div class="content">
+        <div class="content-l">
+            <div class="category--news">
+                <div class="category-l">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/04/vich-6565-1693796503-169379699-4701-3330-1693797002.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=RDZXcHHM7z3QPr24ffhkbg">
+                    <div class="category-l__content">
+                        <h2><a href="">Xác vích gần 100 kg dạt vào biển Vũng Tàu</a></h2>
+                        <span>Xác rùa biển dài 1,1 m, mai rộng 60 cm, nặng gần 100 kg đang phân hủy mạnh, dạt vào Bãi
+                            Trước, TP Vũng Tàu, sáng 4/9.</span>
+                        <p> 10' trước </p>
                     </div>
                 </div>
-                
-                <!-- CONTENT-RIGHT -->
-    
-                <div class="category-r">
-                    <div class="category-r__content">
-                        <h3>Giao thông</h3>
-                        <img src="https://i1-vnexpress.vnecdn.net/2023/09/06/huy-3820-4706-1593310845-16939-2056-8361-1693992343.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=N-qtP2KimEfpLGZbE7hcFQ" alt="">
-                        <p>Nghiên cứu quy hoạch đường sắt Lào Cai - Hà Nội - Quảng Ninh</p>
-                    </div>
-                    <div class="category-r__content">
-                        <p>Đường 1.500 tỷ đồng nối cao tốc TP HCM - Long Thành sau 3 năm thi công</p>
-                    </div>
-                    <div class="category-r__content">
-                        <p>Sức ép 'không đường lùi' ở dự án kênh đào 100 triệu USD</p>
-                    </div>
-                    <div class="category-r__content">
-                        <h3>Giáo dục</h3>
-                        <img src="https://i1-vnexpress.vnecdn.net/2023/09/06/z4668289496338-45c37d29f4f69f4-8700-7495-1694012563.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=bQ10Cezpkcg1OR6LecLckg" alt="">
-                        <p>Lo sinh viên chạy theo ngành hot, bỏ rơi khoa học cơ bản</p>
-                    </div>
-                    <div class="category-r__content">
-                        <p>Đề xuất phạt hành chính thầy giáo gây nổ bóng bay</p>
-                    </div>
-                    <div class="category-r__content">
-                        <p>Người dân tỉnh, thành nào kết hôn muộn nhất?</p>
-                    </div>
-                    <div class="category-r__content">
-                        <h3>Xem nhiều</h3>
-                        <p>Lo sinh viên chạy theo ngành hot, bỏ rơi khoa học cơ bảnKhu rừng hơn 600 ha sắp chuyển thành hồ thủy lợi</p>
-                    </div>
-                    <div class="category-r__content">
-                        <p>Chàng trai thất nghiệp đổi đời nhờ câu cá</p>
-                    </div>
-                    <div class="category-r__content">
-                        <p>Sức ép 'không đường lùi' ở dự án kênh đào 100 triệu USD </p>
-                    </div>
-                    <div class="category-r__content">
-                        <p>Xuất hiện ảnh tướng Nga vắng bóng từ sau vụ Wagner nổi loạn </p>
-                    </div>
-                    <div class="right-bootom">
-                        <p>Ukraine, Romania tranh cãi thông tin UAV Nga rơi xuống lãnh thổ </p>
-                    </div>
-                    <div class="qc">
-                    </div>
+            </div>
+            <div class="item-news">
+                <a href="">Bình Định khởi công đường nối quốc lộ với KCN 5.000 tỷ đồng</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/08/373412386-1278053446245794-437-4357-7042-1694138047.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=DKNNstNMXVXX8_tQIwEUXA">
+                    <span>Đường nối quốc lộ 19 với KCN Becamex VSIP Bình Định dài gần 20 km, tổng mức đầu tư 1.171 tỷ
+                        đồng khởi công sáng 8/9, giúp kết nối giao thương, thu hút đầu tư.</span>
                 </div>
+            </div>
+            <div class="item-news">
+                <a href="">Bộ Chính trị đề nghị kỷ luật Bí thư Bến Tre Lê Đức Thọ</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/08/le-duc-tho-1694169457-6729-1694169547.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=G00llQBPkjoWNLw1MukMMQ">
+                    <span>Bộ Chính trị thống nhất đề nghị Trung ương xem xét, kỷ luật Bí thư Tỉnh ủy Bến Tre Lê Đức
+                        Thọ vì giải trình nguồn gốc và biến động tài sản không trung thực.</span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Ôtô tải tông loạt xe máy, ba người bị thương</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/07/z4671433086627-423fed55b1f2dea-2557-8691-1694071068.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=BYQ7n_3CjKpaS08TxJUrNA">
+                    <span>TP HCM- Ôtô tải 4 tấn đang chạy trên đường Phan Văn Trị, quận Gò Vấp bất ngờ lao qua làn ngược
+                        chiều húc nhiều xe máy làm ba người bị thương, chiều 7/9. </span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Chờ hơn một tháng để đăng ký xe máy theo quy định mới</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/06/e9aa95c947c89296cbd9-7371-1694000801.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=yMchkN_xnPJZGNwAWmqxQQ">
+                    <span>TP HCM- Nhiều người phải chờ hơn một tháng để được bấm biển số hoặc vướng thủ tục sang tên đổi
+                        chủ xe cũ khi thông tư mới có hiệu lực.</span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">'Sống mòn' trong khu tập thể cũ nát</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/06/z4668413609409-aee2bd754d3bf50ae29ad89ceefef16e-1694017817.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=t7Y-558HOyqjIrEZviwxZA">
+                    <span>HẢI DƯƠNG- Khu tập thể Công ty Máy bơm ở phường Nguyễn Trãi xuống cấp, thuộc danh mục nhà nguy
+                        hiểm cấp độ D phải tháo dỡ, nhưng vẫn là nơi cư trú của 148 hộ dân.</span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Nam sinh bị điện giật tử vong trong trường</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/07/z4671092928691-86ff0d0adfc86e4-5962-7016-1694062586.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=_DFVLkrqqyWvYSk_nDo4eA">
+                    <span>TP HCM- Trong lúc sinh hoạt tại khu nội trú trường tư thục ở TP Thủ Đức, nam sinh lớp 10 bị
+                        điện giật chết, nghi do rò rỉ từ bình lọc nước.</span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Hiện trạng bờ sông Sài Gòn phía Thủ Thiêm dự tính cải tạo</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/06/DJI-0023-1693987023.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=l4KlaNkq4gEUBflT0xkMeA">
+                    <span>Gần một km bờ sông Sài Gòn ở Thủ Thiêm phần lớn là đất trống, đường mòn, cỏ cây um tùm, đang
+                        được chính quyền thành phố lên kế hoạch cải tạo.</span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Tìm giải pháp bảo tồn đàn voọc quý hiếm ở Quảng Nam</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/06/anh-1-6098-1693998074.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=F6kmauBNiwqRMBmXUuX_zg">
+                    <span>Trước nguy cơ gần 70 voọc chà vá chân xám quý hiếm ở huyện Núi Thành bị đe dọa, chính quyền
+                        tỉnh Quảng Nam đang tìm nhiều giải pháp để bảo tồn. </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- CONTENT-RIGHT -->
+
+        <div class="category-r">
+            <div class="category-r__content">
+                <h3>Giao thông</h3>
+                <img src="https://i1-vnexpress.vnecdn.net/2023/09/06/huy-3820-4706-1593310845-16939-2056-8361-1693992343.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=N-qtP2KimEfpLGZbE7hcFQ"
+                    alt="">
+                <p>Nghiên cứu quy hoạch đường sắt Lào Cai - Hà Nội - Quảng Ninh</p>
+            </div>
+            <div class="category-r__content">
+                <p>Đường 1.500 tỷ đồng nối cao tốc TP HCM - Long Thành sau 3 năm thi công</p>
+            </div>
+            <div class="category-r__content">
+                <p>Sức ép 'không đường lùi' ở dự án kênh đào 100 triệu USD</p>
+            </div>
+            <div class="category-r__content">
+                <h3>Giáo dục</h3>
+                <img src="https://i1-vnexpress.vnecdn.net/2023/09/06/z4668289496338-45c37d29f4f69f4-8700-7495-1694012563.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=bQ10Cezpkcg1OR6LecLckg"
+                    alt="">
+                <p>Lo sinh viên chạy theo ngành hot, bỏ rơi khoa học cơ bản</p>
+            </div>
+            <div class="category-r__content">
+                <p>Đề xuất phạt hành chính thầy giáo gây nổ bóng bay</p>
+            </div>
+            <div class="category-r__content">
+                <p>Người dân tỉnh, thành nào kết hôn muộn nhất?</p>
+            </div>
+            <div class="category-r__content">
+                <h3>Xem nhiều</h3>
+                <p>Lo sinh viên chạy theo ngành hot, bỏ rơi khoa học cơ bảnKhu rừng hơn 600 ha sắp chuyển thành hồ thủy
+                    lợi</p>
+            </div>
+            <div class="category-r__content">
+                <p>Chàng trai thất nghiệp đổi đời nhờ câu cá</p>
+            </div>
+            <div class="category-r__content">
+                <p>Sức ép 'không đường lùi' ở dự án kênh đào 100 triệu USD </p>
+            </div>
+            <div class="category-r__content">
+                <p>Xuất hiện ảnh tướng Nga vắng bóng từ sau vụ Wagner nổi loạn </p>
+            </div>
+            <div class="right-bootom">
+                <p>Ukraine, Romania tranh cãi thông tin UAV Nga rơi xuống lãnh thổ </p>
             </div>
             
-            <div class="section"></div>
+        </div>
+    </div>
 
-        <!--end content-->
-    
-            <div class="content">
-                    <div class="content-l">
-                        <div class="item-news">
-                            <a href="">Sức ép 'không đường lùi' ở dự án kênh đào 100 triệu USD</a>
-                            <div class="description">
-                                <img src="https://i1-vnexpress.vnecdn.net/2023/08/31/DJI-0762-JPG-1690287415-7740-1693431889.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=kaCXv2vqnIKQAfGGr1Fo2g">
-                                <span>NAM ĐỊNH- Giá nguyên vật liệu tăng cao, Covid-19 bùng phát nhưng dự án kênh đào nối sông Đáy - Ninh Cơ buộc phải về đích đúng hạn sau hơn hai năm rưỡi thi công.</span>
-                            </div>
-                        </div>
-                        <div class="item-news">
-                            <a href="">Chàng trai thất nghiệp đổi đời nhờ câu cá</a>
-                            <div class="description">
-                                <img src="https://i1-vnexpress.vnecdn.net/2023/08/28/can-thu-le-khanh-hoa-1763-1693190180.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=CKfJ3HCBqjqfQZLTgCbjIg">
-                                <span>NGHỆ AN- Cửa hàng quần áo phá sản vì Covid-19, Lê Khánh Hòa đi câu giải sầu và nảy ý tưởng kinh doanh mới - làm mồi, làm dây câu cá. </span>
-                            </div>
-                        </div>
-                        <div class="item-news">
-                            <a href="">Quỹ Bảo hiểm thất nghiệp kết dư hơn 59.000 tỷ đồng</a>
-                            <div class="description">
-                                <img src="https://i1-vnexpress.vnecdn.net/2023/09/05/thatnghiep-6429-1693899098.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=c0xKAArx6nSgjsMj97AFcQ">
-                                <span>Kết dư Quỹ Bảo hiểm thất nghiệp đến cuối năm 2022 ước đạt 59.300 tỷ đồng, dự kiến năm nay tăng lên hơn 62.400 tỷ đồng.</span>
-                            </div>
-                        </div>
-                        <div class="item-news">
-                            <a href="">Hàng chục người tìm già làng lạc ở rừng Cát Tiên</a>
-                            <div class="description">
-                                <img src="https://i1-vnexpress.vnecdn.net/2023/09/04/di-lac-2073-1693820922.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=y2eeupbKwmBVFrg0qsYcAQ">
-                                <span>ĐỒNG NAI- Hàng chục kiểm lâm, cảnh sát và người dân đang tìm kiếm già làng mất tích khi đi hái măng trong rừng Cát Tiên ba hôm trước.</span>
-                            </div>
-                        </div>
-                        <div class="item-news">
-                            <a href="">Đường nối Bình Phước với Lâm Đồng sạt lở</a>
-                            <div class="description">
-                                <img src="https://i1-vnexpress.vnecdn.net/2023/09/04/z4661934821428-9b9c2320468d7ca-1847-3547-1693805538.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=AFBZKGYXEZU_EjBlCY6bCA">
-                                <span>Mưa lớn kéo dài khiến nhiều đoạn trên đường Sao Bọng - Đăng Hà nối Bình Phước với tỉnh Lâm Đồng bị sạt lở, tiềm ẩn nguy cơ tai nạn giao thông. </span>
-                            </div>
-                        </div>
-                        <div class="item-news">
-                            <a href="">Xử lý địa chất yếu trong hầm dài nhất cao tốc Bắc Nam</a>
-                            <div class="description">
-                                <img src="https://i1-vnexpress.vnecdn.net/2023/09/03/DJI-0786-JPG-1474-1693754650.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=l-Aqx9Ge_3QM7lIn_z5NLA">
-                                <span>Khi đào được 200 m đường Núi Vung, hầm dài nhất cao tốc Bắc Nam, nhà thầu gặp mạch nước ngầm chảy mạnh và đá phong hóa, khác so với hồ sơ thiết kế ban đầu. </span>
-                            </div>
-                        </div>
-                        <div class="item-news">
-                            <a href="">Cửa ngõ Hà Nội, TP HCM ùn tắc sau lễ 2/9</a>
-                            <div class="description">
-                                <img src="https://nld.mediacdn.vn/291774122806476800/2022/7/14/so-gtvt-1657788401411362203886.jpg">
-                                <span>Người dân ùn ùn quay trở lại Hà Nội khiến ở các cửa ngõ tắc nghẽn kéo dài hàng km, trong khi ở TP HCM chỉ ùn tắc cục bộ, chiều 4/9. </span>
-                            </div>
-                        </div>
-                        <div class="item-news">
-                            <a href="">Nút giao trên cao ở Nha Trang sau 6 năm thi công</a>
-                            <div class="description">
-                                <img src="https://i1-vnexpress.vnecdn.net/2023/09/01/toan-2_1693476294-1693583106.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=aWt8pG2sqmTzjlYjYPw3Og">
-                                <span>KHÁNH HÒA- Công trình nút giao thông Ngọc Hội tổng đầu tư hơn 1.300 tỷ đồng đạt 79% tiến độ, đã thông xe 3 trong tổng số 4 nhánh, giúp giảm kẹt xe hướng bắc nam của Nha Trang </span>
-                            </div>
-                        </div>
-                        <div class="item-news">
-                            <a href="">Pháo hoa rực sáng bầu trời TP HCM tối 2/9</a>
-                            <div class="description">
-                                <img src="https://i1-vnexpress.vnecdn.net/2023/09/02/phaohoa-13-JPG-1693667007.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=KxvNgtKHOGBfZAppHiaErA">
-                                <span>Màn bắn pháo hoa tầm cao kéo dài 15 phút ở đầu đường hầm sông Sài Gòn khiến người dân thích thú chiêm ngưỡng. </span>
-                            </div>
-                        </div>
-                        <div class="item-news">
-                            <a href="">Ngư dân Nghệ An bắt được cá nghi sủ vàng nặng 6 kg</a>
-                            <div class="description">
-                                <img src="https://i1-vnexpress.vnecdn.net/2023/09/02/Anh-chup-Man-hinh-2023-09-02-l-2452-1533-1693656049.png?w=1020&h=0&q=100&dpr=1&fit=crop&s=rrvbybAmqZ-onTXk1UuAMg">
-                                <span>NGHỆ AN- Trong lúc đánh bắt ở đảo Ngư, thị xã Cửa Lò, anh Nguyễn Văn Hiếu cùng bạn câu được con cá 6 kg, dài gần một mét, màu vàng, vây đỏ, nghi sủ vàng quý hiếm.</span>
-                            </div>
-                        </div>
-                        <div style="margin-right: 11px;">
-                            <a href="">Đề nghị công nhận liệt sĩ cho người bị điện giật khi cứu nạn</a>
-                            <div class="description">
-                                <img src="https://i1-vnexpress.vnecdn.net/2023/09/02/z4653766040243-089ffc9585b8749-8173-3384-1693632110.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=lwXv_2DMtTTbbvcuKQUJqA">
-                                <span>BÌNH THUẬN- Anh Nguyễn Hữu Đốn, 35 tuổi, bị điện giật tử vong khi tham gia cứu nạn nhân trong vụ cháy nhà ở Phan Thiết được đề nghị công nhận liệt sĩ. </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="category-r">
-                        <div class="category-r__content">
-                            <h3>Chính trị</h3>
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/01/vovanthuong-1693501926-1693501-2690-7473-1693501991.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=3qpPSk1t1sn1Ag0B4Nb5jg">
-                            <p>Chủ tịch nước chủ trì lễ kỷ niệm 78 năm Quốc khánh</p>
-                        </div>
-                        <div class="category-r__content">
-                            <p>Lãnh đạo Đảng, Nhà nước vào lăng viếng Chủ tịch Hồ Chí Minh</p>
-                        </div>
-                        <div class="category-r__content">
-                            <p>Thu hồi đất để điều tiết chênh lệch địa tô 'là cần thiết'</p>
-                        </div>
-                        <div class="category-r__content">
-                            <h3>Dân sinh</h3>
-                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/04/anh-5646-1693320103-1693365338-6742-1693793414.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=ZCvRJZGv97UNy4kIS9HWdw">
-                            <p>Nghỉ lái xe tải giúp hàng nghìn nông dân trồng lúa lai</p>
-                        </div>
-                        <div class="category-r__content">
-                            <p>Khe Là - con đập nhiều 'thủy quái'</p>
-                        </div>
-                    </div>
+    <div class="section"></div>
+
+    <!--end content-->
+
+    <div class="content">
+        <div class="content-l">
+            <div class="item-news">
+                <a href="">Sức ép 'không đường lùi' ở dự án kênh đào 100 triệu USD</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/08/31/DJI-0762-JPG-1690287415-7740-1693431889.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=kaCXv2vqnIKQAfGGr1Fo2g">
+                    <span>NAM ĐỊNH- Giá nguyên vật liệu tăng cao, Covid-19 bùng phát nhưng dự án kênh đào nối sông Đáy -
+                        Ninh Cơ buộc phải về đích đúng hạn sau hơn hai năm rưỡi thi công.</span>
+                </div>
             </div>
-    
+            <div class="item-news">
+                <a href="">Chàng trai thất nghiệp đổi đời nhờ câu cá</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/08/28/can-thu-le-khanh-hoa-1763-1693190180.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=CKfJ3HCBqjqfQZLTgCbjIg">
+                    <span>NGHỆ AN- Cửa hàng quần áo phá sản vì Covid-19, Lê Khánh Hòa đi câu giải sầu và nảy ý tưởng
+                        kinh doanh mới - làm mồi, làm dây câu cá. </span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Quỹ Bảo hiểm thất nghiệp kết dư hơn 59.000 tỷ đồng</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/05/thatnghiep-6429-1693899098.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=c0xKAArx6nSgjsMj97AFcQ">
+                    <span>Kết dư Quỹ Bảo hiểm thất nghiệp đến cuối năm 2022 ước đạt 59.300 tỷ đồng, dự kiến năm nay tăng
+                        lên hơn 62.400 tỷ đồng.</span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Hàng chục người tìm già làng lạc ở rừng Cát Tiên</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/04/di-lac-2073-1693820922.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=y2eeupbKwmBVFrg0qsYcAQ">
+                    <span>ĐỒNG NAI- Hàng chục kiểm lâm, cảnh sát và người dân đang tìm kiếm già làng mất tích khi đi hái
+                        măng trong rừng Cát Tiên ba hôm trước.</span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Đường nối Bình Phước với Lâm Đồng sạt lở</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/04/z4661934821428-9b9c2320468d7ca-1847-3547-1693805538.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=AFBZKGYXEZU_EjBlCY6bCA">
+                    <span>Mưa lớn kéo dài khiến nhiều đoạn trên đường Sao Bọng - Đăng Hà nối Bình Phước với tỉnh Lâm
+                        Đồng bị sạt lở, tiềm ẩn nguy cơ tai nạn giao thông. </span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Xử lý địa chất yếu trong hầm dài nhất cao tốc Bắc Nam</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/03/DJI-0786-JPG-1474-1693754650.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=l-Aqx9Ge_3QM7lIn_z5NLA">
+                    <span>Khi đào được 200 m đường Núi Vung, hầm dài nhất cao tốc Bắc Nam, nhà thầu gặp mạch nước ngầm
+                        chảy mạnh và đá phong hóa, khác so với hồ sơ thiết kế ban đầu. </span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Cửa ngõ Hà Nội, TP HCM ùn tắc sau lễ 2/9</a>
+                <div class="description">
+                    <img src="https://nld.mediacdn.vn/291774122806476800/2022/7/14/so-gtvt-1657788401411362203886.jpg">
+                    <span>Người dân ùn ùn quay trở lại Hà Nội khiến ở các cửa ngõ tắc nghẽn kéo dài hàng km, trong khi ở
+                        TP HCM chỉ ùn tắc cục bộ, chiều 4/9. </span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Nút giao trên cao ở Nha Trang sau 6 năm thi công</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/01/toan-2_1693476294-1693583106.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=aWt8pG2sqmTzjlYjYPw3Og">
+                    <span>KHÁNH HÒA- Công trình nút giao thông Ngọc Hội tổng đầu tư hơn 1.300 tỷ đồng đạt 79% tiến độ,
+                        đã thông xe 3 trong tổng số 4 nhánh, giúp giảm kẹt xe hướng bắc nam của Nha Trang </span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Pháo hoa rực sáng bầu trời TP HCM tối 2/9</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/02/phaohoa-13-JPG-1693667007.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=KxvNgtKHOGBfZAppHiaErA">
+                    <span>Màn bắn pháo hoa tầm cao kéo dài 15 phút ở đầu đường hầm sông Sài Gòn khiến người dân thích
+                        thú chiêm ngưỡng. </span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Ngư dân Nghệ An bắt được cá nghi sủ vàng nặng 6 kg</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/02/Anh-chup-Man-hinh-2023-09-02-l-2452-1533-1693656049.png?w=1020&h=0&q=100&dpr=1&fit=crop&s=rrvbybAmqZ-onTXk1UuAMg">
+                    <span>NGHỆ AN- Trong lúc đánh bắt ở đảo Ngư, thị xã Cửa Lò, anh Nguyễn Văn Hiếu cùng bạn câu được
+                        con cá 6 kg, dài gần một mét, màu vàng, vây đỏ, nghi sủ vàng quý hiếm.</span>
+                </div>
+            </div>
+            <div class="item-news">
+                <a href="">Đề nghị công nhận liệt sĩ cho người bị điện giật khi cứu nạn</a>
+                <div class="description">
+                    <img
+                        src="https://i1-vnexpress.vnecdn.net/2023/09/02/z4653766040243-089ffc9585b8749-8173-3384-1693632110.jpg?w=1020&h=0&q=100&dpr=1&fit=crop&s=lwXv_2DMtTTbbvcuKQUJqA">
+                    <span>BÌNH THUẬN- Anh Nguyễn Hữu Đốn, 35 tuổi, bị điện giật tử vong khi tham gia cứu nạn nhân trong
+                        vụ cháy nhà ở Phan Thiết được đề nghị công nhận liệt sĩ. </span>
+                </div>
+            </div>
+        </div>
+        <div class="category-r">
+            <div class="category-r__content">
+                <h3>Chính trị</h3>
+                <img
+                    src="https://i1-vnexpress.vnecdn.net/2023/09/01/vovanthuong-1693501926-1693501-2690-7473-1693501991.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=3qpPSk1t1sn1Ag0B4Nb5jg">
+                <p>Chủ tịch nước chủ trì lễ kỷ niệm 78 năm Quốc khánh</p>
+            </div>
+            <div class="category-r__content">
+                <p>Lãnh đạo Đảng, Nhà nước vào lăng viếng Chủ tịch Hồ Chí Minh</p>
+            </div>
+            <div class="category-r__content">
+                <p>Thu hồi đất để điều tiết chênh lệch địa tô 'là cần thiết'</p>
+            </div>
+            <div class="category-r__content">
+                <h3>Dân sinh</h3>
+                <img
+                    src="https://i1-vnexpress.vnecdn.net/2023/09/04/anh-5646-1693320103-1693365338-6742-1693793414.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=ZCvRJZGv97UNy4kIS9HWdw">
+                <p>Nghỉ lái xe tải giúp hàng nghìn nông dân trồng lúa lai</p>
+            </div>
+            <div class="category-r__content">
+                <p>Khe Là - con đập nhiều 'thủy quái'</p>
+            </div>
+        </div>
+    </div>
+
     <!--end container-->
 
     <!-- FOOTER -->
@@ -624,29 +786,7 @@
     </footer>
 
 
-    <script>
-        // Hàm để hiển thị ngày vào div
-        function showDate() {
-            // Tạo một đối tượng Date với ngày hiện tại
-            var date = new Date();
-            // Tạo một đối tượng options để chỉ định các thành phần của ngày
-            var options = {
-                weekday: "long", // Hiển thị tên thứ
-                day: "numeric", // Hiển thị số ngày
-                month: "numeric", // Hiển thị số tháng
-                year: "numeric" // Hiển thị số năm
-            };
-            // Định dạng ngày theo tiếng Việt
-            var dateStr = date.toLocaleDateString("vi-VN", options);
-            // Lấy phần tử div bằng class name
-            var getDate = document.getElementsByClassName("date")[0];
-            // Thiết lập thuộc tính innerHTML của div bằng ngày
-            getDate.innerHTML = dateStr;
-        }
-        // Gọi hàm showDate () lần đầu tiên
-        showDate();
-
-    </script>
+    <script src="../main.js"></script>
 
 
 </body>
