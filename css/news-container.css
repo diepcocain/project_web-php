@@ -1,1 +1,160 @@
 /* CSS FOR TIN TỨC CHÍNH TRỊ XÃ HỘI */
+
+/* Menu CONTAINER */
+.menu_container {
+    font-family: 'Merriweather', serif;
+    color: #4f4f4f;
+    font-weight: 60px;
+    border-bottom: 1px solid #c5c5c5;
+    display: flex;
+    width: 1050px;
+    margin-left: 200px;
+}
+
+.menu_container h1 {
+    color: #4f4f4f;
+    font-weight: 710px;
+    height: 52px;
+    margin: 0;
+    padding: 15px 10px 15px 0;
+    font-family: 'Merriweather', serif;
+    line-height: 0.5;
+}
+
+ul li {
+    display: inline-block;
+    font-size: 13px;
+    font-family: Arial;
+    padding: 18px 10px 18px;
+    color: #000;
+}
+
+/* CONTENT */
+.content {
+    display: flex;
+}
+
+.category-l {
+    width: 710px;
+    display: flex;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 12px;
+}
+
+.category--news {
+    padding-top: 10px;
+    display: flex;
+}
+
+.category-l img {
+    max-width: 500px ;
+    height: auto;
+}
+
+.category-l__content h2 {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.category-l__content a {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.category-l__content {
+    width: 230px;
+    padding: 15px;
+}
+
+.category-l__content span {
+    color: #4f4f4f;
+}
+.category-l__content p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.content-l {
+    width: 730px;
+    margin-left: 200px;
+}
+
+.item-news {
+    width: 710px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 15px;
+}
+
+.item-news > a {
+    font-weight: bold;
+}
+
+.description {
+    margin-top: 8px;
+    display: flex;
+    color: var(--text-color);
+}
+
+.description span {
+    font-size: 13px;
+    padding-left: 12px;
+}
+
+.description img{
+    width: 150px;
+    height: 87px;
+}
+
+
+/* CONTENT-RIGHT */
+.category-r {
+    margin-top: 10px;
+    width: 300px;
+    border-left: 1px solid #c5c5c5;
+}
+
+.category-r__content {
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.category-r__content img {
+    padding-top: 10px;
+    width: 270px;
+    height: 150px;
+}
+
+.category-r__content p {
+    font-size: 15px;
+    color: #000;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 1px;
+}
+
+.right-bootom p {
+    padding-top: 10px;
+    padding-left: 30px;
+    font-size: 15px;
+    color: #000;
+}
+
+.qc {
+    padding: 140px;
+    background: #f7f7f7;
+    border: 1px solid #e5e5e5;
+    position: relative;
+    margin: 20px 20px;
+    border-radius: 4px;
+}
+
+.section {
+    width: 1050px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 20px;
+    margin-left: 190px;
+}
