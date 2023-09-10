@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tin khoa học</title>
+    <title>Tin Bất động sản</title>
     <!-- FAVICON -->
     <link rel="icon" type="image/x-icon" href="../img/favicon.png">
     <!-- Reset CSS -->
@@ -19,7 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/science-contaier.css">
+    <link rel="stylesheet" href="../css/land-container.css">
     <link rel="stylesheet" href="../css/style.css">
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -496,30 +496,6 @@
 
 
     <script src="../main.js">
-    </script>
-
-    <script>
-        // Hàm để hiển thị ngày vào div
-        function showDate() {
-            // Tạo một đối tượng Date với ngày hiện tại
-            var date = new Date();
-            // Tạo một đối tượng options để chỉ định các thành phần của ngày
-            var options = {
-                weekday: "long", // Hiển thị tên thứ
-                day: "numeric", // Hiển thị số ngày
-                month: "numeric", // Hiển thị số tháng
-                year: "numeric" // Hiển thị số năm
-            };
-            // Định dạng ngày theo tiếng Việt
-            var dateStr = date.toLocaleDateString("vi-VN", options);
-            // Lấy phần tử div bằng class name
-            var getDate = document.getElementsByClassName("date")[0];
-            // Thiết lập thuộc tính innerHTML của div bằng ngày
-            getDate.innerHTML = dateStr;
-        }
-        // Gọi hàm showDate () lần đầu tiên
-        showDate();
-
     </script>
 
 
