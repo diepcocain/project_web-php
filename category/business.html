@@ -19,7 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
-    <link rel="stylesheet" href="../css/news-container.css">
+    <link rel="stylesheet" href="../css/business-container.css">
     <link rel="stylesheet" href="../css/style.css">
     <!-- Icon -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
@@ -76,7 +76,7 @@
                     <a href="#">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </a>
-                    <a href="#" class="login" onclick="document.getElementById('login').style.display='block'">
+                    <a href="#" class="login">
                         <i class="fa-regular fa-user"></i>
                         <span>Đăng Nhập</span>
                     </a>
@@ -93,20 +93,20 @@
                     <li><a href="/" class=" home-logo">
                             <i class="fa-solid fa-house"></i>
                         </a></li>
-                    <li><a href="./news.html">Thời sự</a></li>
-                    <li><a href="./views.html">Góc nhìn</a></li>
-                    <li><a href="./world.html">Thế giới</a></li>
+                    <li><a href="">Thời sự</a></li>
+                    <li><a href="">Góc nhìn</a></li>
+                    <li><a href="">Thế giới</a></li>
                     <li><a href="">Video</a></li>
                     <li><a href="">Podcasts</a></li>
-                    <li><a href="./business.html">Kinh doanh</a></li>
-                    <li><a href="./land.html">Bất động sản</a></li>
-                    <li><a href="./science.html">Khoa học</a></li>
-                    <li><a href="./entertainment.html">Giải trí</a></li>
-                    <li><a href="./sport.html">Thể thao</a></li>
-                    <li><a href="./law.html">Pháp luật</a></li>
-                    <li><a href="./education.html">Giáo dục</a></li>
-                    <li><a href="./health.html">Sức khoẻ</a></li>
-                    <li><a href="./existence.html">Đời sống</a></li>
+                    <li><a href="">Kinh doanh</a></li>
+                    <li><a href="">Bất động sản</a></li>
+                    <li><a href="">Khoa học</a></li>
+                    <li><a href="">Giải trí</a></li>
+                    <li><a href="">Thể thao</a></li>
+                    <li><a href="">Pháp luật</a></li>
+                    <li><a href="">Giáo dục</a></li>
+                    <li><a href="">Sức khoẻ</a></li>
+                    <li><a href="">Đời sống</a></li>
                     <li><a href="">Du lịch</a></li>
                     <li><a href="">
                             <i class="fa-solid fa-bars"></i>
@@ -114,119 +114,370 @@
                 </ul>
             </div>
         </div>
-
-        <!-- Modal -->
-        <div id="login" class="modal">
-            <form class="modal-content animate" action="/action_page.php" method="post">
-                <div class="close" onclick="document.getElementById('login').style.display='none'">
-                    <i class="fa-solid fa-x"></i>
-                </div>
-                <div class="header_modal">
-                    <div class="login_header focus_modal login">
-                        <p>Đăng nhập</p>
-                    </div>
-                    <div class="login_header register">
-                        <p>Tạo tài khoản</p>
-                    </div>
-                </div>
-
-                <div class="body_modal">
-                    <div class="body_left">
-                        <span>Đăng nhập với Email</span>
-
-                        <form action="" method="post">
-                            <input type="email" name="username" id="name" placeholder="Email">
-
-                            <input type="password" id="password" placeholder="Password">
-
-                            <button type="submit">Đăng nhập</button>
-                        </form>
-
-                        <a href="#">
-                            <p class="forgot">Lấy lại mật khẩu</p>
-                        </a>
-                    </div>
-
-                    <div class="body_right">
-                        <span>Đăng nhập với</span>
-                        <div class="modal_social">
-                            <button class="modal_facebook">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                Facebook
-                            </button>
-                            <button class="modal_google">
-                                <i class="fa-brands fa-google"></i>
-                                Google
-                            </button>
-                            <button class="modal_apple">
-                                <i class="fa-brands fa-apple"></i>
-                                Apple
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </form>
-        </div>
-
-        <div id="register" class="modal">
-            <form class="modal-content animate" action="/action_page.php" method="post">
-                <div class="close" onclick="document.getElementById('register').style.display='none'">
-                    <i class="fa-solid fa-x"></i>
-                </div>
-                <div class="header_modal">
-                    <div class="login_header login">
-                        <p>Đăng nhập</p>
-                    </div>
-                    <div class="login_header register  focus_modal">
-                        <p>Tạo tài khoản</p>
-                    </div>
-                </div>
-
-                <div class="body_modal">
-                    <div class="body_left">
-                        <span style="text-align: center; font-size: 12px;">Tạo tài khoản VnExpress
-
-                            Để sử dụng đầy đủ tính năng đọc báo và tham gia cộng đồng hơn 8 triệu thành viên</span>
-
-                        <form action="" method="post">
-                            <input type="email" name="username" id="name" placeholder="Nhập Email">
-
-                            <input type="password" id="password" placeholder="Tạo mật khẩu">
-
-                            <button type="submit">Tạo tài khoản</button>
-                        </form>
-
-                    </div>
-
-                    <div class="body_right">
-                        <span>Đăng nhập với</span>
-                        <div class="modal_social">
-                            <button class="modal_facebook">
-                                <i class="fa-brands fa-facebook-f"></i>
-                                Facebook
-                            </button>
-                            <button class="modal_google">
-                                <i class="fa-brands fa-google"></i>
-                                Google
-                            </button>
-                            <button class="modal_apple">
-                                <i class="fa-brands fa-apple"></i>
-                                Apple
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </form>
-        </div>
     </header>
 
 
 
     <!-- CONTAINER -->
-    <div class="container">
+    <div class="menu_container">
+                
+        <h1>Kinh doanh</h1>
+            <ul>
+                 <li>Quốc tế</li>
+                <li>Doanh nghiệp</li>
+                <li>Chứng khoán</li>
+                <li>Ebank</li>
+                <li>vĩ mô</li>
+                <li>Tiền của tôi</li>
+                <li>Hàng hóa</li>
+                <li>Bảo hiểm</li>
+             </ul>
+     
 
+</div>
+    <div class="container">
+        
+           
+        <!-- content -->
+        <div class="content_container">
+           <div class="content_items">
+            <div class="items_content">
+                <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/05/dien-1693907011-1693907024-5716-1693908011.jpg?w=680&h=408&q=100&dpr=1&fit=crop&s=7JyPs67JsS2viUNAJy7ijg"
+                    alt="">
+
+                    <!-- tiêu đề chính -->
+                <div class="tieu_de">
+                    <div class="tieude_chinh">
+                        <h3>Hóa đơn điện tháng 8 tăng vọt</h3>
+                        <h5>TP HCM - Ông Tuấn (quận 5) cho biết tiền điện tháng 8 của nhà ông lên hơn 17 triệu đồng, gấp
+                            1,75
+                            lần so với tháng 7 và tăng gần 14 lần so với cùng kỳ 2022.</h5>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+            <!-- tiêu đề phụ -->
+            <div >
+                <div class="tieude_phu">
+                    <div class="tieude_phu_con">
+                         <h3>Mới có 20 dự án điện tái tạo chuyển tiếp phát lên lưới</h3>
+                        <h5>Sau 4 tháng đốc thúc, hiện mới có 20 dự án điện tái tạo chuyển tiếp, tương ứng 25% tổng số dự án lỡ giá FIT, được vận hành thương mại, phát lên lưới.</h5>
+                     </div>
+
+                    <div class="tieude_phu_con">
+                         <h3>Giá dầu tiến sát đỉnh 10 tháng</h3>
+                         <h5>Dầu Brent và WTI cùng đi lên khi Nga và Arab Saudi cùng tuyên bố gia hạn các biện pháp siết nguồn cung đến hết năm nay.</h5>
+                     </div>
+
+                    <div class="tieude_phu_con">
+                        <h3>Yen xuống thấp nhất 10 tháng so với USD</h3>
+                        <h5>Giá yen tiến sát 148 yen đổi một đôla Mỹ, khiến giới chức Nhật Bản cảnh báo can thiệp để giải quyết đầu cơ.</h5>
+                    </div>
+                </div>
+           </div>
+        </div>
+     
+         <!--tin tức ngoài lề-->
+             <div class="tin_tuc_ngoai_le">
+                  <div class="sub_tin_tuc_ngoai_le">
+                         <h3>Cuba bắt 17 nghi phạm bị cáo buộc đưa người đến Ukraine tham chiến</h3>
+                        <img src="https://i1-vnexpress.vnecdn.net/2023/09/08/2022-09-28t195142z-1852326457-7327-6000-1694146167.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=sVwltS_lQAFmYuOqHmCvwA" alt="">
+                     </div>
+                 <div class="sub_tin_tuc_ngoai_le">
+                           <h3>Nhiều người viêm phổi khi giao mùa</h3>
+                       <img src="https://i1-suckhoe.vnecdn.net/2023/09/08/dbc904fefbf52eab77e4-169409899-9746-7234-1694154673.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=EKzBraUf8x2SM3I-mBcweg" alt="">
+                 </div>
+                 <div class="sub_tin_tuc_ngoai_le">
+                       <h3>Messi: 'Argentina vẫn giữ đôi chân trên mặt đất'</h3>
+                       <img src="https://i1-thethao.vnecdn.net/2023/09/08/messi-ecuador-jpeg-1694151795-2416-4239-1694151879.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=VJcaVttQk2g2OEYwtYOYOA" alt="">
+                    </div>
+                 <div class="sub_tin_tuc_ngoai_le">
+                        <h3>Nhan sắc 'bông hồng lai' ở Miss Universe Vietnam 2023</h3>
+                      <img src="https://i1-giaitri.vnecdn.net/2023/09/08/miss-universe-vietnam-1.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=k4ohjZdr03uJIugpDPiS_g" alt="">
+                  </div>
+                 <div class="sub_tin_tuc_ngoai_le">
+                        <h3>Trang Nemo xin hưởng án treo bất thành</h3>
+                       <img src="https://i1-vnexpress.vnecdn.net/2023/09/08/trang-nemo-1-1694141494-4789-1694146509.png?w=300&h=180&q=100&dpr=1&fit=crop&s=tic1mj3nUhTk0RU08kq-qg" alt="">
+                 </div>             
+             </div> 
+
+    </div>
+
+    <!-- chủ đề-->
+    <div class="theme_down">
+        <div class="theme-item">
+            <span>
+                <i class="fa-solid fa-chart-line"></i>
+                Chủ đề
+            </span>
+
+            <div class="theme-list">
+                <ul>
+                    <li><a href="" class="theme-name">VinFast niêm yết tại Mỹ</a></li>
+                    <li><a href="" class="theme-name">Khủng  hoảng bảo hiểm</a></li>
+                    <li><a href="" class="theme-name">Cấm xuất khẩu gạo</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> 
+    
+    <!--tin tức-->
+    <div class="tin_tuc">
+        <div class="bang_tin_tuc">
+            <div class="bang_tin_tuc_con">
+                <h3>Apple mất 200 tỷ USD vốn hóa vì Trung Quốc siết iPhone</h3>
+                <div class="sub_bang_tin_tuc_con">
+                     <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/08/apple-china-zuma-press-1694139-4982-7818-1694140011.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=L6HI1VryOUvzj8XykhAQHQ" alt="">
+                     <h5>Cổ phiếu Apple lao dốc hai phiên vừa qua, sau thông tin Trung Quốc hạn chế dùng iPhone tại các công ty và cơ quan nhà nước</h5>
+                </div>        
+            </div>
+            <div class="bang_tin_tuc_con">
+                <h3>Năm làm nông bất lợi của Ấn Độ</h3>
+                <div class="sub_bang_tin_tuc_con">
+                     <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/08/fed1-12-1694111860-8808-1694112468.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=8pa-NN9NXh_hp-UPw84r6g" alt="">
+                     <h5>Không chỉ phải dừng xuất khẩu gạo để ổn định thị trường nội địa, Ấn Độ năm nay còn phải trải qua "khủng hoảng cà chua" và thiếu hành tây. </h5>
+                </div>        
+            </div>
+            <div class="bang_tin_tuc_con">
+                <h3>PVFCCo hợp tác chuyển đổi số với FPT</h3>
+                <div class="sub_bang_tin_tuc_con">
+                     <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/08/c1-1694165267-1600-1694165504.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=mNQjKySzzfv5xXgeO6I8Ug" alt="">
+                     <h5>Tập đoàn FPT sẽ tư vấn các giải pháp chuyển đổi số cho Tổng Công ty Phân bón và Hóa chất Dầu khí (PVFCCo) giai đoạn 2023-2025, định hướng 2030. </h5>
+                </div>        
+            </div>
+            <div class="bang_tin_tuc_con">
+                <h3>Giá khí đốt châu Âu tăng vọt</h3>
+                <div class="sub_bang_tin_tuc_con">
+                     <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/08/gasstorage-1694164268-9898-1694164596.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=nVog9dcTf5GHv4cdTPZtwg" alt="">
+                     <h5>Cuộc đình công hôm nay tại các nhà máy khí hóa lỏng (LNG) của Chevron tại Australia đã kéo giá khí đốt châu Âu lên cao. </h5>
+                </div>        
+            </div>
+            <div class="bang_tin_tuc_con">
+                <h3>Doanh nghiệp Việt kỳ vọng gì khi Tổng thống Mỹ thăm Việt Nam?</h3>
+                <div class="sub_bang_tin_tuc_con">
+                     <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/08/buoidaxanhbentrexuatmyttxvn-16-3631-6555-1694159942.jpg?w=220&h=132&q=100&dpr=1&fit=crop&s=OzTtzNosjtDrLMHf2GhfOA" alt="">
+                     <h5>Nhiều cơ hội hợp tác mới về nông sản, công nghệ được kỳ vọng mở ra sau chuyến thăm của Tổng thống Mỹ Biden tới Việt Nam. </h5>
+                </div>        
+            </div>
+           
+
+            
+        </div>
+
+        <!--bang tin túc phụ-->
+
+        <div class="bang_tin_tuc_phu">
+            <div class="header_bang_tin_tuc_phu">
+                <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v802/banner/hau_truong_kinh_doanh.jpg" alt="">
+                <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v802/banner/cam_nang_fo.jpg" alt="">
+
+            </div>
+
+         <!---->   
+            <div class="content_bang_tin_tuc_phu">
+                <!--1-->
+                <div class="sub_content_bang_tin_tuc_phu">
+                    <div class="header_content_bang_tin_tuc_phu">
+                        <h3>Quốc tế</h3>
+                        
+                                 <ul>
+                                       <li>
+                                        <div class="sub_header_content_bang_tin_tuc_phu" >
+                                           <h5>Phân tích</h5>
+                                        </div> 
+                                      </li>
+                                </ul>
+                              
+                    </div>
+                     <!---->          
+                    <div class="between_content_bang_tin_tuc_phu">
+                        <div class="navbar_between_content_bang_tin_tuc_phu">
+                            <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/08/apple-china-zuma-press-1694139-4982-7818-1694140011.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=75Lu3CpDuPtW8eVXFCrXzw" alt="">
+                            <div class="nav_between_content_bang_tin_tuc_phu">
+                                <div class="subnav_between_content_bang_tin_tuc_phu">
+                                     <h3>Apple mất 200 tỷ USD vốn hóa vì Trung Quốc siết iPhone</h3>
+                                     <h5>Cổ phiếu Apple lao dốc hai phiên vừa qua, sau thông tin Trung Quốc hạn chế dùng iPhone tại các công ty và cơ...</h5>
+                                </div>
+                               
+                                <div class="downnav_between_content_bang_tin_tuc_phu">
+                                    <h4>- Năm làm nông bất lợi của Ấn Độ</h4>
+                                    <h4>- Giá khí đốt châu Âu tăng vọt</h4>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+             <!--2-->   
+             <div class="sub_content_bang_tin_tuc_phu">
+                <div class="header_content_bang_tin_tuc_phu">
+                    <h3>Doanh nghiệp</h3>
+                    
+                             <ul>
+                                   <li>
+                                    <div class="sub_header_content_bang_tin_tuc_phu" >
+                                       <h5>Doanh nhân</h5>
+                                       <h5>Quản trị</h5>
+                                       <h5>Doanh nghiệp viết</h5>
+                                    </div> 
+                                  </li>
+                            </ul>
+                          
+                </div>
+                 <!---->          
+                <div class="between_content_bang_tin_tuc_phu">
+                    <div class="navbar_between_content_bang_tin_tuc_phu">
+                        <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/11/g2-2013-1694403565-1694405781-8529-1694405823.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=H6LttvcORgaybAsts5khNw" alt="">
+                        <div class="nav_between_content_bang_tin_tuc_phu">
+                            <div class="subnav_between_content_bang_tin_tuc_phu">
+                                 <h3>Bình Phước có dự án FDI lớn nhất từ trước đến nay</h3>
+                                 <h5>Tỉnh vừa trao chứng nhận đăng ký đầu tư cho dự án Nhà máy sản xuất lốp xe Haohua, sau khi nhận mức đầu tư 500..</h5>
+                            </div>
+                           
+                            <div class="downnav_between_content_bang_tin_tuc_phu">
+                                <h4>- EY Việt Nam tổ chức giải chạy cho 1.200 người</h4>
+                                <h4>- Be, Gojek tăng phổ cập xe điện cho tài xế</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--3-->
+
+            <div class="sub_content_bang_tin_tuc_phu">
+                <div class="header_content_bang_tin_tuc_phu">
+                    <h3>Tiền của tôi</h3>
+                    
+                             <ul>
+                                   <li>
+                                    <div class="sub_header_content_bang_tin_tuc_phu" >
+                                       <h5>Cẩm nang đầu tư F0</h5>
+                                       <h5>Q&A</h5>
+                                       <h5>Kinh nghiệm</h5>
+                                    </div> 
+                                  </li>
+                            </ul>
+                          
+                </div>
+                 <!---->          
+                <div class="between_content_bang_tin_tuc_phu">
+                    <div class="navbar_between_content_bang_tin_tuc_phu">
+                        <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/08/b93c7cc8aed77b8922c6-1-1694162-4682-7817-1694162555.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=oYpBotyhsW9O3f3V8mdaWQ" alt="">
+                        <div class="nav_between_content_bang_tin_tuc_phu">
+                            <div class="subnav_between_content_bang_tin_tuc_phu">
+                                 <h3>Tối ưu cơ hội đầu tư chứng khoán cùng chuyên gia </h3>
+                                 <h5>Những biến số của thị trường cùng yếu tố trợ lực được chuyên gia phân tích trong tọa đàm "Chủ động đón vận hội..</h5>
+                            </div>
+                           
+                            <div class="downnav_between_content_bang_tin_tuc_phu">
+                                <h4>- Chuyên gia tư vấn | Người trẻ có hơn một tỷ đồng nên đầu tư đất hay chung cư?</h4>
+                                <h4>- Chuyên gia tư vấn | Cần lưu ý gì khi vay thế chấp bất động sản?</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+
+             <!--4-->
+
+             <div class="sub_content_bang_tin_tuc_phu">
+                <div class="header_content_bang_tin_tuc_phu">
+                    <h3>Vĩ mô</h3>
+                    
+                             <ul>
+                                   <li>
+                                    <div class="sub_header_content_bang_tin_tuc_phu" >
+                                       <h5></h5>
+                                    </div> 
+                                  </li>
+                            </ul>
+                          
+                </div>
+                 <!---->          
+                <div class="between_content_bang_tin_tuc_phu">
+                    <div class="navbar_between_content_bang_tin_tuc_phu">
+                        <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/09/vietoil-1694264908-1694264924-2624-1694265011.jpg?w=300&h=180&q=100&dpr=1&fit=crop&s=3eKKnHYye4xm_uErBsFWaA" alt="">
+                        <div class="nav_between_content_bang_tin_tuc_phu">
+                            <div class="subnav_between_content_bang_tin_tuc_phu">
+                                 <h3>Doanh nghiệp xăng dầu bị tước giấy phép chưa nộp lại tiền Quỹ bình ổn</h3>
+                                 <h5>Bộ Tài chính cho biết hai lần nhắc Xuyên Việt Oil - doanh nghiệp đã bị tước giấy phép và lãnh đạo vừa bị khởi...</h5>
+                            </div>
+                           
+                            <div class="downnav_between_content_bang_tin_tuc_phu">
+                                <h4>- Thứ trưởng Trần Quốc Phương: Năm nay có thể giải ngân ít nhất 95% kế hoạch</h4>
+                                <h4>- Thứ trưởng Trần Quốc Phương: Năm nay có thể giải ngân ít nhất 95% kế hoạch</h4>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         
+            
+            <!---->
+            </div>   
+        </div>
+
+    </div>
+
+    <!--tin la cai -->
+    <div class="tin_la_cai">
+        <div class="phong">
+            <div class="content_tin_la_cai">
+                  <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/10/dai-dien-bidv-nhan-giai-tai-ch-7683-5115-1694317756.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=eFRCjV9770qpw9g9-iMv_Q" alt="">
+                <div class="sub_content_tin_la_cai">
+                     <h3>BIDV nhận giải thưởng 'Ngân hàng SME tốt nhất Việt Nam'</h3>
+                     <h5>BIDV đạt giải thưởng "Ngân hàng SME tốt nhất Việt Nam" lần thứ 6 liên tiếp từ tạp chí Alpha Southeast Asia bởi các hoạt động hỗ trợ doanh nghiệp vừa và nhỏ, hôm 7/9. </h5>
+
+                  </div>
+             </div>
+
+             <div class="content_tin_la_cai">
+                     <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/08/buoidaxanhbentrexuatmyttxvn-16-3631-6555-1694159942.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=kLYZi1ZoLMcOpoRBW_TmCA" alt="">
+                  <div class="sub_content_tin_la_cai">
+                        <h3>Doanh nghiệp Việt kỳ vọng gì khi Tổng thống Mỹ thăm Việt Nam?</h3>
+                         <h5>Nhiều cơ hội hợp tác mới về nông sản, công nghệ được kỳ vọng mở ra sau chuyến thăm của Tổng thống Mỹ Biden tới Việt Nam.  </h5>
+
+                  </div>
+             </div>
+
+            <div class="content_tin_la_cai">
+                  <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/09/1-5733-1694166765-1694223620-3659-1694223707.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=H8R_LSOFodYVoJKbXn5zUw" alt="">
+                 <div class="sub_content_tin_la_cai">
+                      <h3>Chiến dịch Tết của Viettel Money nhận giải marketing quốc tế</h3>
+                      <h5>"Tết tận hưởng" của Viettel Money chiến thắng hạng mục Chiến dịch marketing của năm tại Giải thưởng Kinh doanh quốc tế nhờ tính sáng tạo, truyền thông lan tỏa.  </h5>
+
+                </div>
+            </div>
+
+            <div class="content_tin_la_cai">
+                   <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/10/z46769648638384dd658e901851548-5716-5264-1694343475.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=Z1ulEZBcWszquq1foeg4qQ" alt="">
+                 <div class="sub_content_tin_la_cai">
+                        <h3>VSIP Cần Thơ sẽ là khu công nghiệp 'bốn trong một'</h3>
+                         <h5>CẦN THƠVSIP Cần Thơ sẽ phát triển tích hợp trung tâm công nghiệp - trung tâm công nghệ cao - trung tâm dịch vụ và khu dân cư. </h5>
+
+                   </div>
+              </div>
+
+              <div class="content_tin_la_cai">
+                   <img src="https://i1-kinhdoanh.vnecdn.net/2023/09/08/giay-1694162060-6778-1694162551.jpg?w=240&h=144&q=100&dpr=1&fit=crop&s=uWXxRep68Ppxm9wKlGUHfA" alt="">
+                   <div class="sub_content_tin_la_cai">
+                       <h3>TP HCM lần đầu khuyến mãi hàng hiệu tới 90%</h3>
+                       <h5>Sáng 8/9, tại TP HCM có hơn 120 thương hiệu mỹ phẩm, túi xách, đồng hồ... hàng hiệu từ Nhật, Mỹ, Italy đã đồng loạt khuyến mãi tới 90% </h5>
+
+                    </div>
+              </div>
+
+       
+         </div>    
     </div>
 
     <!-- FOOTER -->
@@ -496,8 +747,7 @@
     </footer>
 
 
-    <script src="../main.js">
-    </script>
+    <script src="../main.js"></script>
 
 
 </body>
