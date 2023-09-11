@@ -1,0 +1,1032 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcast Tiếng Việt</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="../img/favicon.png">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/podcast.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar">
+            <div class="navbar__label">
+                <a href="/" class="logo__link">
+                    <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v800/v2_2019/pc/graphics/logo.svg" alt="logo"
+                        class="logo__img">
+                </a>
+
+                <div class="date boder">
+                </div>
+
+                <div class="location">
+                    Hà Nội
+                    <i class="fa-solid fa-chevron-down"></i>
+
+                    <i class="fa-solid fa-cloud"></i>
+                    27°C
+                </div>
+
+            </div>
+
+            <div class="navbar__label">
+                <a href="#">
+                    <div class="news">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Mới Nhất</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="news">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Tin theo khu vực</span>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="news">
+                        <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v800/logos/57x57.png" alt="logo_2"
+                            class="sub__logo">
+                        <span>International</span>
+                    </div>
+                </a>
+
+                <div class="user">
+                    <a href="#">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                    <a href="#" class="login" onclick="document.getElementById('login').style.display='block'">
+                        <i class="fa-regular fa-user"></i>
+                        <span>Đăng Nhập</span>
+                    </a>
+                    <a href="#">
+                        <i class="fa-regular fa-bell"></i>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <!-- NAVBAR -->
+        <div class="navbar-menu">
+            <div class="navbar-items">
+                <ul>
+                    <li><a href="/" class=" home-logo">
+                            <i class="fa-solid fa-house"></i>
+                        </a></li>
+                    <li><a href="./news.html">Thời sự</a></li>
+                    <li><a href="./views.html">Góc nhìn</a></li>
+                    <li><a href="./world.html">Thế giới</a></li>
+                    <li><a href="">Video</a></li>
+                    <li><a href="">Podcasts</a></li>
+                    <li><a href="./business.html">Kinh doanh</a></li>
+                    <li><a href="./land.html">Bất động sản</a></li>
+                    <li><a href="./science.html">Khoa học</a></li>
+                    <li><a href="./entertainment.html">Giải trí</a></li>
+                    <li><a href="./sport.html">Thể thao</a></li>
+                    <li><a href="./law.html">Pháp luật</a></li>
+                    <li><a href="./education.html">Giáo dục</a></li>
+                    <li><a href="./health.html">Sức khoẻ</a></li>
+                    <li><a href="./existence.html">Đời sống</a></li>
+                    <li><a href="">Du lịch</a></li>
+                    <li><a href="">
+                            <i class="fa-solid fa-bars"></i>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="login" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="close" onclick="document.getElementById('login').style.display='none'">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="header_modal">
+                    <div class="login_header focus_modal login">
+                        <p>Đăng nhập</p>
+                    </div>
+                    <div class="login_header register">
+                        <p>Tạo tài khoản</p>
+                    </div>
+                </div>
+
+                <div class="body_modal">
+                    <div class="body_left">
+                        <span>Đăng nhập với Email</span>
+
+                        <form action="" method="post">
+                            <input type="email" name="username" id="name" placeholder="Email">
+
+                            <input type="password" id="password" placeholder="Password">
+
+                            <button type="submit">Đăng nhập</button>
+                        </form>
+
+                        <a href="#">
+                            <p class="forgot">Lấy lại mật khẩu</p>
+                        </a>
+                    </div>
+
+                    <div class="body_right">
+                        <span>Đăng nhập với</span>
+                        <div class="modal_social">
+                            <button class="modal_facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                            <button class="modal_google">
+                                <i class="fa-brands fa-google"></i>
+                                Google
+                            </button>
+                            <button class="modal_apple">
+                                <i class="fa-brands fa-apple"></i>
+                                Apple
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+
+        <div id="register" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="close" onclick="document.getElementById('register').style.display='none'">
+                    <i class="fa-solid fa-x"></i>
+                </div>
+                <div class="header_modal">
+                    <div class="login_header login">
+                        <p>Đăng nhập</p>
+                    </div>
+                    <div class="login_header register  focus_modal">
+                        <p>Tạo tài khoản</p>
+                    </div>
+                </div>
+
+                <div class="body_modal">
+                    <div class="body_left">
+                        <span style="text-align: center; font-size: 12px;">Tạo tài khoản VnExpress
+
+                            Để sử dụng đầy đủ tính năng đọc báo và tham gia cộng đồng hơn 8 triệu thành viên</span>
+
+                        <form action="" method="post">
+                            <input type="email" name="username" id="name" placeholder="Nhập Email">
+
+                            <input type="password" id="password" placeholder="Tạo mật khẩu">
+
+                            <button type="submit">Tạo tài khoản</button>
+                        </form>
+
+                    </div>
+
+                    <div class="body_right">
+                        <span>Đăng nhập với</span>
+                        <div class="modal_social">
+                            <button class="modal_facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
+                                Facebook
+                            </button>
+                            <button class="modal_google">
+                                <i class="fa-brands fa-google"></i>
+                                Google
+                            </button>
+                            <button class="modal_apple">
+                                <i class="fa-brands fa-apple"></i>
+                                Apple
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </header>
+
+
+
+    <!-- CONTAINER -->
+    <div class="container">
+        <div class="nav_container">
+            <a href="#">
+                <h1>
+                    Podcasts
+                </h1>
+            </a>
+            <a href="#">
+                <span>
+                    VnExpress Hôm nay
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    Tôi kể
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    Giải mã
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    Bạn ổn không?
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    Tiền làm gì?
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    Tài chính cá nhân
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    Thầm thì
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    Hộp đen
+                </span>
+            </a>
+            <a href="#">
+                <span>
+                    Họ nói gì?
+                </span>
+            </a>
+        </div>
+
+        <div class="header_container">
+            <div class="main_header_container">
+                <div class="podcast_header">
+                    <img src="https://i1-vnexpress.vnecdn.net/2023/09/10/khinaobancuoicrop1638950496606-6012-7873-1694340458.jpg?w=180&h=180&q=100&dpr=1&fit=crop&s=E4ovFxicDWMwb8DG9T3_0g"
+                        alt="img">
+                    <div class="podcast_header_text">
+                        <a href="#">
+                            <h2>Ngại kết hôn vì rào cản thu nhập</h2>
+                        </a>
+                        <p>
+                            11 năm hẹn hò với 5 người song đều không thể kết hôn vì lương thấp, anh Trung Dũng dần tự
+                            ti, không dám quen thêm ai.
+                        </p>
+
+                        <div class="footer_text">
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>21</span>
+                            </div>
+                            <div class="play_label">
+                                <span>11 phút</span>
+                                <div class="play_btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="podcast_header">
+                    <img src="https://i1-vnexpress.vnecdn.net/2023/09/09/dieu164819706539421648197721-1-7862-5555-1694277180.jpg?w=180&h=180&q=100&dpr=1&fit=crop&s=-B0vLb8k_y0tA9eLJPRm_Q"
+                        alt="img">
+                    <div class="podcast_header_text">
+                        <a href="#">
+                            <h2>Bẫy lừa doanh nghiệp xuất khẩu</h2>
+                        </a>
+                        <p>
+                            Nhận được lời đề nghị mua 7.000 thùng hoa quả tươi từ đối tác Dubai qua mạng, giao dịch
+                            thanh toán theo hình thức trả
+                            trước 50%, công ty chị Minh Tâm bị lừa 27.000 USD.
+                        </p>
+
+                        <div class="footer_text">
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>25</span>
+                            </div>
+                            <div class="play_label">
+                                <span>13 phút</span>
+                                <div class="play_btn">
+                                    <i class="fa-solid fa-play"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content_header_container">
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/11/z46818226438576daa0610e847003c-4196-3032-1694386341.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=TYaecIhQc1j1wpjTkjfoUg"
+                                alt="img">
+                            <h3>
+                                Điểm tin 6h: Việt - Mỹ xác lập quan hệ Đối tác Chiến lược Toàn diện; Đức sa thải HLV
+                                Hansi Flick
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Vietnam Airlines dự kiến mua 50 tàu bay Boeing 737 Max; Cơ thủ Việt Nam vô địch thế giới ở
+                            lần
+                            đầu dự giải; Romania
+                            triệu nhà ngoại giao Nga vì mảnh vỡ UAV rơi vào lãnh thổ...
+                        </p>
+                    </a>
+
+                    <div class="footer_text_container">
+                        <a href="#">
+                            <p>Điểm tin</p>
+                        </a>
+                        <div class="play_label">
+                            <span>4 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/08/ChiNgocDangV-1694166348-6796-1694166694.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=fV6t_dvCkgbHaxmuwDngpA"
+                                alt="img">
+                            <h3>
+                                'Tôi vô tình mở đường cho chồng ngoại tình'
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Sợ chồng áp lực vì thu nhập thấp hơn vợ, tôi động viên anh dành nhiều thời gian hơn cho công
+                            việc để rồi phát hiện anh
+                            lại ngoại tình với đồng nghiệp.
+                        </p>
+                    </a>
+
+                    <div class="footer_text_container">
+                        <a href="#">
+                            <p>Bạn ổn không?</p>
+                        </a>
+                        <div class="play_label">
+                            <span>20 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/08/44efc59df79b22c57b8a-169417530-1667-1562-1694175531.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=fu793B8EHj9JDi4j8wz7Bg"
+                                alt="img">
+                            <h3>
+                                Lao động ế việc lên mạng kiếm tiền
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Gần hai năm thu nhập giảm 50% do thiếu đơn hàng, Thu Hiền tự tạo kênh MXH chia sẻ công thức
+                            nấu ăn và kiếm thêm được 5
+                            triệu mỗi tháng.
+                        </p>
+                    </a>
+
+                    <div class="footer_text_container">
+                        <a href="#">
+                            <p>VnExpress hôm nay</p>
+                        </a>
+                        <div class="play_label">
+                            <span>14 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <h3 class="heading_text">Nhiều người nghe</h3>
+            <div class="content_header_container">
+
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/05/slotdoxe43711692846948-1693845-5135-8783-1693847178.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=Ah2sJtTmWJQk0hmfbOiiEQ"
+                                alt="img">
+                            <h3>
+                                'Săn' suất mua chỗ đỗ ôtô
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            6 năm môi giới căn hộ hạng sang ở quận 5, TP HCM, anh Tấn Hùng nói, nhiều khách cầm 800
+                            triệu “săn" suất mua đứt chỗ đỗ
+                            ôtô nhưng vẫn không được.
+                        </p>
+                    </a>
+
+                    <div class="footer_text_container">
+                        <div class="contact">
+                            <a href="#">
+                                <p>VnExpress hôm nay</p>
+                            </a>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>121</span>
+                            </div>
+                        </div>
+                        <div class="play_label">
+                            <span>12 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/06/levancong-1693994317-9720-1693995565.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=uyWUBGkg0aOQuc6iqdt_tA"
+                                alt="img">
+                            <h3>
+                                Chuyện tình cô gái và người chồng liệt hai chân
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Nhớ lại năm 16 tuổi, chị Tám nói mình được nhiều người theo đuổi, xe đậu đầy sân, nhưng chị
+                            lại chỉ để mắt tới anh chàng
+                            bị liệt 2 chân.
+                        </p>
+                    </a>
+
+                    <div class="footer_text_container">
+                        <a href="#">
+                            <p>Tôi kể</p>
+                        </a>
+
+                        <div class="play_label">
+                            <span>14 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/07/Frame518-1694075723-4247-1694078789.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=-tUMLzlIEv2Db_fAXZ_k3w"
+                                alt="img">
+                            <h3>
+                                Giải mã hiện tượng mơ thấy tương lai
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Khoảng 38% dân số được cho là trải qua những giấc mơ thành sự thật, có giả thuyết cho rằng
+                            đó là cách con người mô phỏng
+                            các mối đe dọa, nhằm tăng khả năng sinh tồn.
+                        </p>
+                    </a>
+
+                    <div class="footer_text_container">
+                        <div class="contact">
+                            <a href="#">
+                                <p>Giải mã</p>
+                            </a>
+                            <div class="comment">
+                                <i class="fa-regular fa-comment"></i>
+                                <span>30</span>
+                            </div>
+                        </div>
+                        <div class="play_label">
+                            <span>16 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <h3 class="heading_text">VnExpress hôm nay</h3>
+            <div class="content_header_container_2">
+
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/08/44efc59df79b22c57b8a-169417530-1667-1562-1694175531.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=fu793B8EHj9JDi4j8wz7Bg"
+                                alt="img">
+                            <h3>
+                                Lao động ế việc lên mạng kiếm tiền
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Gần hai năm thu nhập giảm 50% do thiếu đơn hàng, Thu Hiền tự tạo kênh MXH chia sẻ công thức
+                            nấu ăn và kiếm thêm được 5
+                            triệu mỗi tháng.
+                        </p>
+                    </a>
+
+                    <div class="footer_text_container">
+                        <div class="contact">
+                            <label>9/9</label>
+                        </div>
+                        <div class="play_label">
+                            <span>14 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/07/imec389-1694104480-1694104499-2999-5454-1694104540.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=Ub5pOjKp4svb1SPKD4o0ag"
+                                alt="img">
+                            <h3>
+                                Ngành xăm mình nở rộ
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Nhiều thợ xăm nói, so với 5 năm trước, lượng khách xăm mình tăng 3-5 lần, thợ xăm có thể
+                            sống nhờ nghề với thu nhập tăng
+                            300%.
+                        </p>
+                    </a>
+
+                    <div class="footer_text_container">
+                        <div class="contact">
+                            <label>8/9</label>
+                        </div>
+                        <div class="play_label">
+                            <span>8 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <h3 class="heading_text">Tôi kể</h3>
+            <div class="content_header_container_2">
+            
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/08/44efc59df79b22c57b8a-169417530-1667-1562-1694175531.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=fu793B8EHj9JDi4j8wz7Bg"
+                                alt="img">
+                            <h3>
+                                Lao động ế việc lên mạng kiếm tiền
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Gần hai năm thu nhập giảm 50% do thiếu đơn hàng, Thu Hiền tự tạo kênh MXH chia sẻ công thức
+                            nấu ăn và kiếm thêm được 5
+                            triệu mỗi tháng.
+                        </p>
+                    </a>
+            
+                    <div class="footer_text_container">
+                        <div class="contact">
+                            <label>9/9</label>
+                        </div>
+                        <div class="play_label">
+                            <span>14 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/09/08/44efc59df79b22c57b8a-169417530-1667-1562-1694175531.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=fu793B8EHj9JDi4j8wz7Bg"
+                                alt="img">
+                            <h3>
+                                Ngành xăm mình nở rộ
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Nhiều thợ xăm nói, so với 5 năm trước, lượng khách xăm mình tăng 3-5 lần, thợ xăm có thể
+                            sống nhờ nghề với thu nhập tăng
+                            300%.
+                        </p>
+                    </a>
+            
+                    <div class="footer_text_container">
+                        <div class="contact">
+                            <label>8/9</label>
+                        </div>
+                        <div class="play_label">
+                            <span>8 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+            <h3 class="heading_text">Giải mã</h3>
+            <div class="content_header_container_2">
+            
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/08/31/Frame516-1693467607-6766-1693470695.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=yTJqfIyENNjDEWe5vKB8nA"
+                                alt="img">
+                            <h3>
+                                Vụ ném bom Hiroshima có thật sự giúp kết thúc Thế Chiến II?
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                        Nhiều học giả tin rằng hai vụ ném bom không phải động cơ chính thúc đẩy Nhật đầu hàng phe Đồng minh, nước này có đến 68
+                        thành phố bị hủy diệt bằng bom vào mùa hè 1945.
+                        </p>
+                    </a>
+            
+                    <div class="footer_text_container">
+                        <div class="contact">
+                            <label>31/8</label>
+                        </div>
+                        <div class="play_label">
+                            <span>23 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            
+                <div class="podcad_conatiner">
+                    <a href="#">
+                        <div class="head_podcast_container">
+                            <img src="https://i1-vnexpress.vnecdn.net/2023/08/24/Frame517-1692859414-1236-1692859450.jpg?w=100&h=100&q=100&dpr=1&fit=crop&s=CsQbTFQxawLElUfGJl3CUA"
+                                alt="img">
+                            <h3>
+                            Tại sao vẫn có người tin trái đất phẳng?
+                            </h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <p>
+                            Một số người tin rằng trái đất có hình đĩa phẳng, được bao quanh bởi một bức tường vành cao 45 m giúp con người không
+                            lọt ra bên ngoài.
+                        </p>
+                    </a>
+            
+                    <div class="footer_text_container">
+                        <div class="contact">
+                            <label>24/8</label>
+                        </div>
+                        <div class="play_label">
+                            <span>18 phút</span>
+                            <div class="play_btn">
+                                <i class="fa-solid fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+            
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+    <!-- FOOTER -->
+
+    <footer>
+        <div class="footer">
+            <div class="footer_container-left">
+                <ul class="footer-content-link bold">
+                    <li>
+                        <a href="#">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Video
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Podcasts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Ảnh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Mới nhất</a>
+                    </li>
+                    <li>
+                        <a href="#">Xem nhiều</a>
+                    </li>
+                    <li>
+                        <a href="#">Tin nóng</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-content-link">
+                    <li>
+                        <a href="#">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Video
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Podcasts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Ảnh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Mới nhất</a>
+                    </li>
+                    <li>
+                        <a href="#">Xem nhiều</a>
+                    </li>
+                    <li>
+                        <a href="#">Tin nóng</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-content-link">
+                    <li>
+                        <a href="#">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Video
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Podcasts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Ảnh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Mới nhất</a>
+                    </li>
+                    <li>
+                        <a href="#">Xem nhiều</a>
+                    </li>
+                    <li>
+                        <a href="#">Tin nóng</a>
+                    </li>
+                </ul>
+
+                <ul class="footer-content-link">
+                    <li>
+                        <a href="#">
+                            Trang chủ
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Video
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Podcasts
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Ảnh
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Mới nhất</a>
+                    </li>
+                    <li>
+                        <a href="#">Xem nhiều</a>
+                    </li>
+                    <li>
+                        <a href="#">Tin nóng</a>
+                    </li>
+                </ul>
+
+
+            </div>
+
+            <div class="footer_container-right">
+
+                <ul class="footer-content-right footer-content-link ">
+                    <li>
+                        <a href="#">
+                            Rao vặt
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Startup
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Mua ảnh VnExpress
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">eBox
+                        </a>
+                    </li>
+                </ul>
+
+
+                <div class="footer-right-app">
+                    <span>Tải ứng dụng</span>
+                    <div class="app">
+                        <div class="app_box">
+                            <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v800/logos/57x57.png" alt="logo_2"
+                                class="sub__logo">
+                            VnExpress
+                        </div>
+                        <div class="app_box app_box_2">
+                            <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v800/logos/57x57.png" alt="logo_2"
+                                class="sub__logo">
+                            International
+                        </div>
+                    </div>
+
+                    <span class="contact">Liên hệ</span>
+                    <div class="box-info">
+                        <div class="info">
+                            <i class="fa-regular fa-envelope"></i>
+                            <span>Tòa soạn</span>
+                        </div>
+                        <div class="info">
+                            <i class="fa-solid fa-circle-info"></i>
+                            <span>Quảng cáo</span>
+                        </div>
+                    </div>
+                    <div class="info mt-2 boder-b">
+                        <i class="fa-solid fa-copyright"></i>
+                        <span>Hợp tác bản quyền</span>
+                    </div>
+
+                    <span class="pt-4">Đường dây nóng</span>
+                    <div class="phone">
+                        <div class="phone_number">
+                            <span class="label_number">083.888.0123</span>
+                            <span class="label_text">(Hà Nội)</span>
+                        </div>
+                        <div class="phone_number">
+                            <span class="label_number">082.233.3555</span>
+                            <span class="label_text">(TP. Hồ Chí Minh)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer__social">
+            <div class="logo_social">
+                <span>Báo điện tử</span>
+                <a href="/" class="logo__social">
+                    <img src="https://s1.vnecdn.net/vnexpress/restruct/i/v800/v2_2019/pc/graphics/logo.svg" alt="logo"
+                        class="logo__img">
+                </a>
+            </div>
+
+            <div class="box_social">
+                <div class="social">
+                    <a href="#">
+                        <span>Điều khoản sử dụng</span>
+                    </a>
+                    <a href="#">
+                        <span class="boder-l-r">RSS</span>
+                    </a>
+                    <a href="#">
+                        <span>Theo dõi VnExpress trên</span>
+                    </a>
+                </div>
+                <div class="social_icon_label">
+                    <a href="#">
+                        <div class="icon_social facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon_social twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="icon_social youtube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+
+        <div class="copyright">
+            <div class="copy_content">
+                <span class="bold">Báo tiếng Việt nhiều người xem nhất</span>
+                <span>Thuộc Bộ Khoa học Công nghệ</span>
+                <span>Số giấy phép: 548/GP-BTTTT ngày 24/08/2021</span>
+            </div>
+            <div class="copy_content ">
+                <span>Tổng biên tập: Phạm Hiếu</span>
+                <span class="copy_content-main">Địa chỉ: Tầng 10, Tòa A FPT Tower, số 10 Phạm Văn Bạch, Dịch Vọng, Cầu
+                    Giấy, Hà Nội</span>
+                <span>Điện thoại: 024 7300 8899 - máy lẻ 4500</span>
+            </div>
+            <div class="copy_content">
+                <span>© 1997-2023. Toàn bộ bản quyền thuộc VnExpress</span>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <script src="../main.js">
+    </script>
+
+
+</body>
+
+</html>
