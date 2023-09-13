@@ -135,6 +135,7 @@
 }
 
 .sub_tin_tuc_ngoai_le {
+    cursor: pointer;
     display: flex;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -212,9 +213,9 @@
     padding-right: 20px;
 }
 
-.bang_tin_tuc_con {}
 
-.bang_tin_tuc_con>h3 {
+
+.bang_tin_tuc_con >h3 {
     font-size: 17px;
     font-weight: 600;
     font-family: 'Merriweather', serif;

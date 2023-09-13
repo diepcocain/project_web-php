@@ -133,6 +133,7 @@
 }
 
 .sub_tin_tuc_ngoai_le {
+    cursor: pointer;
     display: flex;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -332,9 +333,10 @@
     
 }
 .navbar_end_content_bang_tin_tuc_phu{
+    cursor: pointer;
     border-bottom: 1px solid var(--gray-color);
 }
-.navbar_end_content_bang_tin_tuc_phu > h3{
+.navbar_end_content_bang_tin_tuc_phu> a > h3{
     font-size: 14px;
     margin-top: 10px;
     
@@ -362,6 +364,7 @@
 }
 
 .content_tin_la_cai {
+    cursor: pointer;
     padding-top: 15px;
     display: flex;
     padding-bottom: 20px;
