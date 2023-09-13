@@ -94,7 +94,10 @@ header {}
 .navbar-items ul li {
     padding: 16.5px 0;
     margin-right: 10px;
+}
 
+.navbar-items ul li a {
+    font-family:  sans-serif;
 }
 
 .navbar-items>ul>li:hover a {
