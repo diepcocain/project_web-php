@@ -24,6 +24,7 @@ html,
 a {
     text-decoration: none;
     color: #333;
+    font-family: 'Merriweather', serif;
     font-size: var(--font-text-sm);
 }
 
@@ -94,6 +95,7 @@ li>a {
 .left- {
     padding-left: 20px;
     border-left: 1px solid #c5c5c5;
+    margin-left: 20px;
 }
 
 .active {
