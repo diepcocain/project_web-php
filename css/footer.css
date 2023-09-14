@@ -2,6 +2,7 @@
 
 footer {
     margin: 0rem 12.75rem 1rem 12.75rem;
+
 }
 
 
@@ -24,6 +25,10 @@ footer {
 
 .footer-content-link>li {
     padding-bottom: 8px;
+}
+
+.footer-content-link>li >a {
+    font-family: 'Roboto', sans-serif;
 }
 
 .footer_container-right {
@@ -242,6 +247,3 @@ footer {
 .copy_content-main {
     padding-right: 2em;
 }
-
-
-
