@@ -1,1 +1,338 @@
 /* CSS FOR TIN KHOA HỌC */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+.container {
+    margin: 1rem 12.75rem 1rem 12.75rem;
+}
+
+/* Giới thiệu */
+.ul-nav-folder{
+    display: flex;
+}
+
+.ul-nav-folder > li > a {
+    padding: 0 6px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.nav-folder {
+    padding-top: 20px;
+    align-items: flex-start;
+    border-bottom: 1px solid #e5e5e5;
+    flex-wrap: wrap;
+    display: flex;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+}
+
+.title-folder {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 700px;
+    color: #4f4f4f !important;
+    font-size: 8px;
+    line-height: 157%;
+    margin-right: 20px;
+    height: 52px;
+}
+
+/* content chính */
+.content_chinh {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.left_content {
+    width: 70%;
+}
+.right_content {
+    width: 30%;
+}
+
+/* Tiêu đề chính */
+.main_left_content {
+    display: flex;
+    
+}
+
+.main_left_content > img {
+    width: 72%;
+}
+
+.text {
+    background-color:#f8f7f7;
+    padding: 1rem;
+}
+
+.text > h1 {
+    font-family: 'Merriweather', serif;
+}
+
+.text_time {
+    padding-top: 10px;
+}
+
+.text_time > span {
+    font-size: 14px;
+    color: #928a8a;
+    padding-right: 1rem;
+}
+
+.leftbox {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 18px;
+}
+
+
+/* Tiêu đề phụ */
+.box_extra {
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 10px ;
+}
+
+.extra{
+    display: flex;
+    padding-top: 1rem;
+}
+
+.between_extra{
+    padding-left: 65px;
+    padding-right: 25px;
+}
+
+.left_extra > img{
+    width: 120%;
+    height: 81%;
+}
+
+.between_extra > img {
+    width: 100%;
+    height: 82%;
+}
+
+.right_extra > img {
+    width: 100%;
+    height: 82%;
+}
+
+
+/* Tin tức ngoài lề */
+.right_content {
+    width: 320px;
+    height: auto;
+    border: 1px solid var(--gray-color);
+    padding: 10px;
+    margin: 15px 25px;
+
+}
+
+.right_content_one {
+    display: flex;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--gray-color);
+    padding-top: 3px;
+
+}
+.right_content_one > img {
+    width: 55%;
+    padding-left: 25px;
+}
+.right_content_one > a{
+    font-family: "Merriweather",serif;
+    font-size: 13px;
+    line-height: 160%;
+}
+
+
+/* nội dung phụ */
+.science-news{
+    display: flex;
+    border-bottom:1px solid #c5c5c5 ;
+}
+
+/* content left */
+.content-l {
+    width: 380px;
+    border-right: 1px solid #c5c5c5;
+    padding-right: 20px;
+    
+}
+
+.item-news {
+    width: 100%;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 12px;
+}
+
+.item-news > a {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.description {
+    margin-top: 8px;
+    display: flex;
+    color: var(--text-color);
+}
+
+.description span {
+    font-size: 13px;
+    padding-left: 12px;
+}
+
+.description img{
+    width: 150px;
+    height: 87px;
+}
+
+/* content right */
+.content-r {
+    width: 680px;
+    padding-left: 20px;
+}
+/* khoa hoc trong nuoc */
+.category {
+    width: 100%;
+    margin-bottom: 15px;
+    padding-top: 10px;
+}
+
+.category > a {
+     font-size: 22px; 
+     text-decoration: underline; 
+}
+
+
+.category-khoahoc {
+    border-bottom: 1px solid #c5c5c5;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.category-l {
+    width: 240px;
+    border-right:1px solid #c5c5c5 ;
+    padding-right: 20px;
+}
+
+.category-l img {
+    width: 240px;
+    padding-right: 20px;
+}
+
+.category-l__content a{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.category-l__content {
+    padding: 10px 20px;
+    background-color: #f8f7f7;
+    height: 230px;
+}
+
+.category-l__content > p {
+    font-size: 14px;
+    padding-top: 10px;
+}
+
+
+.category-r {
+    padding: 10px;
+    display: flex;
+    border-bottom:1px solid #c5c5c5 ;
+    padding-bottom: 10px;
+}
+
+.category-r > a {
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.category-r > img {
+    width: 140px;
+    height: 84px;
+}
+
+/* tri tue nhan tao */
+
+.category-tritue {
+    border-bottom: 1px solid #c5c5c5;
+    padding-bottom: 10px;
+    display: flex;
+}
+
+.category-l-tritue {
+    padding: 10px 20px;
+    background-color: #f8f7f7;
+    height: 70px;
+}
+.category-l-tritue > a{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Các phần tin cuối của content right */
+.category--r {
+    padding: 10px;
+    display: flex;
+}
+
+.category--r > a {
+    font-size: 15px;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+.category--r > img {
+    width: 140px;
+    height: 84px;
+}
+
+/* tin la cai */
+.phong {
+    width: 680px;
+    border-right: 1px solid var(--gray-color);
+    padding-right: 15px;
+    padding-top: 20px;
+}
+
+.content_tin_la_cai {
+    padding-top: 15px;
+    display: flex;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--gray-color);
+}
+
+.content_tin_la_cai>img {
+    width: 220px;
+}
+
+.sub_content_tin_la_cai {
+    padding-left: 15px;
+}
+
+.sub_content_tin_la_cai>h3 {
+    font-weight: 550;
+    font-family: 'Merriweather', serif;
+}
+
+.sub_content_tin_la_cai>h3:hover {
+    color: dodgerblue;
+}
+
+.sub_content_tin_la_cai>h5 {
+    margin-top: 8px;
+    font-weight: 400;
+
+}
