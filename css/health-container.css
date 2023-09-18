@@ -13,7 +13,7 @@
 }
 
 
-.text > a > h1 {
+.font {
     font-family: 'Merriweather', serif;
 }
 
@@ -23,6 +23,18 @@
     font-weight: 600;
     font-size: 16px;
     padding-left: 30px;
+}
+
+.ul-nav-folder>li:hover>a {
+    color: #9f224e;
+}
+
+.text > a > h1 {
+    font-family: 'Merriweather', serif;
+}
+
+.text>a:hover>h1 {
+    color: #9f224e;
 }
 
 .nav-folder {
@@ -86,6 +98,10 @@
     padding-bottom: 18px;
 }
 
+.theme-name {
+    padding: 10px 0;
+    font-size: 12px;
+}
 
 /* Tiêu đề phụ */
 .box_extra {

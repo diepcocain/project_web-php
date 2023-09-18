@@ -29,6 +29,10 @@
     padding-left: 30px;
 }
 
+.ul-nav-folder>li:hover>a {
+    color: #9f224e;
+}
+
 .nav-folder {
     align-items: flex-start;
     border-bottom: 1px solid #e5e5e5;
