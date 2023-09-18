@@ -1,4 +1,6 @@
 /* CSS CHO TIN SỨC KHỎE */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
 
 .container {
     margin: 1rem 12.75rem 1rem 12.75rem;
@@ -11,7 +13,12 @@
 }
 
 
+.text > a > h1 {
+    font-family: 'Merriweather', serif;
+}
+
 .ul-nav-folder>li>a {
+    font-family: 'Merriweather', serif;
     padding: 0px 8px;
     font-weight: 600;
     font-size: 16px;
@@ -127,6 +134,11 @@
     border-bottom: 1px solid var(--gray-color);
 }
 
+.theme-list > li > a {
+    font-size: 12px;
+}
+
+
 .theme-item span {
     margin-right: 20px;
 }
@@ -141,6 +153,11 @@
     text-decoration: underline;
 }
 
+.font > a > h3 {
+    padding-top: 10px;
+    font-size: 12px;
+    font-family: 'Merriweather', serif;
+}
 
 /* tin la cai */
 
