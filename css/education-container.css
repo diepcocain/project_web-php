@@ -1,445 +1,409 @@
 /* CSS CHO TIN GIÁO DỤC */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
 .container {
-    margin: 1rem 12.75rem 0 12.75rem;
-    display: flex;
-
+  margin: 1rem 12.75rem 0 12.75rem;
+  display: flex;
 }
 
-
 .menu_container {
-    margin: 1rem 12.75rem 0 12.75rem;
-    font-family: 'Merriweather', serif;
-    color: #4f4f4f;
-    font-weight: 600;
-    border-bottom: 1px solid var(--gray-color);
-    top: 0;
-    display: flex;
-
+  margin: 1rem 12.75rem 0 12.75rem;
+  font-family: "Merriweather", serif;
+  color: #4f4f4f;
+  font-weight: 600;
+  border-bottom: 1px solid var(--gray-color);
+  top: 0;
+  display: flex;
 }
 
 .menu_container h1 {
-    color: #4f4f4f;
-    margin-right: 20px;
-    font-weight: 700;
-    height: 52px;
-    margin: 0;
-    padding: 15px 10px 15px 0;
-    font-weight: 700;
-    font-family: 'Merriweather', serif;
-    line-height: 0.5;
+  color: #4f4f4f;
+  margin-right: 20px;
+  font-weight: 700;
+  height: 52px;
+  margin: 0;
+  padding: 15px 10px 15px 0;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
+  line-height: 0.5;
 }
 
-.menu_container>ul>li {
-    cursor: pointer;
-    display: inline-block;
-    font-size: 15px;
-    padding: 18px 10px 18px;
-    color: #626262;
-
+.menu_container > ul > li {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  padding: 18px 10px 18px;
+  color: #626262;
 }
 
 .menu_container ul li:hover {
-    color: #9f224e;
+  color: #9f224e;
 }
 
 .content_container {
-    margin-top: 15px;
-
+  margin-top: 15px;
 }
 
 .content_items {
-    width: 700px;
+  width: 700px;
 
-    padding-bottom: 1rem;
-    border-bottom: 1px solid var(--gray-color);
-
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--gray-color);
 }
 
 .items_content {
-    background-color: #f7f7f7;
-    display: flex;
-
+  background-color: #f7f7f7;
+  display: flex;
 }
 
 .items_content img {
-    width: 450px;
-    height: 250px;
-    height: auto;
+  width: 450px;
+  height: 250px;
+  height: auto;
 }
 
 .tieu_de {
-    cursor: pointer;
-    padding: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 500;
-
+  cursor: pointer;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
 }
 
-.tieude_chinh>h3 {
-    font-size: 23px;
-    font-family: 'Merriweather', serif;
+.tieude_chinh > h3 {
+  font-size: 23px;
+  font-family: "Merriweather", serif;
 }
 
-.tieude_chinh>h3:hover {
-    color: dodgerblue;
+.tieude_chinh > h3:hover {
+  color: dodgerblue;
 }
 
-.tieude_chinh>h5 {
-    padding: 12px 0;
-    font-weight: 300;
-
-
+.tieude_chinh > h5 {
+  padding: 12px 0;
+  font-weight: 300;
 }
 
 .tieude_phu {
-    width: 700px;
-    display: flex;
-    border-bottom: 1px solid var(--gray-color);
+  width: 700px;
+  display: flex;
+  border-bottom: 1px solid var(--gray-color);
 }
 
 .tieude_phu_con {
-    padding: 10px;
-    width: 230px;
+  padding: 10px;
+  width: 230px;
 }
 
-.tieude_phu_con>h5 {
-    font-weight: 300;
-    padding: 6px 0;
-    font-size: 13px;
+.tieude_phu_con > h5 {
+  font-weight: 300;
+  padding: 6px 0;
+  font-size: 13px;
 }
 
-.tieude_phu_con>h3 {
-    font-size: 15px;
-    font-family: 'Merriweather', serif;
-
+.tieude_phu_con > h3 {
+  font-size: 15px;
+  font-family: "Merriweather", serif;
 }
 
-.tieude_phu_con>h3:hover {
-    color: dodgerblue;
+.tieude_phu_con > h3:hover {
+  color: dodgerblue;
 }
 
 /*tin tuc ngoai le */
 .tin_tuc_ngoai_le {
-    width: 320px;
-    height: auto;
-    border: 1px solid var(--gray-color);
-    padding: 10px;
-    margin: 15px 25px;
-
-
+  width: 320px;
+  height: auto;
+  border: 1px solid var(--gray-color);
+  padding: 10px;
+  margin: 15px 25px;
 }
 
 .sub_tin_tuc_ngoai_le {
-    cursor: pointer;
-    display: flex;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--gray-color);
-    padding-top: 8px;
-
+  cursor: pointer;
+  display: flex;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray-color);
+  padding-top: 8px;
 }
 
-.sub_tin_tuc_ngoai_le>h3 {
-    font-size: 15px;
-    font-weight: 500;
-    font-family: 'Merriweather', serif;
-    width: 200px;
-    display: flex;
-    padding-left: 8px;
-
-
+.sub_tin_tuc_ngoai_le > h3 {
+  font-size: 15px;
+  font-weight: 500;
+  font-family: "Merriweather", serif;
+  width: 200px;
+  display: flex;
+  padding-left: 8px;
 }
 
-.sub_tin_tuc_ngoai_le>img {
-    width: 90px;
-    align-items: center;
-    margin: 0 10px;
-
+.sub_tin_tuc_ngoai_le > img {
+  width: 90px;
+  align-items: center;
+  margin: 0 10px;
 }
-
-
 
 /* chủ đề */
 .theme_down {
-    margin: 1rem 12.75rem 0 12.75rem;
-
+  margin: 1rem 12.75rem 0 12.75rem;
 }
 
 .theme-item,
 .theme-list ul {
-    display: flex;
-    font-size: var(--font-text-base);
-    align-items: center;
-    color: var(--text-color);
+  display: flex;
+  font-size: var(--font-text-base);
+  align-items: center;
+  color: var(--text-color);
 }
 
 .theme-item {
-    width: 700px;
-    height: 30px;
-    border-bottom: 1px solid var(--gray-color);
+  width: 700px;
+  height: 30px;
+  border-bottom: 1px solid var(--gray-color);
 }
 
 .theme-item span {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .theme-list ul li {
-    padding: 5px 15px;
+  padding: 5px 15px;
 }
 
 .theme-list ul li a {
-    color: #a42e58;
-    font-size: 15px;
-    text-decoration: underline;
+  color: #a42e58;
+  font-size: 15px;
+  text-decoration: underline;
 }
 
 /* TIN TUC */
 .tin_tuc {
-    margin: 1rem 12.75rem 0 12.75rem;
-    display: flex;
-    border-bottom: 1px solid var(--gray-color);
-    padding-bottom: 30px;
-
+  margin: 1rem 12.75rem 0 12.75rem;
+  display: flex;
+  border-bottom: 1px solid var(--gray-color);
+  padding-bottom: 30px;
 }
 
 .bang_tin_tuc {
-    width: 420px;
-    border-right: 1px solid var(--gray-color);
-    padding-right: 20px;
+  width: 420px;
+  border-right: 1px solid var(--gray-color);
+  padding-right: 20px;
 }
 
-
-
-.bang_tin_tuc_con >h3 {
-    font-size: 17px;
-    font-weight: 600;
-    font-family: 'Merriweather', serif;
-    padding: 16px 0;
-    cursor: pointer;
+.bang_tin_tuc_con > h3 {
+  font-size: 17px;
+  font-weight: 600;
+  font-family: "Merriweather", serif;
+  padding: 16px 0;
+  cursor: pointer;
 }
 
-
-
-.bang_tin_tuc_con>h3:hover {
-    color: dodgerblue;
+.bang_tin_tuc_con > h3:hover {
+  color: dodgerblue;
 }
 
 .sub_bang_tin_tuc_con {
-    border-bottom: 1px solid var(--gray-color);
-    display: flex;
-    padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray-color);
+  display: flex;
+  padding-bottom: 10px;
 }
 
-.sub_bang_tin_tuc_con>img {
-    width: 150px;
-
+.sub_bang_tin_tuc_con > img {
+  width: 150px;
 }
 
-.sub_bang_tin_tuc_con>h5 {
-    font-weight: 300;
-    padding: 0 10px;
-
+.sub_bang_tin_tuc_con > h5 {
+  font-weight: 300;
+  padding: 0 10px;
 }
 
 /*bang tin tức phụ*/
-.bang_tin_tuc_phu {}
-
-.header_bang_tin_tuc_phu {
-    display: flex;
+.bang_tin_tuc_phu {
 }
 
-.header_bang_tin_tuc_phu>img {
-    width: 310px;
-    padding: 0 5px 0 10px;
+.header_bang_tin_tuc_phu {
+  display: flex;
+}
+
+.header_bang_tin_tuc_phu > img {
+  width: 310px;
+  padding: 0 5px 0 10px;
 }
 
 /**/
 .sub_content_bang_tin_tuc_phu {
-    padding-left: 15px;
-    padding-top: 20px;
+  padding-left: 15px;
+  padding-top: 20px;
 }
 
 .header_content_bang_tin_tuc_phu {
-    display: flex;
-    align-items: center;
-    padding: 16px 0;
-
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
 }
 
-.header_content_bang_tin_tuc_phu>h3 {
-    font-size: 18px;
-    font-family: 'Merriweather', serif;
-    font-weight: 550;
-    padding-bottom: 1px;
-    border-bottom: 1px solid #9f224e;
+.header_content_bang_tin_tuc_phu > h3 {
+  font-size: 18px;
+  font-family: "Merriweather", serif;
+  font-weight: 550;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #9f224e;
 }
 
-.header_content_bang_tin_tuc_phu>h3:hover {
-    cursor: pointer;
-    color: #a42e58;
-
+.header_content_bang_tin_tuc_phu > h3:hover {
+  cursor: pointer;
+  color: #a42e58;
 }
 
 .sub_header_content_bang_tin_tuc_phu {
-    display: flex;
+  display: flex;
 }
 
-.sub_header_content_bang_tin_tuc_phu>a>span {
-    padding-left: 1rem;
-    font-size: 14px;
-
+.sub_header_content_bang_tin_tuc_phu > a > span {
+  padding-left: 1rem;
+  font-size: 14px;
 }
-
-
 
 /**/
-.between_content_bang_tin_tuc_phu {}
-
-.navbar_between_content_bang_tin_tuc_phu {
-    display: flex;
+.between_content_bang_tin_tuc_phu {
 }
 
-.navbar_between_content_bang_tin_tuc_phu>img {
-    width: 180px;
+.navbar_between_content_bang_tin_tuc_phu {
+  display: flex;
+}
+
+.navbar_between_content_bang_tin_tuc_phu > img {
+  width: 180px;
 }
 
 .nav_between_content_bang_tin_tuc_phu {
-    display: flex;
-    width: 380px;
-    padding-left: 10px;
+  display: flex;
+  width: 380px;
+  padding-left: 10px;
 }
 
-.subnav_between_content_bang_tin_tuc_phu>h3 {
-    font-family: 'Merriweather', serif;
-    font-weight: 560;
-    font-size: 14px;
+.subnav_between_content_bang_tin_tuc_phu > h3 {
+  font-family: "Merriweather", serif;
+  font-weight: 560;
+  font-size: 14px;
 }
 
-.subnav_between_content_bang_tin_tuc_phu>h3:hover {
-    color: dodgerblue;
+.subnav_between_content_bang_tin_tuc_phu > h3:hover {
+  color: dodgerblue;
 }
 
-.subnav_between_content_bang_tin_tuc_phu>h5 {
-    font-weight: 400;
-    padding-top: 12px;
+.subnav_between_content_bang_tin_tuc_phu > h5 {
+  font-weight: 400;
+  padding-top: 12px;
 }
 
 .downnav_between_content_bang_tin_tuc_phu {
-    width: 500px;
-    padding-left: 10px;
+  width: 500px;
+  padding-left: 10px;
 }
 
-.downnav_between_content_bang_tin_tuc_phu>h4 {
-    font-size: 13px;
-    font-weight: 500;
-    border-bottom: 1px solid var(--gray-color);
-    padding-bottom: 3px;
-    padding-top: 5px;
+.downnav_between_content_bang_tin_tuc_phu > h4 {
+  font-size: 13px;
+  font-weight: 500;
+  border-bottom: 1px solid var(--gray-color);
+  padding-bottom: 3px;
+  padding-top: 5px;
 }
 
-.downnav_between_content_bang_tin_tuc_phu>h4:hover {
-    color: dodgerblue;
+.downnav_between_content_bang_tin_tuc_phu > h4:hover {
+  color: dodgerblue;
 }
 
 /*tin la cai*/
 .tin_la_cai {
-    margin: 1rem 12.75rem 2rem 12.75rem;
-    padding-top: 10px;
-    border-top: 1px solid var(--gray-color);
-    display: flex;
+  margin: 1rem 12.75rem 2rem 12.75rem;
+  padding-top: 10px;
+  border-top: 1px solid var(--gray-color);
+  display: flex;
 }
 
 .phong {
-    width: 780px;
-    border-right: 1px solid var(--gray-color);
-    padding-right: 15px;
-    
+  width: 780px;
+  border-right: 1px solid var(--gray-color);
+  padding-right: 15px;
 }
 
 .content_tin_la_cai {
-    padding-top: 15px;
-    display: flex;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--gray-color);
+  padding-top: 15px;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray-color);
 }
 
-.content_tin_la_cai>img {
-    width: 220px;
+.content_tin_la_cai > img {
+  width: 220px;
 }
 
 .sub_content_tin_la_cai {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
-.sub_content_tin_la_cai>h3 {
-    font-weight: 550;
-    font-family: 'Merriweather', serif;
+.sub_content_tin_la_cai > h3 {
+  font-weight: 550;
+  font-family: "Merriweather", serif;
 }
 
-.sub_content_tin_la_cai>h3:hover {
-    color: dodgerblue;
+.sub_content_tin_la_cai > h3:hover {
+  color: dodgerblue;
 }
 
-.sub_content_tin_la_cai>h5 {
-    margin-top: 8px;
-    font-weight: 400;
-
+.sub_content_tin_la_cai > h5 {
+  margin-top: 8px;
+  font-weight: 400;
 }
 /**/
-.between_content_tin_la_cai{
-    padding: 0 25px;
-    width: 260px;
-    
+.between_content_tin_la_cai {
+  padding: 0 25px;
+  width: 260px;
 }
-.end_content_tin_la_cai{
-    background-color: #f7f7f7;
-    width: 260px;
+.end_content_tin_la_cai {
+  background-color: #f7f7f7;
+  width: 260px;
 }
-.sub-end_content_tin_la_cai{
-    padding:10px 15px;
+.sub-end_content_tin_la_cai {
+  padding: 10px 15px;
 }
-.sub-end_content_tin_la_cai > h2{
-    padding-bottom: 5px;
-    
-    font-family: 'Merriweather', serif;
-    font-size: 16px;
-    border-bottom: 1px solid #9f224e;
-    
+.sub-end_content_tin_la_cai > h2 {
+  padding-bottom: 5px;
+
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  border-bottom: 1px solid #9f224e;
 }
-.sub-end_content_tin_la_cai > h2:hover{
-    cursor: pointer;
-    color: #a42e58;
+.sub-end_content_tin_la_cai > h2:hover {
+  cursor: pointer;
+  color: #a42e58;
 }
 .end_content_tin_la_cai > img {
-    width: 240px;
-    padding-left: 17px;
-    padding-top: 15px;
+  width: 240px;
+  padding-left: 17px;
+  padding-top: 15px;
 }
-.nav_end_content_tin_la_cai{
-    padding: 15px;
-    padding-bottom: 50px;
+.nav_end_content_tin_la_cai {
+  padding: 15px;
+  padding-bottom: 50px;
 }
-.nav_end_content_tin_la_cai >h3{
-    font-size: 14.5px;
-    font-family: 'Merriweather', serif;
-    font-weight: 550;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--gray-color);
+.nav_end_content_tin_la_cai > h3 {
+  font-size: 14.5px;
+  font-family: "Merriweather", serif;
+  font-weight: 550;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray-color);
 }
-.nav_end_content_tin_la_cai >h3:hover{
-    color: dodgerblue;
+.nav_end_content_tin_la_cai > h3:hover {
+  color: dodgerblue;
 }
-.nav_end_content_tin_la_cai >h5{
-    padding-top: 10px;
-    font-size: 12px;
-    font-weight: 430;
-    font-family: 'Merriweather', serif;
-    padding-bottom: 10px;
-    border-bottom: 1px solid var(--gray-color);
-    
+.nav_end_content_tin_la_cai > h5 {
+  padding-top: 10px;
+  font-size: 12px;
+  font-weight: 430;
+  font-family: "Merriweather", serif;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--gray-color);
 }

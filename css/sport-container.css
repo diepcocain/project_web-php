@@ -1,350 +1,340 @@
 /* CSS CHO TIN THỂ THAO */
 /* CSS CHO TIN GIẢI TRÍ */
 .container {
-
 }
 
 .flexbox {
-
 }
 
 .content-main {
-    margin-top: 0;
-    border: none;
-    padding-top: 0;
+  margin-top: 0;
+  border: none;
+  padding-top: 0;
 }
 
-.flexbox-tide ul{
-    display: flex;
-    align-items:end;
+.flexbox-tide ul {
+  display: flex;
+  align-items: end;
 }
 
 .flexbox-tide ul li {
-    padding: 12px 6px 0;
+  padding: 12px 6px 0;
 }
 
 .flexbox-tide ul li:first-child a {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 .flexbox-tide ul li a {
-    font-size: 15px;
-    font-weight: 600;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 /* topic-story */
 .topic-story {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 .topic-l {
-    width: 750px;
-    height: 565px;
-    position: relative;
+  width: 750px;
+  height: 565px;
+  position: relative;
 }
 
 .topic-l img {
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
-    
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
-.topic-title{
-    position: absolute;
-    bottom: 90px;
-    left: 0;
-    color: white;
-    margin: 0;
-    padding: 0 10px;
-
-    
+.topic-title {
+  position: absolute;
+  bottom: 90px;
+  left: 0;
+  color: white;
+  margin: 0;
+  padding: 0 10px;
 }
 
 .topic_header {
-    background: #000;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 65px;
-    color: white;
-    padding: 4px 10px;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 65px;
+  color: white;
+  padding: 4px 10px;
 }
 
 .topic-r {
-    width: 330px;
-    margin-left: 20px;
+  width: 330px;
+  margin-left: 20px;
 }
 
 .topic-item__img {
-    position: relative;
+  position: relative;
 }
 
 .topic-item__img img {
-    height: 198px;
+  height: 198px;
 }
 
 .topic-item__img h4 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 10px;
-    color: white;
-    background: transparent;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  color: white;
+  background: transparent;
 }
 
-
 .topic-r img {
-    width: 100%;
+  width: 100%;
 }
 
 .topic-item span {
-    display: block;
-    padding: 4px;
+  display: block;
+  padding: 4px;
 }
 /* topic new item  */
 .topic-item-news {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 .thumb-art {
-    width: 260px;
-}
-
-.thumb-art img {   
-    width: 260px;
-    height: 156px;
+  width: 260px;
 }
 
 .thumb-art img {
-    width: 100%;
+  width: 260px;
+  height: 156px;
+}
+
+.thumb-art img {
+  width: 100%;
 }
 
 .thumb-art span {
-    display: block;
-    
+  display: block;
 }
 
 .flex-box-theme {
-    width: 100%;
-    padding: 10px 0; 
-    margin: 10px 0;
-    border-top: 1px solid #c5c5c5;
-    border-bottom: 1px solid #c5c5c5;
+  width: 100%;
+  padding: 10px 0;
+  margin: 10px 0;
+  border-top: 1px solid #c5c5c5;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .theme-item {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .cate_content {
-    display: flex;
+  display: flex;
 }
 
 .cate__content-l {
-    width: 245px;
-
+  width: 245px;
 }
 
 .cate__content-l img {
-    width: 100%;
-    margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .meta-news {
-    display: block;
-    margin-top: 16px;
-    color: var(--text-color);
+  display: block;
+  margin-top: 16px;
+  color: var(--text-color);
 }
 
 .cate__content-r {
-    width: 400px;
-    margin-left: 20px;
+  width: 400px;
+  margin-left: 20px;
 }
-
 
 .item-news:last-child {
-    border: none;
+  border: none;
 }
 
-.title-news a{
-    font-size: 16px;
+.title-news a {
+  font-size: 16px;
 }
 
 .description a {
-    font-size: 14px;
-    font-family: sans-serif;
+  font-size: 14px;
+  font-family: sans-serif;
 }
 
 /* BOOK-cate */
 .cate-book {
-    display: flex;
+  display: flex;
 }
 .book-l {
-    width: 365px;
+  width: 365px;
 }
 
 .book--top > img {
-    width: 100%;
-    height: 219px;
+  width: 100%;
+  height: 219px;
 }
 
 .book-r {
-    width: 330px;
+  width: 330px;
 }
 
 .book-r img {
-    width: 100%;
-    height: 440px;
+  width: 100%;
+  height: 440px;
 }
 /* ảnh */
 .photo_header {
-    height: 30px;
-    display: flex;
-    flex-direction: column;
+  height: 30px;
+  display: flex;
+  flex-direction: column;
 }
-.photo-item{ 
-    display: flex;
-    height: 480px;
+.photo-item {
+  display: flex;
+  height: 480px;
 }
 
-.photo-l img{
-    width: 800px;
+.photo-l img {
+  width: 800px;
 }
 
 .photo-r {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .photo-news {
-    padding: 25px;
+  padding: 25px;
 }
 
-.photo-news a{
-    color: #e6e6e6 !important;
-
+.photo-news a {
+  color: #e6e6e6 !important;
 }
 
 .photo-news:first-child {
-    background: #17191a;
-    flex: 1;
+  background: #17191a;
+  flex: 1;
 }
 
 .photo-news:last-child {
-    background: #222222;
-    flex: 1;
+  background: #222222;
+  flex: 1;
 }
 
-.photo-news:last-child a{
-    color: #c2c1c1 !important;
+.photo-news:last-child a {
+  color: #c2c1c1 !important;
 }
 
 /* entertainment - new */
 /* tin tức giải trí */
 
 .enter-news {
-    display: flex;
-}  
+  display: flex;
+}
 
 .new-left {
-    width: 749px;
+  width: 749px;
 }
 
 .new-right {
-    width: 300px;
+  width: 300px;
 }
 
-.item-new__enter{
-    display: flex;
+.item-new__enter {
+  display: flex;
 }
 
 .item-new__enter img {
-    width: 240px;
-    height: 144px;
-    margin-right: 20px;
+  width: 240px;
+  height: 144px;
+  margin-right: 20px;
 }
 
 .new-head .title-news > a {
-    font-size: 18px ; 
-    font-weight: 700;
+  font-size: 18px;
+  font-weight: 700;
 }
 
 /* right entertainment  */
 
-.common-new > img{
-    width: 100%;
-    height: 180px;
+.common-new > img {
+  width: 100%;
+  height: 180px;
 }
 
 .under-title {
-    text-decoration: underline ;
-    margin-bottom: 15px;
+  text-decoration: underline;
+  margin-bottom: 15px;
 }
 
 .item-link {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .item-link:last-child {
-    border: none;
-    margin-bottom: 0p;
+  border: none;
+  margin-bottom: 0p;
 }
 
 .item-link > .description > a {
-    font-size: 13px;
+  font-size: 13px;
 }
 
-
-.item-link  >.item-icon  {
-    font-size: 12px;
-    margin-right: 14px;
+.item-link > .item-icon {
+  font-size: 12px;
+  margin-right: 14px;
 }
 
 .category-r__content a {
-    display: block;
+  display: block;
 }
 
 /* Lịch thi đấu */
 
 .match_schedule {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
 }
 
 .schedule-item {
-    width: 202px;
-    border: 1px solid #c5c5c5;
-    padding: 4px;
-    margin-right: 15px;
+  width: 202px;
+  border: 1px solid #c5c5c5;
+  padding: 4px;
+  margin-right: 15px;
 }
 
 .schedule-item:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
-.schedule-name,.sc-name-l, .vs-name-p {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.schedule-name,
+.sc-name-l,
+.vs-name-p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .schedule-name {
-    height: 34px;
-    border-bottom: 1px solid #c5c5c5;
+  height: 34px;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .vs-name-p {
-    height: 30px;
-    line-height: 30px;
+  height: 30px;
+  line-height: 30px;
 }
 
 .schedule-down {
-    display: flex;
-    justify-content: center;
-    border-top: 1px solid #c5c5c5;
-    padding: 4px 0
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #c5c5c5;
+  padding: 4px 0;
 }
-

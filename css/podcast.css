@@ -1,212 +1,211 @@
 /* CSS CHO PODCART */
 
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
 .container {
-    margin: 1rem 12.75rem 1rem 12.75rem;
+  margin: 1rem 12.75rem 1rem 12.75rem;
 }
 
 .header_container {
-    padding-bottom: 2rem;
+  padding-bottom: 2rem;
 }
 
 .nav_container {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
 }
 
-.nav_container>a>h1 {
-    font-family: 'Merriweather', serif;
+.nav_container > a > h1 {
+  font-family: "Merriweather", serif;
 }
 
 .nav_container > a > h1:hover {
-    color: #9f224e;
+  color: #9f224e;
 }
 
-.nav_container>a>span {
-    padding-left: 1rem;
-    padding-top: 1rem;
-    font-weight: 600;
-    font-size: 14px;
+.nav_container > a > span {
+  padding-left: 1rem;
+  padding-top: 1rem;
+  font-weight: 600;
+  font-size: 14px;
 }
 
-.nav_container>a:hover>span,
-.podcast_header_text>a:hover>h2 
-{
-    color: #9f224e;
+.nav_container > a:hover > span,
+.podcast_header_text > a:hover > h2 {
+  color: #9f224e;
 }
 
 .main_header_container {
-    padding: 1.5rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #ccc;
+  padding: 1.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
 }
 
 .podcast_header {
-    width: 50%;
-    padding-left: 8px;
-    display: flex;
-    align-items: start;
-    justify-content: space-between;
+  width: 50%;
+  padding-left: 8px;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
 }
 
-.podcast_header>img {
-    cursor: pointer;
-    width: 180px;
-    border-radius: 4px;
+.podcast_header > img {
+  cursor: pointer;
+  width: 180px;
+  border-radius: 4px;
 }
 
 .podcast_header_text {
-    padding: 0 1rem;
+  padding: 0 1rem;
 }
 
-.podcast_header_text>a>h2 {
-    padding: 8px 0;
-    font-weight: 700;
-    font-family: 'Merriweather', serif;
+.podcast_header_text > a > h2 {
+  padding: 8px 0;
+  font-weight: 700;
+  font-family: "Merriweather", serif;
 }
 
-.podcast_header_text>p {
-    padding: 8px 0;
-    font-size: 0.925rem;
+.podcast_header_text > p {
+  padding: 8px 0;
+  font-size: 0.925rem;
 }
 
 .footer_text {
-    padding-top: 1.25rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+  padding-top: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
-.comment>span {
-    font-size: 14px;
-    font-weight: 400;
-    color: #9f224e;
+.comment > span {
+  font-size: 14px;
+  font-weight: 400;
+  color: #9f224e;
 }
 
 .play_label {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.play_label>span {
-    font-size: 13px;
-    padding-right: 12px
+.play_label > span {
+  font-size: 13px;
+  padding-right: 12px;
 }
 
 .play_btn {
-    width: 32px;
-    height: 32px;
-    border-radius: 99999px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #fae4ea;
+  width: 32px;
+  height: 32px;
+  border-radius: 99999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fae4ea;
 }
 
-.play_btn>i {
-    font-size: 14px;
-    color: #9f224e;
+.play_btn > i {
+  font-size: 14px;
+  color: #9f224e;
 }
 
 .play_btn:hover {
-    background: #9f224e;
+  background: #9f224e;
 }
 
-.play_btn:hover>i {
-    color: #fff;
+.play_btn:hover > i {
+  color: #fff;
 }
 
 .content_header_container {
-    padding: 1.5rem 0;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    border-bottom: 1px solid #ccc;
+  padding: 1.5rem 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-bottom: 1px solid #ccc;
 }
 
 .podcad_conatiner {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .head_podcast_container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.head_podcast_container>img {
-    border-radius: 4px;
+.head_podcast_container > img {
+  border-radius: 4px;
 }
 
-.head_podcast_container>h3 {
-    padding: 0 0.875rem;
-    font-size: 17.5px;
-    font-weight: 400;
-    font-family: 'Merriweather', serif;
+.head_podcast_container > h3 {
+  padding: 0 0.875rem;
+  font-size: 17.5px;
+  font-weight: 400;
+  font-family: "Merriweather", serif;
 }
 
-.head_podcast_container>h3:hover {
-    color: #9f224e;
+.head_podcast_container > h3:hover {
+  color: #9f224e;
 }
 
-.podcad_conatiner>a>p {
-    font-size: 1rem;
-    margin: 1rem 0;
-    color: #484646;
+.podcad_conatiner > a > p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  color: #484646;
 }
 
 .footer_text_container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
 }
 
-.footer_text_container>a>p {
-    font-size: 0.875rem;
-    color: #989393;
+.footer_text_container > a > p {
+  font-size: 0.875rem;
+  color: #989393;
 }
 
 .heading_text {
-    width: 18%;
-    padding-top: 2rem;
-    padding-bottom: 4px;
-    cursor: pointer;
-    font-weight: 600;
-    color: #B42652;
-    border-bottom: 1px solid #B42652;
-    font-family: 'Merriweather', serif;
+  width: 18%;
+  padding-top: 2rem;
+  padding-bottom: 4px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #b42652;
+  border-bottom: 1px solid #b42652;
+  font-family: "Merriweather", serif;
 }
 
 .contact {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
-.contact>a {
-    border-right: 1px solid #949292;
-    padding-right: 0.5rem;
+.contact > a {
+  border-right: 1px solid #949292;
+  padding-right: 0.5rem;
 }
 
-.contact>.comment {
-    padding-left: 0.5rem;
+.contact > .comment {
+  padding-left: 0.5rem;
 }
 
 .content_header_container_2 {
-    width: 75%;
-    padding: 1.5rem 0;
-    display: grid;
-    gap: 2rem;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    border-bottom: 1px solid #ccc;
+  width: 75%;
+  padding: 1.5rem 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-bottom: 1px solid #ccc;
 }
 
 .contact > label {
-    font-size: 13px;
-    color: #949292;
+  font-size: 13px;
+  color: #949292;
 }

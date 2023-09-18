@@ -1,257 +1,248 @@
 /* CSS CHO TIN SỨC KHỎE */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
 .container {
-    margin: 1rem 12.75rem 1rem 12.75rem;
+  margin: 1rem 12.75rem 1rem 12.75rem;
 }
 
 /* Giới thiệu */
 .ul-nav-folder {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-
 
 .font {
-    font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
-.ul-nav-folder>li>a {
-    font-family: 'Merriweather', serif;
-    padding: 0px 8px;
-    font-weight: 600;
-    font-size: 16px;
-    padding-left: 30px;
+.ul-nav-folder > li > a {
+  font-family: "Merriweather", serif;
+  padding: 0px 8px;
+  font-weight: 600;
+  font-size: 16px;
+  padding-left: 30px;
 }
 
-.ul-nav-folder>li:hover>a {
-    color: #9f224e;
+.ul-nav-folder > li:hover > a {
+  color: #9f224e;
 }
 
 .text > a > h1 {
-    font-family: 'Merriweather', serif;
+  font-family: "Merriweather", serif;
 }
 
-.text>a:hover>h1 {
-    color: #9f224e;
+.text > a:hover > h1 {
+  color: #9f224e;
 }
 
 .nav-folder {
-    align-items: flex-start;
-    border-bottom: 1px solid #e5e5e5;
-    flex-wrap: wrap;
-    display: flex;
+  align-items: flex-start;
+  border-bottom: 1px solid #e5e5e5;
+  flex-wrap: wrap;
+  display: flex;
 }
-
 
 /* Contnet chinh */
 .content_chinh {
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid var(--gray-color)
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--gray-color);
 }
 .content-all {
-    display: flex;
+  display: flex;
 }
-
 
 /* content left */
 .left_content {
-    width: 700px;
-    border-right: 1px solid var(--gray-color);
-    padding-right: 20px;
+  width: 700px;
+  border-right: 1px solid var(--gray-color);
+  padding-right: 20px;
 }
-
 
 /* Tiêu đề chính */
 .main_left_content {
-    display: flex;
-    padding-top: 15px;
+  display: flex;
+  padding-top: 15px;
 }
 
-.main_left_content>img {
-    width: 72%;
+.main_left_content > img {
+  width: 72%;
 }
 
 .text {
-    background-color: #f8f7f7;
-    padding: 0 20px;
+  background-color: #f8f7f7;
+  padding: 0 20px;
 }
 
-.text>h1 {
-    font-family: 'Merriweather', serif;
+.text > h1 {
+  font-family: "Merriweather", serif;
 }
 
 .text_time {
-    padding-top: 10px;
+  padding-top: 10px;
 }
 
-.text_time>span {
-    font-size: 14px;
-    color: #928a8a;
-    padding-right: 1rem;
+.text_time > span {
+  font-size: 14px;
+  color: #928a8a;
+  padding-right: 1rem;
 }
 
 .leftbox {
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 18px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 18px;
 }
 
 .theme-name {
-    padding: 10px 0;
-    font-size: 12px;
+  padding: 10px 0;
+  font-size: 12px;
 }
 
 /* Tiêu đề phụ */
 .box_extra {
-    border-bottom: 1px solid #e5e5e5;
-    padding-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 10px;
 }
 
 .extra {
-    display: flex;
-    padding-top: 1rem;
+  display: flex;
+  padding-top: 1rem;
 }
 
 .between_extra {
-    padding-left: 25px;
-    padding-right: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
-.left_extra>img {
-    width: 100%;
-    height: 81%;
+.left_extra > img {
+  width: 100%;
+  height: 81%;
 }
 
-.between_extra>img {
-    width: 100%;
-    height: 82%;
+.between_extra > img {
+  width: 100%;
+  height: 82%;
 }
 
-.right_extra>img {
-    width: 100%;
-    height: 82%;
+.right_extra > img {
+  width: 100%;
+  height: 82%;
 }
-
 
 /* chủ đề */
 .theme-item,
 .theme-list ul {
-    display: flex;
-    font-size: var(--font-text-base);
-    align-items: center;
-    color: var(--text-color);
-    padding: 30px;
+  display: flex;
+  font-size: var(--font-text-base);
+  align-items: center;
+  color: var(--text-color);
+  padding: 30px;
 }
 
 .theme-item {
-    height: 30px;
-    border-bottom: 1px solid var(--gray-color);
+  height: 30px;
+  border-bottom: 1px solid var(--gray-color);
 }
 
 .theme-list > li > a {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-
 .theme-item span {
-    margin-right: 20px;
+  margin-right: 20px;
 }
 
 .theme-list ul li {
-    padding: 10px;
+  padding: 10px;
 }
 
 .theme-list ul li a {
-    color: #a42e58;
-    font-size: 16px;
-    text-decoration: underline;
+  color: #a42e58;
+  font-size: 16px;
+  text-decoration: underline;
 }
 
 .font > a > h3 {
-    padding-top: 10px;
-    font-size: 12px;
-    font-family: 'Merriweather', serif;
+  padding-top: 10px;
+  font-size: 12px;
+  font-family: "Merriweather", serif;
 }
 
 /* tin la cai */
 
 .phong {
-    padding-right: 15px;
+  padding-right: 15px;
 }
 
 .content_tin_la_cai {
-    padding-top: 15px;
-    display: flex;
-    padding-bottom: 20px;
-    border-bottom: 1px solid var(--gray-color);
+  padding-top: 15px;
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--gray-color);
 }
 
-.content_tin_la_cai>img {
-    width: 220px;
+.content_tin_la_cai > img {
+  width: 220px;
 }
 
 .sub_content_tin_la_cai {
-    padding-left: 15px;
+  padding-left: 15px;
 }
 
-.sub_content_tin_la_cai>h3 {
-    font-weight: 550;
-    font-family: 'Merriweather', serif;
-    font-size: 20px;
+.sub_content_tin_la_cai > h3 {
+  font-weight: 550;
+  font-family: "Merriweather", serif;
+  font-size: 20px;
 }
 
-.sub_content_tin_la_cai>h3:hover {
-    color: dodgerblue;
+.sub_content_tin_la_cai > h3:hover {
+  color: dodgerblue;
 }
 
-.sub_content_tin_la_cai>h5 {
-    margin-top: 8px;
-    font-weight: 400;
-    font-size: 14px;
+.sub_content_tin_la_cai > h5 {
+  margin-top: 8px;
+  font-weight: 400;
+  font-size: 14px;
 }
-
 
 /* content right */
 .category-r {
-    width: 300px;
-    margin-top: 10px;
+  width: 300px;
+  margin-top: 10px;
 }
 
 .category-r__content {
-    padding-left: 30px;
-    cursor:  pointer;
+  padding-left: 30px;
+  cursor: pointer;
 }
 
 .category-r__content > h3 {
-    border-bottom: 1px solid #9f224e;
-    position: relative;
-    display: inline-block;
-    padding-top: 20px;
-    padding-bottom: 5px;
-    font-family: 'Merriweather', serif;
-    font-size: 22px;
+  border-bottom: 1px solid #9f224e;
+  position: relative;
+  display: inline-block;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  font-family: "Merriweather", serif;
+  font-size: 22px;
 }
 
 .category-r__content img {
-    padding: 10px 0;
-    width: 270px;
-    height: 180px;
+  padding: 10px 0;
+  width: 270px;
+  height: 180px;
 }
 
 .category-r__content p {
-    font-size: 15px;
-    color: #000;
-    padding-top: 10px;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #c5c5c5;
+  font-size: 15px;
+  color: #000;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #c5c5c5;
 }
 
 .right-bootom p {
-    padding-top: 10px;
-    padding-left: 30px;
-    font-size: 15px;
-    color: #000;
+  padding-top: 10px;
+  padding-left: 30px;
+  font-size: 15px;
+  color: #000;
 }
-
